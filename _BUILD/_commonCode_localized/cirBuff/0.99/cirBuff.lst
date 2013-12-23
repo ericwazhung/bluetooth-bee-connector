@@ -1,0 +1,432 @@
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s 			page 1
+
+
+   1               		.file	"cirBuff.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.global __do_copy_data
+   8               		.global __do_clear_bss
+   9               		.stabs	"/Users/meh/_avrProjects/tabletBluetoother/8-gittifying/",100,0,2,.Ltext0
+  10               		.stabs	"_commonCode_localized/cirBuff/0.99/cirBuff.c",100,0,2,.Ltext0
+  11               		.text
+  12               	.Ltext0:
+  13               		.stabs	"gcc2_compiled.",60,0,0,0
+  14               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,1,0
+  15               		.stabs	"char:t(0,2)=@s8;r(0,2);0;255;",128,0,1,0
+  16               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,1,0
+  17               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,1,0
+  18               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,1,0
+  19               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,1,
+  20               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,1,0
+  21               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,1,0
+  22               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,1,0
+  23               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,1,0
+  24               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,1,0
+  25               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,1,0
+  26               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,1,0
+  27               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,1,0
+  28               		.stabs	"void:t(0,15)=(0,15)",128,0,1,0
+  29               		.stabs	"_commonCode_localized/cirBuff/0.99/cirBuff.h",130,0,0,0
+  30               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/inttypes.h",130,0,0,0
+  31               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/stdint.h",130,0,0,0
+  32               		.stabs	"int8_t:t(3,1)=(0,10)",128,0,121,0
+  33               		.stabs	"uint8_t:t(3,2)=(0,11)",128,0,122,0
+  34               		.stabs	"int16_t:t(3,3)=(0,1)",128,0,123,0
+  35               		.stabs	"uint16_t:t(3,4)=(0,4)",128,0,124,0
+  36               		.stabs	"int32_t:t(3,5)=(0,3)",128,0,125,0
+  37               		.stabs	"uint32_t:t(3,6)=(0,5)",128,0,126,0
+  38               		.stabs	"int64_t:t(3,7)=(0,6)",128,0,128,0
+  39               		.stabs	"uint64_t:t(3,8)=(0,7)",128,0,129,0
+  40               		.stabs	"intptr_t:t(3,9)=(3,3)",128,0,142,0
+  41               		.stabs	"uintptr_t:t(3,10)=(3,4)",128,0,147,0
+  42               		.stabs	"int_least8_t:t(3,11)=(3,1)",128,0,159,0
+  43               		.stabs	"uint_least8_t:t(3,12)=(3,2)",128,0,164,0
+  44               		.stabs	"int_least16_t:t(3,13)=(3,3)",128,0,169,0
+  45               		.stabs	"uint_least16_t:t(3,14)=(3,4)",128,0,174,0
+  46               		.stabs	"int_least32_t:t(3,15)=(3,5)",128,0,179,0
+  47               		.stabs	"uint_least32_t:t(3,16)=(3,6)",128,0,184,0
+  48               		.stabs	"int_least64_t:t(3,17)=(3,7)",128,0,192,0
+  49               		.stabs	"uint_least64_t:t(3,18)=(3,8)",128,0,199,0
+  50               		.stabs	"int_fast8_t:t(3,19)=(3,1)",128,0,213,0
+  51               		.stabs	"uint_fast8_t:t(3,20)=(3,2)",128,0,218,0
+  52               		.stabs	"int_fast16_t:t(3,21)=(3,3)",128,0,223,0
+  53               		.stabs	"uint_fast16_t:t(3,22)=(3,4)",128,0,228,0
+  54               		.stabs	"int_fast32_t:t(3,23)=(3,5)",128,0,233,0
+  55               		.stabs	"uint_fast32_t:t(3,24)=(3,6)",128,0,238,0
+  56               		.stabs	"int_fast64_t:t(3,25)=(3,7)",128,0,246,0
+  57               		.stabs	"uint_fast64_t:t(3,26)=(3,8)",128,0,253,0
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s 			page 2
+
+
+  58               		.stabs	"intmax_t:t(3,27)=(3,7)",128,0,273,0
+  59               		.stabs	"uintmax_t:t(3,28)=(3,8)",128,0,278,0
+  60               		.stabn	162,0,0,0
+  61               		.stabs	"int_farptr_t:t(2,1)=(3,5)",128,0,77,0
+  62               		.stabs	"uint_farptr_t:t(2,2)=(3,6)",128,0,81,0
+  63               		.stabn	162,0,0,0
+  64               		.stabs	"cirBuff_t:t(1,1)=(1,2)=s5writePosition:(1,3)=B(3,2),0,8;readPosition:(1,3),8,8;length:(3,2
+  65               		.stabn	162,0,0,0
+  66               		.stabs	"cirBuff_init:F(3,2)",36,0,16,cirBuff_init
+  67               		.stabs	"cirBuff:P(0,16)=*(1,1)",64,0,16,30
+  68               		.stabs	"length:P(3,2)",64,0,16,22
+  69               		.stabs	"array:P(1,4)",64,0,16,20
+  70               	.global	cirBuff_init
+  71               		.type	cirBuff_init, @function
+  72               	cirBuff_init:
+  73               		.stabd	46,0,0
+   1:_commonCode_localized/cirBuff/0.99/cirBuff.c **** //cirBuff 0.97
+   2:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+   3:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #include "cirBuff.h"
+   4:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+   5:_commonCode_localized/cirBuff/0.99/cirBuff.c **** //Give a read in the middle of a write-block... to test.
+   6:_commonCode_localized/cirBuff/0.99/cirBuff.c **** //#define __TESTING__
+   7:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+   8:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+   9:_commonCode_localized/cirBuff/0.99/cirBuff.c **** //This should probably be renamed... som'n like bufferEmpty...
+  10:_commonCode_localized/cirBuff/0.99/cirBuff.c **** //volatile uint8_t UART_Ready[NUMUARTS] = UARTARRAYINIT;
+  11:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+  12:_commonCode_localized/cirBuff/0.99/cirBuff.c **** //Returns non-zero if there's an error
+  13:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #if (!defined(CIRBUFF_NO_CALLOC) || !CIRBUFF_NO_CALLOC)
+  14:_commonCode_localized/cirBuff/0.99/cirBuff.c ****  uint8_t cirBuff_init(cirBuff_t *cirBuff, uint8_t length)
+  15:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #else
+  16:_commonCode_localized/cirBuff/0.99/cirBuff.c ****  uint8_t cirBuff_init(cirBuff_t *cirBuff, uint8_t length, uint8_t *array)
+  17:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #endif
+  18:_commonCode_localized/cirBuff/0.99/cirBuff.c **** {
+  74               		.stabn	68,0,18,.LM0-.LFBB1
+  75               	.LM0:
+  76               	.LFBB1:
+  77               	/* prologue: function */
+  78               	/* frame size = 0 */
+  79 0000 FC01      		movw r30,r24
+  19:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//length+1 because one byte is unused to indicate full/empty (see below)
+  20:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #if (!defined(CIRBUFF_NO_CALLOC) || !CIRBUFF_NO_CALLOC)
+  21:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	cirBuff->buffer = (uint8_t *)calloc(length+1, sizeof(uint8_t));
+  22:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+  23:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//Check if malloc failed
+  24:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	if(cirBuff->buffer == NULL)
+  25:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		return 1;
+  26:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+  27:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	cirBuff->length = length + 1;
+  28:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #else
+  29:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	cirBuff->buffer = array;
+  80               		.stabn	68,0,29,.LM1-.LFBB1
+  81               	.LM1:
+  82 0002 5483      		std Z+4,r21
+  83 0004 4383      		std Z+3,r20
+  30:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	cirBuff->length = length;
+  84               		.stabn	68,0,30,.LM2-.LFBB1
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s 			page 3
+
+
+  85               	.LM2:
+  86 0006 6283      		std Z+2,r22
+  31:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #endif
+  32:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	
+  33:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	
+  34:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	cirBuff->writePosition = 0;
+  87               		.stabn	68,0,34,.LM3-.LFBB1
+  88               	.LM3:
+  89 0008 1082      		st Z,__zero_reg__
+  35:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	cirBuff->readPosition = 0;
+  90               		.stabn	68,0,35,.LM4-.LFBB1
+  91               	.LM4:
+  92 000a 1182      		std Z+1,__zero_reg__
+  36:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	
+  37:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	return 0;	
+  38:_commonCode_localized/cirBuff/0.99/cirBuff.c **** }
+  93               		.stabn	68,0,38,.LM5-.LFBB1
+  94               	.LM5:
+  95 000c 80E0      		ldi r24,lo8(0)
+  96               	/* epilogue start */
+  97 000e 0895      		ret
+  98               		.size	cirBuff_init, .-cirBuff_init
+  99               	.Lscope1:
+ 100               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 101               		.stabd	78,0,0
+ 102               		.stabs	"cirBuff_addByte:F(3,2)",36,0,61,cirBuff_addByte
+ 103               		.stabs	"cirBuff:P(0,16)",64,0,61,30
+ 104               		.stabs	"Data:P(3,2)",64,0,61,18
+ 105               		.stabs	"dontBlock:P(3,2)",64,0,61,20
+ 106               	.global	cirBuff_addByte
+ 107               		.type	cirBuff_addByte, @function
+ 108               	cirBuff_addByte:
+ 109               		.stabd	46,0,0
+  39:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+  40:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #if (!defined(CIRBUFF_NO_CALLOC) || !CIRBUFF_NO_CALLOC)
+  41:_commonCode_localized/cirBuff/0.99/cirBuff.c **** //In most cases I'm using this for there's no reason to destroy it...
+  42:_commonCode_localized/cirBuff/0.99/cirBuff.c **** // But one should never alloc without free...
+  43:_commonCode_localized/cirBuff/0.99/cirBuff.c **** // Returns 1 if the buffer was already NULL...
+  44:_commonCode_localized/cirBuff/0.99/cirBuff.c **** uint8_t cirBuff_destroy(cirBuff_t *cirBuff)
+  45:_commonCode_localized/cirBuff/0.99/cirBuff.c **** {
+  46:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	if(cirBuff->buffer != NULL)
+  47:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	{
+  48:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		free(cirBuff->buffer);
+  49:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		cirBuff->buffer = NULL;
+  50:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		return 0;
+  51:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	}
+  52:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	else
+  53:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		return 1;
+  54:_commonCode_localized/cirBuff/0.99/cirBuff.c **** }
+  55:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #endif
+  56:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+  57:_commonCode_localized/cirBuff/0.99/cirBuff.c **** //This loads the byte into the send buffer 
+  58:_commonCode_localized/cirBuff/0.99/cirBuff.c **** // (in midi_out the buffer is flushed one-by-one whenever the TX-complete interrupt is called)
+  59:_commonCode_localized/cirBuff/0.99/cirBuff.c **** // this is the old midiOut_sendByte:
+  60:_commonCode_localized/cirBuff/0.99/cirBuff.c **** // returns 1 if the buffer was full AND dontBlock was true (i.e. the byte was lost!), 0 otherwise
+  61:_commonCode_localized/cirBuff/0.99/cirBuff.c **** uint8_t cirBuff_addByte(cirBuff_t *cirBuff, uint8_t Data, uint8_t dontBlock)
+  62:_commonCode_localized/cirBuff/0.99/cirBuff.c **** {   
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s 			page 4
+
+
+ 110               		.stabn	68,0,62,.LM6-.LFBB2
+ 111               	.LM6:
+ 112               	.LFBB2:
+ 113               	/* prologue: function */
+ 114               	/* frame size = 0 */
+ 115 0010 FC01      		movw r30,r24
+ 116 0012 262F      		mov r18,r22
+  63:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	uint8_t nextWritePosition = (cirBuff->writePosition + 1)%(cirBuff->length);
+ 117               		.stabn	68,0,63,.LM7-.LFBB2
+ 118               	.LM7:
+ 119 0014 8081      		ld r24,Z
+ 120 0016 90E0      		ldi r25,lo8(0)
+ 121 0018 6281      		ldd r22,Z+2
+ 122 001a 0196      		adiw r24,1
+ 123 001c 70E0      		ldi r23,lo8(0)
+ 124 001e 00D0      		rcall __divmodhi4
+  64:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #ifdef __TESTING__
+  65:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	int i = 0;
+  66:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #endif
+  67:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	
+  68:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//Wait if the buffer's full
+  69:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//   can check this by determining if the writePosition is one less than the sendPosition
+  70:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//   (or if the nextWritePosition is the same as the readPosition, makes more sense...)
+  71:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	while(!dontBlock && (nextWritePosition == cirBuff->readPosition))
+ 125               		.stabn	68,0,71,.LM8-.LFBB2
+ 126               	.LM8:
+ 127 0020 4423      		tst r20
+ 128 0022 01F4      		brne .L5
+ 129 0024 00C0      		rjmp .L10
+ 130               	.L6:
+  72:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	{		
+  73:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #ifdef __TESTING__
+  74:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		if(i == 60000000)
+  75:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 			cirBuff_getByte(cirBuff);
+  76:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		i++;
+  77:_commonCode_localized/cirBuff/0.99/cirBuff.c **** #endif
+  78:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		//This probably isn't necessary... it wasn't in midiOut, but I don't know for certain.
+  79:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		// I've heard of optimizers optimizing out empty loops (even if a test is volatile?!)
+  80:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		asm("nop;");
+ 131               		.stabn	68,0,80,.LM9-.LFBB2
+ 132               	.LM9:
+ 133               	/* #APP */
+ 134               	 ;  80 "_commonCode_localized/cirBuff/0.99/cirBuff.c" 1
+ 135 0026 0000      		nop;
+ 136               	 ;  0 "" 2
+ 137               	/* #NOAPP */
+ 138               	.L10:
+  71:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	while(!dontBlock && (nextWritePosition == cirBuff->readPosition))
+ 139               		.stabn	68,0,71,.LM10-.LFBB2
+ 140               	.LM10:
+ 141 0028 9181      		ldd r25,Z+1
+ 142 002a 8917      		cp r24,r25
+ 143 002c 01F0      		breq .L6
+ 144               	.L5:
+  81:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	}
+  82:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	
+  83:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//***This is where the midiOut code checked if the UART was ready to receive another byte to trans
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s 			page 5
+
+
+  84:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//    It would then load the byte directly to the UART instead of the buffer
+  85:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//    This doesn't make a whole lot of sense... why not test this outside and call addByte if it's
+  86:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//     I think it was more efficient to have a single function, but this test could occur anywhere
+  87:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//     (no sense in all that math above... right? Briefly:
+  88:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//if(UART_Ready[uartNum])
+  89:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//{
+  90:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//	UDR = Data;
+  91:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//	UART_Ready[uartNum] = FALSE;
+  92:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//}
+  93:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//else //Otherwise load to the buffer
+  94:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	
+  95:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//Note, these values may differ from the ones in the while loop...
+  96:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	// This *should* be OK, and maybe even handy
+  97:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	// Note, also, that there is always one byte that's unused... 
+  98:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//  so writePosition == readPosition => empty
+  99:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	if(nextWritePosition != cirBuff->readPosition)
+ 145               		.stabn	68,0,99,.LM11-.LFBB2
+ 146               	.LM11:
+ 147 002e 9181      		ldd r25,Z+1
+ 148 0030 8917      		cp r24,r25
+ 149 0032 01F4      		brne .L7
+ 150 0034 81E0      		ldi r24,lo8(1)
+ 151 0036 0895      		ret
+ 152               	.L7:
+ 100:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	{
+ 101:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		//Load to the buffer
+ 102:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		cirBuff->buffer[ cirBuff->writePosition ] = Data;
+ 153               		.stabn	68,0,102,.LM12-.LFBB2
+ 154               	.LM12:
+ 155 0038 9081      		ld r25,Z
+ 156 003a A381      		ldd r26,Z+3
+ 157 003c B481      		ldd r27,Z+4
+ 158 003e A90F      		add r26,r25
+ 159 0040 B11D      		adc r27,__zero_reg__
+ 160 0042 2C93      		st X,r18
+ 103:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		//Set up the writePosition for the next call
+ 104:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		cirBuff->writePosition = nextWritePosition;
+ 161               		.stabn	68,0,104,.LM13-.LFBB2
+ 162               	.LM13:
+ 163 0044 8083      		st Z,r24
+ 164 0046 80E0      		ldi r24,lo8(0)
+ 105:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		return 0;
+ 106:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	}
+ 107:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	else	//Indicate that the buffer was full
+ 108:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		return 1;
+ 109:_commonCode_localized/cirBuff/0.99/cirBuff.c **** }
+ 165               		.stabn	68,0,109,.LM14-.LFBB2
+ 166               	.LM14:
+ 167 0048 0895      		ret
+ 168               		.size	cirBuff_addByte, .-cirBuff_addByte
+ 169               		.stabs	"nextWritePosition:r(3,2)",64,0,63,24
+ 170               		.stabn	192,0,0,.LFBB2-.LFBB2
+ 171               		.stabn	224,0,0,.Lscope2-.LFBB2
+ 172               	.Lscope2:
+ 173               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 174               		.stabd	78,0,0
+ 175               		.stabs	"cirBuff_getByte:F(3,3)",36,0,113,cirBuff_getByte
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s 			page 6
+
+
+ 176               		.stabs	"cirBuff:P(0,16)",64,0,113,30
+ 177               	.global	cirBuff_getByte
+ 178               		.type	cirBuff_getByte, @function
+ 179               	cirBuff_getByte:
+ 180               		.stabd	46,0,0
+ 110:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+ 111:_commonCode_localized/cirBuff/0.99/cirBuff.c **** //If there's data in the buffer, return it (it's a single unsigned byte, 0-255)
+ 112:_commonCode_localized/cirBuff/0.99/cirBuff.c **** // If there was no data in the buffer, return -1
+ 113:_commonCode_localized/cirBuff/0.99/cirBuff.c **** int16_t cirBuff_getByte(cirBuff_t *cirBuff)
+ 114:_commonCode_localized/cirBuff/0.99/cirBuff.c **** {
+ 181               		.stabn	68,0,114,.LM15-.LFBB3
+ 182               	.LM15:
+ 183               	.LFBB3:
+ 184               	/* prologue: function */
+ 185               	/* frame size = 0 */
+ 186 004a FC01      		movw r30,r24
+ 115:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	uint8_t byte;
+ 116:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	
+ 117:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	//There's no data in the buffer
+ 118:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	if(cirBuff->writePosition == cirBuff->readPosition)
+ 187               		.stabn	68,0,118,.LM16-.LFBB3
+ 188               	.LM16:
+ 189 004c 9081      		ld r25,Z
+ 190 004e 8181      		ldd r24,Z+1
+ 191 0050 9817      		cp r25,r24
+ 192 0052 01F4      		brne .L13
+ 193 0054 2FEF      		ldi r18,lo8(-1)
+ 194 0056 3FEF      		ldi r19,hi8(-1)
+ 195 0058 00C0      		rjmp .L14
+ 196               	.L13:
+ 119:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		return -1;
+ 120:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	else
+ 121:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	{
+ 122:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		byte = cirBuff->buffer[ cirBuff->readPosition ];
+ 197               		.stabn	68,0,122,.LM17-.LFBB3
+ 198               	.LM17:
+ 199 005a 8181      		ldd r24,Z+1
+ 200 005c A381      		ldd r26,Z+3
+ 201 005e B481      		ldd r27,Z+4
+ 202 0060 A80F      		add r26,r24
+ 203 0062 B11D      		adc r27,__zero_reg__
+ 204 0064 2C91      		ld r18,X
+ 123:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		
+ 124:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		(cirBuff->readPosition)++;
+ 205               		.stabn	68,0,124,.LM18-.LFBB3
+ 206               	.LM18:
+ 207 0066 8181      		ldd r24,Z+1
+ 208 0068 8F5F      		subi r24,lo8(-(1))
+ 209 006a 8183      		std Z+1,r24
+ 125:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		(cirBuff->readPosition) %= (cirBuff->length);
+ 210               		.stabn	68,0,125,.LM19-.LFBB3
+ 211               	.LM19:
+ 212 006c 8181      		ldd r24,Z+1
+ 213 006e 6281      		ldd r22,Z+2
+ 214 0070 00D0      		rcall __udivmodqi4
+ 215 0072 9183      		std Z+1,r25
+ 126:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 		return byte;
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s 			page 7
+
+
+ 216               		.stabn	68,0,126,.LM20-.LFBB3
+ 217               	.LM20:
+ 218 0074 30E0      		ldi r19,lo8(0)
+ 219               	.L14:
+ 127:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	}
+ 128:_commonCode_localized/cirBuff/0.99/cirBuff.c **** }
+ 220               		.stabn	68,0,128,.LM21-.LFBB3
+ 221               	.LM21:
+ 222 0076 C901      		movw r24,r18
+ 223               	/* epilogue start */
+ 224 0078 0895      		ret
+ 225               		.size	cirBuff_getByte, .-cirBuff_getByte
+ 226               		.stabs	"byte:r(3,2)",64,0,115,18
+ 227               		.stabn	192,0,0,.LFBB3-.LFBB3
+ 228               		.stabn	224,0,0,.Lscope3-.LFBB3
+ 229               	.Lscope3:
+ 230               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 231               		.stabd	78,0,0
+ 232               		.stabs	"cirBuff_empty:F(0,15)",36,0,130,cirBuff_empty
+ 233               		.stabs	"cirBuff:P(0,16)",64,0,130,30
+ 234               	.global	cirBuff_empty
+ 235               		.type	cirBuff_empty, @function
+ 236               	cirBuff_empty:
+ 237               		.stabd	46,0,0
+ 129:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 
+ 130:_commonCode_localized/cirBuff/0.99/cirBuff.c **** void cirBuff_empty(cirBuff_t *cirBuff)
+ 131:_commonCode_localized/cirBuff/0.99/cirBuff.c **** {
+ 238               		.stabn	68,0,131,.LM22-.LFBB4
+ 239               	.LM22:
+ 240               	.LFBB4:
+ 241               	/* prologue: function */
+ 242               	/* frame size = 0 */
+ 243 007a FC01      		movw r30,r24
+ 132:_commonCode_localized/cirBuff/0.99/cirBuff.c **** 	cirBuff->writePosition = cirBuff->readPosition;
+ 244               		.stabn	68,0,132,.LM23-.LFBB4
+ 245               	.LM23:
+ 246 007c 8181      		ldd r24,Z+1
+ 247 007e 8083      		st Z,r24
+ 248               	/* epilogue start */
+ 133:_commonCode_localized/cirBuff/0.99/cirBuff.c **** }
+ 249               		.stabn	68,0,133,.LM24-.LFBB4
+ 250               	.LM24:
+ 251 0080 0895      		ret
+ 252               		.size	cirBuff_empty, .-cirBuff_empty
+ 253               	.Lscope4:
+ 254               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 255               		.stabd	78,0,0
+ 256               		.stabs	"",100,0,0,.Letext0
+ 257               	.Letext0:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s 			page 8
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 cirBuff.c
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s:2      *ABS*:0000003f __SREG__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s:3      *ABS*:0000003e __SP_H__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s:4      *ABS*:0000003d __SP_L__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s:5      *ABS*:00000000 __tmp_reg__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s:6      *ABS*:00000001 __zero_reg__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s:72     .text:00000000 cirBuff_init
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s:108    .text:00000010 cirBuff_addByte
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s:179    .text:0000004a cirBuff_getByte
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccb2Wsdm.s:236    .text:0000007a cirBuff_empty
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+__divmodhi4
+__udivmodqi4

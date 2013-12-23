@@ -1,0 +1,2798 @@
+
+_BUILD/tabletBluetoother.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000ee4  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         0000004c  00800060  00000ee4  00000f78  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000064  008000ac  008000ac  00000fc4  2**0
+                  ALLOC
+  3 .stab         000035ac  00000000  00000000  00000fc4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00001d57  00000000  00000000  00004570  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	5a c0       	rjmp	.+180    	; 0xb6 <__ctors_end>
+   2:	74 c0       	rjmp	.+232    	; 0xec <__bad_interrupt>
+   4:	73 c0       	rjmp	.+230    	; 0xec <__bad_interrupt>
+   6:	72 c0       	rjmp	.+228    	; 0xec <__bad_interrupt>
+   8:	71 c0       	rjmp	.+226    	; 0xec <__bad_interrupt>
+   a:	70 c0       	rjmp	.+224    	; 0xec <__bad_interrupt>
+   c:	6f c0       	rjmp	.+222    	; 0xec <__bad_interrupt>
+   e:	6e c0       	rjmp	.+220    	; 0xec <__bad_interrupt>
+  10:	6d c0       	rjmp	.+218    	; 0xec <__bad_interrupt>
+  12:	6c c0       	rjmp	.+216    	; 0xec <__bad_interrupt>
+  14:	6b c0       	rjmp	.+214    	; 0xec <__bad_interrupt>
+  16:	6a c0       	rjmp	.+212    	; 0xec <__bad_interrupt>
+  18:	69 c0       	rjmp	.+210    	; 0xec <__bad_interrupt>
+  1a:	68 c0       	rjmp	.+208    	; 0xec <__bad_interrupt>
+  1c:	67 c0       	rjmp	.+206    	; 0xec <__bad_interrupt>
+  1e:	70 c4       	rjmp	.+2272   	; 0x900 <main+0x478>
+  20:	76 c4       	rjmp	.+2284   	; 0x90e <main+0x486>
+  22:	8f c4       	rjmp	.+2334   	; 0x942 <main+0x4ba>
+  24:	98 c4       	rjmp	.+2352   	; 0x956 <main+0x4ce>
+  26:	b5 c4       	rjmp	.+2410   	; 0x992 <main+0x50a>
+  28:	72 c4       	rjmp	.+2276   	; 0x90e <main+0x486>
+  2a:	b9 c4       	rjmp	.+2418   	; 0x99e <main+0x516>
+  2c:	94 c4       	rjmp	.+2344   	; 0x956 <main+0x4ce>
+  2e:	bf c4       	rjmp	.+2430   	; 0x9ae <main+0x526>
+  30:	92 c4       	rjmp	.+2340   	; 0x956 <main+0x4ce>
+  32:	43 c5       	rjmp	.+2694   	; 0xaba <main+0x632>
+  34:	c6 c4       	rjmp	.+2444   	; 0x9c2 <main+0x53a>
+  36:	01 c5       	rjmp	.+2562   	; 0xa3a <main+0x5b2>
+
+00000038 <header0>:
+  38:	20 2f 55 73 65 72 73 2f 6d 65 68 2f 5f 61 76 72      /Users/meh/_avr
+  48:	50 72 6f 6a 65 63 74 73 2f 74 61 62 6c 65 74 42     Projects/tabletB
+  58:	6c 75 65 74 6f 6f 74 68 65 72 2f 38 2d 67 69 74     luetoother/8-git
+  68:	74 69 66 79 69 6e 67 20 00                          tifying .
+
+00000071 <header1>:
+  71:	20 4d 6f 6e 20 44 65 63 20 32 33 20 30 38 3a 30      Mon Dec 23 08:0
+  81:	30 3a 34 34 20 50 53 54 20 32 30 31 33 20 00        0:44 PST 2013 .
+
+00000090 <headerOpt>:
+  90:	20 57 44 54 5f 44 49 53 3d 54 52 55 45 20 00         WDT_DIS=TRUE .
+
+0000009f <__c.1838>:
+  9f:	45 46 47 65 66 67 00                                EFGefg.
+
+000000a6 <__c.1832>:
+  a6:	20 2b 2d 2e 30 31 32 33 34 35 36 37 38 39 68 00      +-.0123456789h.
+
+000000b6 <__ctors_end>:
+  b6:	11 24       	eor	r1, r1
+  b8:	1f be       	out	0x3f, r1	; 63
+  ba:	cf e5       	ldi	r28, 0x5F	; 95
+  bc:	d1 e0       	ldi	r29, 0x01	; 1
+  be:	de bf       	out	0x3e, r29	; 62
+  c0:	cd bf       	out	0x3d, r28	; 61
+
+000000c2 <__do_copy_data>:
+  c2:	10 e0       	ldi	r17, 0x00	; 0
+  c4:	a0 e6       	ldi	r26, 0x60	; 96
+  c6:	b0 e0       	ldi	r27, 0x00	; 0
+  c8:	e4 ee       	ldi	r30, 0xE4	; 228
+  ca:	fe e0       	ldi	r31, 0x0E	; 14
+  cc:	02 c0       	rjmp	.+4      	; 0xd2 <__do_copy_data+0x10>
+  ce:	05 90       	lpm	r0, Z+
+  d0:	0d 92       	st	X+, r0
+  d2:	ac 3a       	cpi	r26, 0xAC	; 172
+  d4:	b1 07       	cpc	r27, r17
+  d6:	d9 f7       	brne	.-10     	; 0xce <__do_copy_data+0xc>
+
+000000d8 <__do_clear_bss>:
+  d8:	11 e0       	ldi	r17, 0x01	; 1
+  da:	ac ea       	ldi	r26, 0xAC	; 172
+  dc:	b0 e0       	ldi	r27, 0x00	; 0
+  de:	01 c0       	rjmp	.+2      	; 0xe2 <.do_clear_bss_start>
+
+000000e0 <.do_clear_bss_loop>:
+  e0:	1d 92       	st	X+, r1
+
+000000e2 <.do_clear_bss_start>:
+  e2:	a0 31       	cpi	r26, 0x10	; 16
+  e4:	b1 07       	cpc	r27, r17
+  e6:	e1 f7       	brne	.-8      	; 0xe0 <.do_clear_bss_loop>
+  e8:	cf d1       	rcall	.+926    	; 0x488 <main>
+  ea:	fa c6       	rjmp	.+3572   	; 0xee0 <_exit>
+
+000000ec <__bad_interrupt>:
+  ec:	89 cf       	rjmp	.-238    	; 0x0 <__vectors>
+
+000000ee <tcnter_init>:
+//   after all inlining, it's still bigger than without inlining!
+//Inlined: Saved 24B (4216)	
+TCNTER_INLINEABLE
+void tcnter_init(void)
+{
+	tcnter_lastTcnt = TCNTER_SOURCE_VAR;
+  ee:	82 b7       	in	r24, 0x32	; 50
+  f0:	80 93 b0 00 	sts	0x00B0, r24
+	tcnter_myTcnter = 0;
+  f4:	10 92 ac 00 	sts	0x00AC, r1
+  f8:	10 92 ad 00 	sts	0x00AD, r1
+  fc:	10 92 ae 00 	sts	0x00AE, r1
+ 100:	10 92 af 00 	sts	0x00AF, r1
+
+	DPRINT("tcnter_init()\n");
+}
+ 104:	08 95       	ret
+
+00000106 <tcnter_update>:
+//  (how could it take *more* instructions?!)
+//   trying to shuffle registers?
+//TCNTER_INLINEABLE
+void tcnter_update(void)
+{
+	tcnter_source_t thisTcnt = TCNTER_SOURCE_VAR;	//e.g. TCNT0
+ 106:	22 b7       	in	r18, 0x32	; 50
+	
+	tcnter_compare_t deltaTcnt = (tcnter_compare_t)thisTcnt 
+ 108:	30 91 b0 00 	lds	r19, 0x00B0
+										- (tcnter_compare_t)tcnter_lastTcnt;
+ 10c:	82 2f       	mov	r24, r18
+ 10e:	90 e0       	ldi	r25, 0x00	; 0
+ 110:	83 1b       	sub	r24, r19
+ 112:	91 09       	sbc	r25, r1
+
+	// Handle wrap-around...
+	if (thisTcnt < tcnter_lastTcnt)
+ 114:	23 17       	cp	r18, r19
+ 116:	10 f4       	brcc	.+4      	; 0x11c <tcnter_update+0x16>
+		deltaTcnt += (tcnter_compare_t)(TCNTER_SOURCE_OVERFLOW_VAL);
+ 118:	80 50       	subi	r24, 0x00	; 0
+ 11a:	9f 4f       	sbci	r25, 0xFF	; 255
+
+	tcnter_lastTcnt = thisTcnt;
+ 11c:	20 93 b0 00 	sts	0x00B0, r18
+
+	tcnter_myTcnter += (tcnter_t)deltaTcnt;
+ 120:	9c 01       	movw	r18, r24
+ 122:	44 27       	eor	r20, r20
+ 124:	37 fd       	sbrc	r19, 7
+ 126:	40 95       	com	r20
+ 128:	54 2f       	mov	r21, r20
+ 12a:	80 91 ac 00 	lds	r24, 0x00AC
+ 12e:	90 91 ad 00 	lds	r25, 0x00AD
+ 132:	a0 91 ae 00 	lds	r26, 0x00AE
+ 136:	b0 91 af 00 	lds	r27, 0x00AF
+ 13a:	82 0f       	add	r24, r18
+ 13c:	93 1f       	adc	r25, r19
+ 13e:	a4 1f       	adc	r26, r20
+ 140:	b5 1f       	adc	r27, r21
+ 142:	80 93 ac 00 	sts	0x00AC, r24
+ 146:	90 93 ad 00 	sts	0x00AD, r25
+ 14a:	a0 93 ae 00 	sts	0x00AE, r26
+ 14e:	b0 93 af 00 	sts	0x00AF, r27
+}
+ 152:	08 95       	ret
+
+00000154 <tcnter_get>:
+
+//Inlined: Saved 40B
+TCNTER_INLINEABLE
+tcnter_t tcnter_get(void)
+{
+ 154:	60 91 ac 00 	lds	r22, 0x00AC
+ 158:	70 91 ad 00 	lds	r23, 0x00AD
+	return tcnter_myTcnter;
+}
+ 15c:	80 91 ae 00 	lds	r24, 0x00AE
+ 160:	90 91 af 00 	lds	r25, 0x00AF
+ 164:	08 95       	ret
+
+00000166 <tcnter_isItTime8>:
+//  The old method (thisTime > nextTime)
+//   resulted in sometimes 12 instructions (4=readThisTime, 4=readNextTime
+//    4=compare) Then 4=calcNextTime...
+TCNTER_INLINEABLE
+uint8_t tcnter_isItTime8(tcnter8_t *startTime, tcnter8_t deltaTime)
+{
+ 166:	fc 01       	movw	r30, r24
+	tcnter8_t thisDelta = (uint8_t)tcnter_myTcnter - (uint8_t)(*startTime);
+ 168:	90 91 ac 00 	lds	r25, 0x00AC
+ 16c:	80 81       	ld	r24, Z
+ 16e:	29 2f       	mov	r18, r25
+ 170:	28 1b       	sub	r18, r24
+	
+	if(thisDelta >= deltaTime)
+ 172:	26 17       	cp	r18, r22
+ 174:	10 f4       	brcc	.+4      	; 0x17a <tcnter_isItTime8+0x14>
+ 176:	80 e0       	ldi	r24, 0x00	; 0
+ 178:	08 95       	ret
+		//  (thisDelta - deltaTime) = 1
+		// So set startTime (for the next go-round) to thisTime - 1
+		//  (to hopefully eliminate cumulative error)
+
+		// Could this math be combined with >= above?
+		*startTime = (uint8_t)tcnter_myTcnter - (thisDelta - deltaTime);
+ 17a:	69 0f       	add	r22, r25
+ 17c:	62 1b       	sub	r22, r18
+ 17e:	60 83       	st	Z, r22
+ 180:	81 e0       	ldi	r24, 0x01	; 1
+		return TRUE;
+	}
+	else
+		return FALSE;
+// return (((uint8_t)tcnter_myTcnter - (uint8_t)startTime) > (uint8_t)deltaTime);
+}
+ 182:	08 95       	ret
+
+00000184 <tcnter_isItTime>:
+
+
+TCNTER_INLINEABLE
+uint8_t tcnter_isItTime(tcnter_t *startTime, tcnter_t deltaTime)
+{
+ 184:	af 92       	push	r10
+ 186:	bf 92       	push	r11
+ 188:	cf 92       	push	r12
+ 18a:	df 92       	push	r13
+ 18c:	ef 92       	push	r14
+ 18e:	ff 92       	push	r15
+ 190:	0f 93       	push	r16
+ 192:	1f 93       	push	r17
+ 194:	fc 01       	movw	r30, r24
+ 196:	7a 01       	movw	r14, r20
+ 198:	8b 01       	movw	r16, r22
+	tcnter_t thisDelta = tcnter_myTcnter - *startTime;
+ 19a:	20 91 ac 00 	lds	r18, 0x00AC
+ 19e:	30 91 ad 00 	lds	r19, 0x00AD
+ 1a2:	40 91 ae 00 	lds	r20, 0x00AE
+ 1a6:	50 91 af 00 	lds	r21, 0x00AF
+ 1aa:	80 81       	ld	r24, Z
+ 1ac:	91 81       	ldd	r25, Z+1	; 0x01
+ 1ae:	a2 81       	ldd	r26, Z+2	; 0x02
+ 1b0:	b3 81       	ldd	r27, Z+3	; 0x03
+ 1b2:	59 01       	movw	r10, r18
+ 1b4:	6a 01       	movw	r12, r20
+ 1b6:	a8 1a       	sub	r10, r24
+ 1b8:	b9 0a       	sbc	r11, r25
+ 1ba:	ca 0a       	sbc	r12, r26
+ 1bc:	db 0a       	sbc	r13, r27
+
+	if(thisDelta >= deltaTime)
+ 1be:	ae 14       	cp	r10, r14
+ 1c0:	bf 04       	cpc	r11, r15
+ 1c2:	c0 06       	cpc	r12, r16
+ 1c4:	d1 06       	cpc	r13, r17
+ 1c6:	10 f4       	brcc	.+4      	; 0x1cc <tcnter_isItTime+0x48>
+ 1c8:	80 e0       	ldi	r24, 0x00	; 0
+ 1ca:	0f c0       	rjmp	.+30     	; 0x1ea <tcnter_isItTime+0x66>
+	{
+		*startTime = tcnter_myTcnter - (thisDelta - deltaTime);
+ 1cc:	ba 01       	movw	r22, r20
+ 1ce:	a9 01       	movw	r20, r18
+ 1d0:	4e 0d       	add	r20, r14
+ 1d2:	5f 1d       	adc	r21, r15
+ 1d4:	60 1f       	adc	r22, r16
+ 1d6:	71 1f       	adc	r23, r17
+ 1d8:	4a 19       	sub	r20, r10
+ 1da:	5b 09       	sbc	r21, r11
+ 1dc:	6c 09       	sbc	r22, r12
+ 1de:	7d 09       	sbc	r23, r13
+ 1e0:	40 83       	st	Z, r20
+ 1e2:	51 83       	std	Z+1, r21	; 0x01
+ 1e4:	62 83       	std	Z+2, r22	; 0x02
+ 1e6:	73 83       	std	Z+3, r23	; 0x03
+ 1e8:	81 e0       	ldi	r24, 0x01	; 1
+		return TRUE;
+	}
+	else
+		return FALSE;
+}
+ 1ea:	1f 91       	pop	r17
+ 1ec:	0f 91       	pop	r16
+ 1ee:	ff 90       	pop	r15
+ 1f0:	ef 90       	pop	r14
+ 1f2:	df 90       	pop	r13
+ 1f4:	cf 90       	pop	r12
+ 1f6:	bf 90       	pop	r11
+ 1f8:	af 90       	pop	r10
+ 1fa:	08 95       	ret
+
+000001fc <timer_setOutputModes>:
+										uint8_t outputMode)
+{
+	uint8_t channelNums;
+
+	//This is not be-all-end-all testing, but helps...
+	if(timerNum >= MAXTIMERS)
+ 1fc:	84 30       	cpi	r24, 0x04	; 4
+ 1fe:	10 f0       	brcs	.+4      	; 0x204 <timer_setOutputModes+0x8>
+ 200:	81 e0       	ldi	r24, 0x01	; 1
+ 202:	08 95       	ret
+		return 1;
+	if(outputChannels >= 0x0f) //MAXCHANNELSPERTIMER)
+ 204:	6f 30       	cpi	r22, 0x0F	; 15
+ 206:	10 f0       	brcs	.+4      	; 0x20c <timer_setOutputModes+0x10>
+ 208:	82 e0       	ldi	r24, 0x02	; 2
+ 20a:	08 95       	ret
+
+	//For the sake of our brute-force switch statement...
+	//Combine the timer number and channel into a single variable...
+	//The high nibble contains the timer number, 
+	// the low contains the channel numbers as a mask (A=0x1,B=0x2,C=0x3...)
+	channelNums = (timerNum<<4) | outputChannels;
+ 20c:	82 95       	swap	r24
+ 20e:	80 7f       	andi	r24, 0xF0	; 240
+ 210:	86 2b       	or	r24, r22
+				writeMasked((outputMode<<COM_SHIFT), COM_MASK, T0_COMReg);
+				break;
+		   #endif
+		   #if defined(OUT_OC0A)
+			case OUT_OC0A:
+				writeMasked((outputMode<<COMA_SHIFT), COMA_MASK, T0_COMReg);
+ 212:	50 e0       	ldi	r21, 0x00	; 0
+ 214:	34 2f       	mov	r19, r20
+ 216:	32 95       	swap	r19
+ 218:	33 0f       	add	r19, r19
+ 21a:	33 0f       	add	r19, r19
+ 21c:	30 7c       	andi	r19, 0xC0	; 192
+				break;
+		   #endif
+		   #if defined(OUT_OC0B)
+			case OUT_OC0B:
+				writeMasked((outputMode<<COMB_SHIFT), COMB_MASK, T0_COMReg);
+ 21e:	94 e0       	ldi	r25, 0x04	; 4
+ 220:	44 0f       	add	r20, r20
+ 222:	55 1f       	adc	r21, r21
+ 224:	9a 95       	dec	r25
+ 226:	e1 f7       	brne	.-8      	; 0x220 <timer_setOutputModes+0x24>
+ 228:	40 73       	andi	r20, 0x30	; 48
+ 22a:	60 e0       	ldi	r22, 0x00	; 0
+ 22c:	70 e0       	ldi	r23, 0x00	; 0
+ 22e:	21 e0       	ldi	r18, 0x01	; 1
+	uint8_t i;
+
+	//Handle each output in the mask...
+	for(i=1; i<=8; i<<=1)
+	{
+		uint8_t channelNum = channelNums & (0xf0 | i);
+ 230:	92 2f       	mov	r25, r18
+ 232:	90 6f       	ori	r25, 0xF0	; 240
+ 234:	98 23       	and	r25, r24
+
+		//Don't bother with the switch statement if the for loop is testing
+		// a channel that's not being enabled (in the mask)
+		if((channelNum & 0x0f) == 0)
+ 236:	e9 2f       	mov	r30, r25
+ 238:	f0 e0       	ldi	r31, 0x00	; 0
+ 23a:	ef 70       	andi	r30, 0x0F	; 15
+ 23c:	f0 70       	andi	r31, 0x00	; 0
+ 23e:	30 97       	sbiw	r30, 0x00	; 0
+ 240:	f1 f0       	breq	.+60     	; 0x27e <timer_setOutputModes+0x82>
+			continue;
+
+
+		switch(channelNum)
+ 242:	92 30       	cpi	r25, 0x02	; 2
+ 244:	79 f0       	breq	.+30     	; 0x264 <timer_setOutputModes+0x68>
+ 246:	93 30       	cpi	r25, 0x03	; 3
+ 248:	18 f4       	brcc	.+6      	; 0x250 <timer_setOutputModes+0x54>
+ 24a:	91 30       	cpi	r25, 0x01	; 1
+ 24c:	29 f4       	brne	.+10     	; 0x258 <timer_setOutputModes+0x5c>
+ 24e:	06 c0       	rjmp	.+12     	; 0x25c <timer_setOutputModes+0x60>
+ 250:	91 31       	cpi	r25, 0x11	; 17
+ 252:	69 f0       	breq	.+26     	; 0x26e <timer_setOutputModes+0x72>
+ 254:	92 31       	cpi	r25, 0x12	; 18
+ 256:	79 f0       	breq	.+30     	; 0x276 <timer_setOutputModes+0x7a>
+ 258:	83 e0       	ldi	r24, 0x03	; 3
+ 25a:	08 95       	ret
+				writeMasked((outputMode<<COM_SHIFT), COM_MASK, T0_COMReg);
+				break;
+		   #endif
+		   #if defined(OUT_OC0A)
+			case OUT_OC0A:
+				writeMasked((outputMode<<COMA_SHIFT), COMA_MASK, T0_COMReg);
+ 25c:	9a b5       	in	r25, 0x2a	; 42
+ 25e:	9f 73       	andi	r25, 0x3F	; 63
+ 260:	93 2b       	or	r25, r19
+ 262:	03 c0       	rjmp	.+6      	; 0x26a <timer_setOutputModes+0x6e>
+				break;
+		   #endif
+		   #if defined(OUT_OC0B)
+			case OUT_OC0B:
+				writeMasked((outputMode<<COMB_SHIFT), COMB_MASK, T0_COMReg);
+ 264:	9a b5       	in	r25, 0x2a	; 42
+ 266:	9f 7c       	andi	r25, 0xCF	; 207
+ 268:	94 2b       	or	r25, r20
+ 26a:	9a bd       	out	0x2a, r25	; 42
+				break;
+ 26c:	08 c0       	rjmp	.+16     	; 0x27e <timer_setOutputModes+0x82>
+				writeMasked((outputMode<<COM_SHIFT), COM_MASK, T1_COMReg);
+				break;
+		   #endif
+		   #if defined(OUT_OC1A)
+			case OUT_OC1A:
+				writeMasked((outputMode<<COMA_SHIFT), COMA_MASK, T1_COMReg);
+ 26e:	90 b7       	in	r25, 0x30	; 48
+ 270:	9f 73       	andi	r25, 0x3F	; 63
+ 272:	93 2b       	or	r25, r19
+ 274:	03 c0       	rjmp	.+6      	; 0x27c <timer_setOutputModes+0x80>
+				break;
+		   #endif
+		   #if defined(OUT_OC1B)
+			case OUT_OC1B:
+				writeMasked((outputMode<<COMB_SHIFT), COMB_MASK, T1_COMReg);
+ 276:	90 b7       	in	r25, 0x30	; 48
+ 278:	9f 7c       	andi	r25, 0xCF	; 207
+ 27a:	94 2b       	or	r25, r20
+ 27c:	90 bf       	out	0x30, r25	; 48
+	channelNums = (timerNum<<4) | outputChannels;
+	
+	uint8_t i;
+
+	//Handle each output in the mask...
+	for(i=1; i<=8; i<<=1)
+ 27e:	22 0f       	add	r18, r18
+ 280:	6f 5f       	subi	r22, 0xFF	; 255
+ 282:	7f 4f       	sbci	r23, 0xFF	; 255
+ 284:	64 30       	cpi	r22, 0x04	; 4
+ 286:	71 05       	cpc	r23, r1
+ 288:	99 f6       	brne	.-90     	; 0x230 <timer_setOutputModes+0x34>
+ 28a:	80 e0       	ldi	r24, 0x00	; 0
+				return 3;
+				break;
+		}
+	}
+	return 0;
+}
+ 28c:	08 95       	ret
+
+0000028e <timer_selectDivisor>:
+	uint8_t csbits;
+	
+  #if defined(CSOBS)
+	if(timerNum == 0 || timerNum == 1 || timerNum == 3)//IS_CSTYP(timerNum) || IS_CSOBS(timerNum))
+  #else
+	if(IS_CSTYP(timerNum))
+ 28e:	82 30       	cpi	r24, 0x02	; 2
+ 290:	28 f5       	brcc	.+74     	; 0x2dc <timer_selectDivisor+0x4e>
+  #endif
+	{
+		switch(clockDiv)
+ 292:	66 30       	cpi	r22, 0x06	; 6
+ 294:	81 f0       	breq	.+32     	; 0x2b6 <timer_selectDivisor+0x28>
+ 296:	67 30       	cpi	r22, 0x07	; 7
+ 298:	28 f4       	brcc	.+10     	; 0x2a4 <timer_selectDivisor+0x16>
+ 29a:	66 23       	and	r22, r22
+ 29c:	51 f0       	breq	.+20     	; 0x2b2 <timer_selectDivisor+0x24>
+ 29e:	63 30       	cpi	r22, 0x03	; 3
+ 2a0:	e9 f4       	brne	.+58     	; 0x2dc <timer_selectDivisor+0x4e>
+ 2a2:	05 c0       	rjmp	.+10     	; 0x2ae <timer_selectDivisor+0x20>
+ 2a4:	68 30       	cpi	r22, 0x08	; 8
+ 2a6:	49 f0       	breq	.+18     	; 0x2ba <timer_selectDivisor+0x2c>
+ 2a8:	6a 30       	cpi	r22, 0x0A	; 10
+ 2aa:	c1 f4       	brne	.+48     	; 0x2dc <timer_selectDivisor+0x4e>
+ 2ac:	08 c0       	rjmp	.+16     	; 0x2be <timer_selectDivisor+0x30>
+ 2ae:	92 e0       	ldi	r25, 0x02	; 2
+ 2b0:	07 c0       	rjmp	.+14     	; 0x2c0 <timer_selectDivisor+0x32>
+ 2b2:	91 e0       	ldi	r25, 0x01	; 1
+ 2b4:	05 c0       	rjmp	.+10     	; 0x2c0 <timer_selectDivisor+0x32>
+ 2b6:	93 e0       	ldi	r25, 0x03	; 3
+			case CLKDIV8:
+				csbits = CSTYP_DIV8;
+				break;
+			case CLKDIV64:
+				csbits = CSTYP_DIV64;	
+				break;
+ 2b8:	03 c0       	rjmp	.+6      	; 0x2c0 <timer_selectDivisor+0x32>
+ 2ba:	94 e0       	ldi	r25, 0x04	; 4
+			case CLKDIV256:
+				csbits = CSTYP_DIV256;	
+				break;
+ 2bc:	01 c0       	rjmp	.+2      	; 0x2c0 <timer_selectDivisor+0x32>
+ 2be:	95 e0       	ldi	r25, 0x05	; 5
+ 2c0:	97 70       	andi	r25, 0x07	; 7
+	}
+  #endif
+	else 
+		return 1;	
+
+	switch(timerNum)
+ 2c2:	81 30       	cpi	r24, 0x01	; 1
+ 2c4:	29 f0       	breq	.+10     	; 0x2d0 <timer_selectDivisor+0x42>
+	{
+		//Assume Timer0 and Timer1 exist (see setWGM)
+		case 0:
+			writeMasked(csbits, CSMASK, T0_CSReg);
+ 2c6:	83 b7       	in	r24, 0x33	; 51
+ 2c8:	88 7f       	andi	r24, 0xF8	; 248
+ 2ca:	89 2b       	or	r24, r25
+ 2cc:	83 bf       	out	0x33, r24	; 51
+ 2ce:	04 c0       	rjmp	.+8      	; 0x2d8 <timer_selectDivisor+0x4a>
+			break;
+		case 1:
+			writeMasked(csbits, CSMASK, T1_CSReg);
+ 2d0:	80 b7       	in	r24, 0x30	; 48
+ 2d2:	88 7f       	andi	r24, 0xF8	; 248
+ 2d4:	89 2b       	or	r24, r25
+ 2d6:	80 bf       	out	0x30, r24	; 48
+ 2d8:	80 e0       	ldi	r24, 0x00	; 0
+			break;
+ 2da:	08 95       	ret
+ 2dc:	81 e0       	ldi	r24, 0x01	; 1
+			return 1;
+			break;
+	}
+	
+	return 0;
+}
+ 2de:	08 95       	ret
+
+000002e0 <timer_setWGM>:
+//	wgmLb *= 0xff;
+//	wgmHb *= 0xff;
+
+	//Make sure the chosen WGM will be written to the WGM bits properly, as implemented below...
+	// Only modes 0-3 are implemented...
+	if(wgm > 0x03)
+ 2e0:	64 30       	cpi	r22, 0x04	; 4
+ 2e2:	b8 f4       	brcc	.+46     	; 0x312 <timer_setWGM+0x32>
+		return 1;
+	
+	switch(timerNum)
+ 2e4:	88 23       	and	r24, r24
+ 2e6:	a9 f4       	brne	.+42     	; 0x312 <timer_setWGM+0x32>
+			//Whatever .stab is, this single change reduces it by 36Bytes
+			writebit(WGM00, T0_WGMReg, wgmHb);
+//			writeMasked(wgmHb, (1<<WGM00), T0_WGMReg);
+#else
+			//This seems to be the "universal" WGM Timer0 settings
+			writebit(WGM00, T0_WGMReg, wgmLb);
+ 2e8:	86 2f       	mov	r24, r22
+ 2ea:	81 70       	andi	r24, 0x01	; 1
+ 2ec:	19 f0       	breq	.+6      	; 0x2f4 <timer_setWGM+0x14>
+ 2ee:	8a b5       	in	r24, 0x2a	; 42
+ 2f0:	81 60       	ori	r24, 0x01	; 1
+ 2f2:	02 c0       	rjmp	.+4      	; 0x2f8 <timer_setWGM+0x18>
+ 2f4:	8a b5       	in	r24, 0x2a	; 42
+ 2f6:	8e 7f       	andi	r24, 0xFE	; 254
+ 2f8:	8a bd       	out	0x2a, r24	; 42
+ 2fa:	8a b5       	in	r24, 0x2a	; 42
+			writebit(WGM01, T0_WGMReg, wgmHb);
+ 2fc:	62 70       	andi	r22, 0x02	; 2
+ 2fe:	19 f0       	breq	.+6      	; 0x306 <timer_setWGM+0x26>
+ 300:	8a b5       	in	r24, 0x2a	; 42
+ 302:	82 60       	ori	r24, 0x02	; 2
+ 304:	02 c0       	rjmp	.+4      	; 0x30a <timer_setWGM+0x2a>
+ 306:	8a b5       	in	r24, 0x2a	; 42
+ 308:	8d 7f       	andi	r24, 0xFD	; 253
+ 30a:	8a bd       	out	0x2a, r24	; 42
+ 30c:	8a b5       	in	r24, 0x2a	; 42
+ 30e:	80 e0       	ldi	r24, 0x00	; 0
+ 310:	08 95       	ret
+ 312:	81 e0       	ldi	r24, 0x01	; 1
+			return 1;
+			break;
+	}
+	
+	return 0;
+}
+ 314:	08 95       	ret
+
+00000316 <timer_init>:
+
+//Roughly equivalent to the ol' Init_timerX(clkDiv, wgm)
+//Return 0 if no error...
+#if (!defined(TIMER_INIT_UNUSED) || !TIMER_INIT_UNUSED)
+uint8_t timer_init(uint8_t timerNum, uint8_t clockDiv, uint8_t wgm)
+{
+ 316:	0f 93       	push	r16
+ 318:	1f 93       	push	r17
+ 31a:	18 2f       	mov	r17, r24
+ 31c:	06 2f       	mov	r16, r22
+	//set the waveform mode
+	ERR_HANDLE_NUM(1,				\
+ 31e:	64 2f       	mov	r22, r20
+ 320:	df df       	rcall	.-66     	; 0x2e0 <timer_setWGM>
+ 322:	88 23       	and	r24, r24
+ 324:	11 f0       	breq	.+4      	; 0x32a <timer_init+0x14>
+ 326:	80 61       	ori	r24, 0x10	; 16
+ 328:	05 c0       	rjmp	.+10     	; 0x334 <timer_init+0x1e>
+		timer_setWGM(timerNum, wgm)	);
+
+	//select the clock
+	ERR_HANDLE_NUM(2,							\
+ 32a:	81 2f       	mov	r24, r17
+ 32c:	60 2f       	mov	r22, r16
+ 32e:	af df       	rcall	.-162    	; 0x28e <timer_selectDivisor>
+ 330:	81 11       	cpse	r24, r1
+ 332:	80 62       	ori	r24, 0x20	; 32
+		timer_selectDivisor(timerNum, clockDiv)	);
+		
+	return 0;
+}
+ 334:	1f 91       	pop	r17
+ 336:	0f 91       	pop	r16
+ 338:	08 95       	ret
+
+0000033a <timer_compareMatchIntSetup>:
+uint8_t timer_compareMatchIntSetup(uint8_t timerNum, uint8_t outputChannel,\
+	  												uint8_t enable)
+{
+	uint8_t channelNum;
+
+	if(timerNum >= MAXTIMERS)
+ 33a:	84 30       	cpi	r24, 0x04	; 4
+ 33c:	10 f0       	brcs	.+4      	; 0x342 <timer_compareMatchIntSetup+0x8>
+ 33e:	81 e0       	ldi	r24, 0x01	; 1
+ 340:	08 95       	ret
+		return 1;
+
+	if(outputChannel >= 2) //MAXCHANNELSPERTIMER)
+ 342:	62 30       	cpi	r22, 0x02	; 2
+ 344:	10 f0       	brcs	.+4      	; 0x34a <timer_compareMatchIntSetup+0x10>
+ 346:	82 e0       	ldi	r24, 0x02	; 2
+ 348:	08 95       	ret
+ 34a:	44 23       	and	r20, r20
+ 34c:	11 f0       	breq	.+4      	; 0x352 <timer_compareMatchIntSetup+0x18>
+ 34e:	41 e0       	ldi	r20, 0x01	; 1
+	channelNum = (timerNum<<4) + outputChannel;
+
+	//Don't clear interrupts before disabling this one, or that defeats the purpose!
+	// But do clear so we don't get unexpected overflows on init
+	if(enable)
+		cli();
+ 350:	f8 94       	cli
+	
+	switch(channelNum)
+ 352:	82 95       	swap	r24
+ 354:	80 7f       	andi	r24, 0xF0	; 240
+ 356:	86 0f       	add	r24, r22
+ 358:	81 30       	cpi	r24, 0x01	; 1
+ 35a:	a1 f0       	breq	.+40     	; 0x384 <timer_compareMatchIntSetup+0x4a>
+ 35c:	81 30       	cpi	r24, 0x01	; 1
+ 35e:	30 f0       	brcs	.+12     	; 0x36c <timer_compareMatchIntSetup+0x32>
+ 360:	80 31       	cpi	r24, 0x10	; 16
+ 362:	e1 f0       	breq	.+56     	; 0x39c <timer_compareMatchIntSetup+0x62>
+ 364:	81 31       	cpi	r24, 0x11	; 17
+ 366:	31 f1       	breq	.+76     	; 0x3b4 <timer_compareMatchIntSetup+0x7a>
+ 368:	83 e0       	ldi	r24, 0x03	; 3
+ 36a:	08 95       	ret
+			break;
+	   #endif
+	   #if defined(OCIE0A)
+		case 0x00:
+//			setbit(OCIE0A, T0_TIMSK);
+			writebit(OCIE0A, T0_TIMSK, enable);
+ 36c:	44 23       	and	r20, r20
+ 36e:	19 f0       	breq	.+6      	; 0x376 <timer_compareMatchIntSetup+0x3c>
+ 370:	89 b7       	in	r24, 0x39	; 57
+ 372:	80 61       	ori	r24, 0x10	; 16
+ 374:	02 c0       	rjmp	.+4      	; 0x37a <timer_compareMatchIntSetup+0x40>
+ 376:	89 b7       	in	r24, 0x39	; 57
+ 378:	8f 7e       	andi	r24, 0xEF	; 239
+ 37a:	89 bf       	out	0x39, r24	; 57
+ 37c:	89 b7       	in	r24, 0x39	; 57
+			// My OCD bit me in the ass, this was set to TIMSK by mistake(?)
+			setbit(OCF0A, T0_TIFR);
+ 37e:	88 b7       	in	r24, 0x38	; 56
+ 380:	80 61       	ori	r24, 0x10	; 16
+ 382:	23 c0       	rjmp	.+70     	; 0x3ca <timer_compareMatchIntSetup+0x90>
+			break;
+	   #endif
+	   #if defined(OCIE0B)
+		case 0x01:
+//			setbit(OCIE0B, T0_TIMSK);
+			writebit(OCIE0B, T0_TIMSK, enable);
+ 384:	44 23       	and	r20, r20
+ 386:	19 f0       	breq	.+6      	; 0x38e <timer_compareMatchIntSetup+0x54>
+ 388:	89 b7       	in	r24, 0x39	; 57
+ 38a:	88 60       	ori	r24, 0x08	; 8
+ 38c:	02 c0       	rjmp	.+4      	; 0x392 <timer_compareMatchIntSetup+0x58>
+ 38e:	89 b7       	in	r24, 0x39	; 57
+ 390:	87 7f       	andi	r24, 0xF7	; 247
+ 392:	89 bf       	out	0x39, r24	; 57
+ 394:	89 b7       	in	r24, 0x39	; 57
+			// As was this...
+			setbit(OCF0B, T0_TIFR);
+ 396:	88 b7       	in	r24, 0x38	; 56
+ 398:	88 60       	ori	r24, 0x08	; 8
+ 39a:	17 c0       	rjmp	.+46     	; 0x3ca <timer_compareMatchIntSetup+0x90>
+			break;
+	   #endif
+	   #if defined(OCIE1A)
+		case 0x10:
+//			setbit(OCIE1A, T1_TIMSK);
+			writebit(OCIE1A, T1_TIMSK, enable);
+ 39c:	44 23       	and	r20, r20
+ 39e:	19 f0       	breq	.+6      	; 0x3a6 <timer_compareMatchIntSetup+0x6c>
+ 3a0:	89 b7       	in	r24, 0x39	; 57
+ 3a2:	80 64       	ori	r24, 0x40	; 64
+ 3a4:	02 c0       	rjmp	.+4      	; 0x3aa <timer_compareMatchIntSetup+0x70>
+ 3a6:	89 b7       	in	r24, 0x39	; 57
+ 3a8:	8f 7b       	andi	r24, 0xBF	; 191
+ 3aa:	89 bf       	out	0x39, r24	; 57
+ 3ac:	89 b7       	in	r24, 0x39	; 57
+			setbit(OCF1A, T1_TIFR);
+ 3ae:	88 b7       	in	r24, 0x38	; 56
+ 3b0:	80 64       	ori	r24, 0x40	; 64
+ 3b2:	0b c0       	rjmp	.+22     	; 0x3ca <timer_compareMatchIntSetup+0x90>
+			break;
+	   #endif
+	   #if defined(OCIE1B)
+		case 0x11:
+//			setbit(OCIE1B, T1_TIMSK);
+			writebit(OCIE1B, T1_TIMSK, enable);
+ 3b4:	44 23       	and	r20, r20
+ 3b6:	19 f0       	breq	.+6      	; 0x3be <timer_compareMatchIntSetup+0x84>
+ 3b8:	89 b7       	in	r24, 0x39	; 57
+ 3ba:	80 62       	ori	r24, 0x20	; 32
+ 3bc:	02 c0       	rjmp	.+4      	; 0x3c2 <timer_compareMatchIntSetup+0x88>
+ 3be:	89 b7       	in	r24, 0x39	; 57
+ 3c0:	8f 7d       	andi	r24, 0xDF	; 223
+ 3c2:	89 bf       	out	0x39, r24	; 57
+ 3c4:	89 b7       	in	r24, 0x39	; 57
+			setbit(OCF1B, T1_TIFR);
+ 3c6:	88 b7       	in	r24, 0x38	; 56
+ 3c8:	80 62       	ori	r24, 0x20	; 32
+ 3ca:	88 bf       	out	0x38, r24	; 56
+			break;
+	}
+	
+	//Don't reenable interrupts here if disabling... just leave them as they were....
+	// but do enable for init...
+	if(enable)
+ 3cc:	44 23       	and	r20, r20
+ 3ce:	11 f4       	brne	.+4      	; 0x3d4 <timer_compareMatchIntSetup+0x9a>
+ 3d0:	80 e0       	ldi	r24, 0x00	; 0
+ 3d2:	08 95       	ret
+		sei();
+ 3d4:	78 94       	sei
+ 3d6:	80 e0       	ldi	r24, 0x00	; 0
+	
+	return 0;
+}
+ 3d8:	08 95       	ret
+
+000003da <timer_overflowIntEnable>:
+
+#if (!defined(TIMER_OVERFLOWINTENABLE_UNUSED) \
+		      || !TIMER_OVERFLOWINTENABLE_UNUSED)
+uint8_t timer_overflowIntEnable(uint8_t timerNum)
+{
+	cli();
+ 3da:	f8 94       	cli
+	
+	switch(timerNum)
+ 3dc:	88 23       	and	r24, r24
+ 3de:	21 f0       	breq	.+8      	; 0x3e8 <timer_overflowIntEnable+0xe>
+ 3e0:	81 30       	cpi	r24, 0x01	; 1
+ 3e2:	41 f0       	breq	.+16     	; 0x3f4 <timer_overflowIntEnable+0x1a>
+ 3e4:	81 e0       	ldi	r24, 0x01	; 1
+ 3e6:	08 95       	ret
+	{
+		#if defined(T0_TIMSK)
+		case 0:
+			//Enable the overflow interrupt (don't forget to create a handler!)
+			setbit(TOIE0, T0_TIMSK);
+ 3e8:	89 b7       	in	r24, 0x39	; 57
+ 3ea:	82 60       	ori	r24, 0x02	; 2
+ 3ec:	89 bf       	out	0x39, r24	; 57
+			//Clear the overflow flag (OCD)...
+			setbit(TOV0, T0_TIFR);
+ 3ee:	88 b7       	in	r24, 0x38	; 56
+ 3f0:	82 60       	ori	r24, 0x02	; 2
+ 3f2:	05 c0       	rjmp	.+10     	; 0x3fe <timer_overflowIntEnable+0x24>
+			break; 
+		#endif
+		#if defined(T1_TIMSK)
+		case 1:
+			setbit(TOIE1, T1_TIMSK);
+ 3f4:	89 b7       	in	r24, 0x39	; 57
+ 3f6:	84 60       	ori	r24, 0x04	; 4
+ 3f8:	89 bf       	out	0x39, r24	; 57
+			setbit(TOV1, T1_TIFR);
+ 3fa:	88 b7       	in	r24, 0x38	; 56
+ 3fc:	84 60       	ori	r24, 0x04	; 4
+ 3fe:	88 bf       	out	0x38, r24	; 56
+		#endif
+		default:
+			return 1;
+	}
+	
+	sei();
+ 400:	78 94       	sei
+ 402:	80 e0       	ldi	r24, 0x00	; 0
+	
+	return 0;
+}
+ 404:	08 95       	ret
+
+00000406 <cirBuff_init>:
+#if (!defined(CIRBUFF_NO_CALLOC) || !CIRBUFF_NO_CALLOC)
+ uint8_t cirBuff_init(cirBuff_t *cirBuff, uint8_t length)
+#else
+ uint8_t cirBuff_init(cirBuff_t *cirBuff, uint8_t length, uint8_t *array)
+#endif
+{
+ 406:	fc 01       	movw	r30, r24
+	if(cirBuff->buffer == NULL)
+		return 1;
+
+	cirBuff->length = length + 1;
+#else
+	cirBuff->buffer = array;
+ 408:	54 83       	std	Z+4, r21	; 0x04
+ 40a:	43 83       	std	Z+3, r20	; 0x03
+	cirBuff->length = length;
+ 40c:	62 83       	std	Z+2, r22	; 0x02
+#endif
+	
+	
+	cirBuff->writePosition = 0;
+ 40e:	10 82       	st	Z, r1
+	cirBuff->readPosition = 0;
+ 410:	11 82       	std	Z+1, r1	; 0x01
+	
+	return 0;	
+}
+ 412:	80 e0       	ldi	r24, 0x00	; 0
+ 414:	08 95       	ret
+
+00000416 <cirBuff_addByte>:
+//This loads the byte into the send buffer 
+// (in midi_out the buffer is flushed one-by-one whenever the TX-complete interrupt is called)
+// this is the old midiOut_sendByte:
+// returns 1 if the buffer was full AND dontBlock was true (i.e. the byte was lost!), 0 otherwise
+uint8_t cirBuff_addByte(cirBuff_t *cirBuff, uint8_t Data, uint8_t dontBlock)
+{   
+ 416:	fc 01       	movw	r30, r24
+ 418:	26 2f       	mov	r18, r22
+	uint8_t nextWritePosition = (cirBuff->writePosition + 1)%(cirBuff->length);
+ 41a:	80 81       	ld	r24, Z
+ 41c:	90 e0       	ldi	r25, 0x00	; 0
+ 41e:	62 81       	ldd	r22, Z+2	; 0x02
+ 420:	01 96       	adiw	r24, 0x01	; 1
+ 422:	70 e0       	ldi	r23, 0x00	; 0
+ 424:	68 d4       	rcall	.+2256   	; 0xcf6 <__divmodhi4>
+#endif
+	
+	//Wait if the buffer's full
+	//   can check this by determining if the writePosition is one less than the sendPosition
+	//   (or if the nextWritePosition is the same as the readPosition, makes more sense...)
+	while(!dontBlock && (nextWritePosition == cirBuff->readPosition))
+ 426:	44 23       	and	r20, r20
+ 428:	29 f4       	brne	.+10     	; 0x434 <cirBuff_addByte+0x1e>
+ 42a:	01 c0       	rjmp	.+2      	; 0x42e <cirBuff_addByte+0x18>
+			cirBuff_getByte(cirBuff);
+		i++;
+#endif
+		//This probably isn't necessary... it wasn't in midiOut, but I don't know for certain.
+		// I've heard of optimizers optimizing out empty loops (even if a test is volatile?!)
+		asm("nop;");
+ 42c:	00 00       	nop
+#endif
+	
+	//Wait if the buffer's full
+	//   can check this by determining if the writePosition is one less than the sendPosition
+	//   (or if the nextWritePosition is the same as the readPosition, makes more sense...)
+	while(!dontBlock && (nextWritePosition == cirBuff->readPosition))
+ 42e:	91 81       	ldd	r25, Z+1	; 0x01
+ 430:	89 17       	cp	r24, r25
+ 432:	e1 f3       	breq	.-8      	; 0x42c <cirBuff_addByte+0x16>
+	
+	//Note, these values may differ from the ones in the while loop...
+	// This *should* be OK, and maybe even handy
+	// Note, also, that there is always one byte that's unused... 
+	//  so writePosition == readPosition => empty
+	if(nextWritePosition != cirBuff->readPosition)
+ 434:	91 81       	ldd	r25, Z+1	; 0x01
+ 436:	89 17       	cp	r24, r25
+ 438:	11 f4       	brne	.+4      	; 0x43e <cirBuff_addByte+0x28>
+ 43a:	81 e0       	ldi	r24, 0x01	; 1
+ 43c:	08 95       	ret
+	{
+		//Load to the buffer
+		cirBuff->buffer[ cirBuff->writePosition ] = Data;
+ 43e:	90 81       	ld	r25, Z
+ 440:	a3 81       	ldd	r26, Z+3	; 0x03
+ 442:	b4 81       	ldd	r27, Z+4	; 0x04
+ 444:	a9 0f       	add	r26, r25
+ 446:	b1 1d       	adc	r27, r1
+ 448:	2c 93       	st	X, r18
+		//Set up the writePosition for the next call
+		cirBuff->writePosition = nextWritePosition;
+ 44a:	80 83       	st	Z, r24
+ 44c:	80 e0       	ldi	r24, 0x00	; 0
+		return 0;
+	}
+	else	//Indicate that the buffer was full
+		return 1;
+}
+ 44e:	08 95       	ret
+
+00000450 <cirBuff_getByte>:
+
+//If there's data in the buffer, return it (it's a single unsigned byte, 0-255)
+// If there was no data in the buffer, return -1
+int16_t cirBuff_getByte(cirBuff_t *cirBuff)
+{
+ 450:	fc 01       	movw	r30, r24
+	uint8_t byte;
+	
+	//There's no data in the buffer
+	if(cirBuff->writePosition == cirBuff->readPosition)
+ 452:	90 81       	ld	r25, Z
+ 454:	81 81       	ldd	r24, Z+1	; 0x01
+ 456:	98 17       	cp	r25, r24
+ 458:	19 f4       	brne	.+6      	; 0x460 <cirBuff_getByte+0x10>
+ 45a:	2f ef       	ldi	r18, 0xFF	; 255
+ 45c:	3f ef       	ldi	r19, 0xFF	; 255
+ 45e:	0e c0       	rjmp	.+28     	; 0x47c <cirBuff_getByte+0x2c>
+		return -1;
+	else
+	{
+		byte = cirBuff->buffer[ cirBuff->readPosition ];
+ 460:	81 81       	ldd	r24, Z+1	; 0x01
+ 462:	a3 81       	ldd	r26, Z+3	; 0x03
+ 464:	b4 81       	ldd	r27, Z+4	; 0x04
+ 466:	a8 0f       	add	r26, r24
+ 468:	b1 1d       	adc	r27, r1
+ 46a:	2c 91       	ld	r18, X
+		
+		(cirBuff->readPosition)++;
+ 46c:	81 81       	ldd	r24, Z+1	; 0x01
+ 46e:	8f 5f       	subi	r24, 0xFF	; 255
+ 470:	81 83       	std	Z+1, r24	; 0x01
+		(cirBuff->readPosition) %= (cirBuff->length);
+ 472:	81 81       	ldd	r24, Z+1	; 0x01
+ 474:	62 81       	ldd	r22, Z+2	; 0x02
+ 476:	33 d4       	rcall	.+2150   	; 0xcde <__udivmodqi4>
+ 478:	91 83       	std	Z+1, r25	; 0x01
+		return byte;
+ 47a:	30 e0       	ldi	r19, 0x00	; 0
+	}
+}
+ 47c:	c9 01       	movw	r24, r18
+ 47e:	08 95       	ret
+
+00000480 <cirBuff_empty>:
+
+void cirBuff_empty(cirBuff_t *cirBuff)
+{
+ 480:	fc 01       	movw	r30, r24
+	cirBuff->writePosition = cirBuff->readPosition;
+ 482:	81 81       	ldd	r24, Z+1	; 0x01
+ 484:	80 83       	st	Z, r24
+}
+ 486:	08 95       	ret
+
+00000488 <main>:
+
+
+//int main(void) __attribute__((flatten));
+
+int main(void)
+{
+ 488:	2f 92       	push	r2
+ 48a:	3f 92       	push	r3
+ 48c:	4f 92       	push	r4
+ 48e:	5f 92       	push	r5
+ 490:	6f 92       	push	r6
+ 492:	7f 92       	push	r7
+ 494:	8f 92       	push	r8
+ 496:	9f 92       	push	r9
+ 498:	af 92       	push	r10
+ 49a:	bf 92       	push	r11
+ 49c:	cf 92       	push	r12
+ 49e:	df 92       	push	r13
+ 4a0:	ef 92       	push	r14
+ 4a2:	ff 92       	push	r15
+ 4a4:	0f 93       	push	r16
+ 4a6:	1f 93       	push	r17
+ 4a8:	cf 93       	push	r28
+ 4aa:	df 93       	push	r29
+
+	//!!! WDT could cause problems... this probably should be inited earlier and called everywhere...
+	//INIT_HEARTBEAT(HEARTBEATPIN, HEARTBEAT, HEARTCONNECTION);
+
+
+	setoutPORT(Tx0pin, Tx0PORT);
+ 4ac:	bc 9a       	sbi	0x17, 4	; 23
+	setinpuPORT(Rx0pin, Rx0PORT);
+ 4ae:	bb 98       	cbi	0x17, 3	; 23
+ 4b0:	c3 9a       	sbi	0x18, 3	; 24
+
+	setoutPORT(Tx1pin, Tx1PORT);
+ 4b2:	b8 9a       	sbi	0x17, 0	; 23
+	setinpuPORT(Rx1pin, Rx1PORT);
+ 4b4:	ba 98       	cbi	0x17, 2	; 23
+ 4b6:	c2 9a       	sbi	0x18, 2	; 24
+	// Not using DMS, because I'd rather not use interrupts
+	// so there's no lag-time in the main-loop (for polling)
+	// TODO: timer_common doesn't address this device, specifically
+	//   so there would be some wisdom in verifying its functionality
+	//   esp. 8-bit, etc.
+	timer_init(0, CLKDIV8, WGM_NORMAL);
+ 4b8:	80 e0       	ldi	r24, 0x00	; 0
+ 4ba:	63 e0       	ldi	r22, 0x03	; 3
+ 4bc:	40 e0       	ldi	r20, 0x00	; 0
+ 4be:	2b df       	rcall	.-426    	; 0x316 <timer_init>
+	tcnter_init();
+ 4c0:	16 de       	rcall	.-980    	; 0xee <tcnter_init>
+
+//Inlining saves 6 Bytes
+BTBC_INLINEABLE
+void btbc_init(void)
+{
+	cirBuff_init(&btbCirBuff, BTBBUFFLEN, btbBuffer);
+ 4c2:	8b ee       	ldi	r24, 0xEB	; 235
+ 4c4:	90 e0       	ldi	r25, 0x00	; 0
+ 4c6:	64 e1       	ldi	r22, 0x14	; 20
+ 4c8:	4c ef       	ldi	r20, 0xFC	; 252
+ 4ca:	50 e0       	ldi	r21, 0x00	; 0
+ 4cc:	9c df       	rcall	.-200    	; 0x406 <cirBuff_init>
+	cirBuff_init(&btbDeviceBuff, BTBBUFFLEN, btbDeviceBuffer);
+ 4ce:	86 ee       	ldi	r24, 0xE6	; 230
+ 4d0:	90 e0       	ldi	r25, 0x00	; 0
+ 4d2:	64 e1       	ldi	r22, 0x14	; 20
+ 4d4:	42 ed       	ldi	r20, 0xD2	; 210
+ 4d6:	50 e0       	ldi	r21, 0x00	; 0
+ 4d8:	96 df       	rcall	.-212    	; 0x406 <cirBuff_init>
+
+
+	//Just add a delay so the pull-up works, etc...
+	// ALSO check the heart-input, if low, go into puatTest mode
+	uint8_t puatTest = FALSE;
+	puar0_bitTcnt = tcnter_get();
+ 4da:	3c de       	rcall	.-904    	; 0x154 <tcnter_get>
+ 4dc:	7b 01       	movw	r14, r22
+ 4de:	8c 01       	movw	r16, r24
+	while(tcnter_get() - puar0_bitTcnt < 3000000)
+ 4e0:	01 c0       	rjmp	.+2      	; 0x4e4 <main+0x5c>
+	{
+		tcnter_update();
+ 4e2:	11 de       	rcall	.-990    	; 0x106 <tcnter_update>
+
+	//Just add a delay so the pull-up works, etc...
+	// ALSO check the heart-input, if low, go into puatTest mode
+	uint8_t puatTest = FALSE;
+	puar0_bitTcnt = tcnter_get();
+	while(tcnter_get() - puar0_bitTcnt < 3000000)
+ 4e4:	37 de       	rcall	.-914    	; 0x154 <tcnter_get>
+ 4e6:	6e 19       	sub	r22, r14
+ 4e8:	7f 09       	sbc	r23, r15
+ 4ea:	80 0b       	sbc	r24, r16
+ 4ec:	91 0b       	sbc	r25, r17
+ 4ee:	60 3c       	cpi	r22, 0xC0	; 192
+ 4f0:	26 ec       	ldi	r18, 0xC6	; 198
+ 4f2:	72 07       	cpc	r23, r18
+ 4f4:	2d e2       	ldi	r18, 0x2D	; 45
+ 4f6:	82 07       	cpc	r24, r18
+ 4f8:	20 e0       	ldi	r18, 0x00	; 0
+ 4fa:	92 07       	cpc	r25, r18
+ 4fc:	90 f3       	brcs	.-28     	; 0x4e2 <main+0x5a>
+
+//Inlining saved 26 bytes (one call?!)
+PUAR_INLINEABLE
+void puar_setBitTcnt(uint8_t puarNum, myTcnter_t tcnt)
+{
+	puar_bitTcnt[puarNum] = tcnt;
+ 4fe:	88 e6       	ldi	r24, 0x68	; 104
+ 500:	90 e0       	ldi	r25, 0x00	; 0
+ 502:	a0 e0       	ldi	r26, 0x00	; 0
+ 504:	b0 e0       	ldi	r27, 0x00	; 0
+ 506:	80 93 f0 00 	sts	0x00F0, r24
+ 50a:	90 93 f1 00 	sts	0x00F1, r25
+ 50e:	a0 93 f2 00 	sts	0x00F2, r26
+ 512:	b0 93 f3 00 	sts	0x00F3, r27
+ 516:	80 93 f4 00 	sts	0x00F4, r24
+ 51a:	90 93 f5 00 	sts	0x00F5, r25
+ 51e:	a0 93 f6 00 	sts	0x00F6, r26
+ 522:	b0 93 f7 00 	sts	0x00F7, r27
+myTcnter_t puat_bitTcnt[NUMPUATS];
+//Inlining this saved nearly 30Bytes! (in a for loop for two puats)
+PUAT_INLINEABLE
+void puat_setBitTcnt(uint8_t puatNum, myTcnter_t tcnt)
+{
+	puat_bitTcnt[puatNum] = tcnt;
+ 526:	80 93 c3 00 	sts	0x00C3, r24
+ 52a:	90 93 c4 00 	sts	0x00C4, r25
+ 52e:	a0 93 c5 00 	sts	0x00C5, r26
+ 532:	b0 93 c6 00 	sts	0x00C6, r27
+
+//static 
+extern __inline__ void puat_writeOutput(uint8_t puatNum, uint8_t value)
+{
+	if(puatNum == 0)
+		writepinPORT(Tx0pin, Tx0PORT, value);
+ 536:	c4 9a       	sbi	0x18, 4	; 24
+ 538:	28 b3       	in	r18, 0x18	; 24
+ 53a:	80 93 c7 00 	sts	0x00C7, r24
+ 53e:	90 93 c8 00 	sts	0x00C8, r25
+ 542:	a0 93 c9 00 	sts	0x00C9, r26
+ 546:	b0 93 ca 00 	sts	0x00CA, r27
+	else
+		writepinPORT(Tx1pin, Tx1PORT, value);
+ 54a:	c0 9a       	sbi	0x18, 0	; 24
+ 54c:	88 b3       	in	r24, 0x18	; 24
+
+	//This was only necessary for debugging timer initialization bugs...
+	// which have been resolved
+//	set_heartBlink(retVal);
+
+	setoutPORT(HEART_PINNUM, HEART_PINPORT);
+ 54e:	b9 9a       	sbi	0x17, 1	; 23
+	   if(puat_txDataWaiting[puatNum])
+		{
+			puat_shiftingByte[puatNum] = puat_txData[puatNum];
+			puat_txDataWaiting[puatNum] = FALSE;
+
+			puat_txState[puatNum] = TXSTATE_SENDING_START;
+ 550:	11 e0       	ldi	r17, 0x01	; 1
+			puat_shiftingByte[puatNum] >>= 1;
+		}
+		//Transmit Stop Bit...
+		else if( puat_txState[puatNum] == TXSTATE_SENDING_BIT8 ) 
+		{
+			puat_txState[puatNum] = TXSTATE_SENDING_STOP;
+ 552:	3a e0       	ldi	r19, 0x0A	; 10
+ 554:	e3 2e       	mov	r14, r19
+		{
+   		//Make sure it wasn't just a glitch...
+   		if(!puar_readInput(puarNum)) //getbit(rxPin))
+   		{
+         	//TCNT0 = thisTcnt - BIT_TCNT;
+         	rxState[puarNum] = RXSTATE_FIRST_BIT;
+ 556:	22 e0       	ldi	r18, 0x02	; 2
+ 558:	f2 2e       	mov	r15, r18
+					btbcResponseIndex++;
+				else	//Not an expected btb response...
+				{
+					DPRINT("... apparently wasn't a disconnect notice."
+							 " Need to Resend the buffered data\n");
+					btbcState = BTBCSTATE_CONNECTED;
+ 55a:	0b e0       	ldi	r16, 0x0B	; 11
+					// When the host disconnects from the "serial port"
+					//  (via bluetooth)
+					// OR when bluetooth is disabled on the host
+					// the btb sends BTSTATE:1
+					// WHAT ABOUT OTHER DISCONNECTS?
+					btbcResponse = btbcResponse_BTSTATE1;
+ 55c:	c3 e8       	ldi	r28, 0x83	; 131
+ 55e:	d0 e0       	ldi	r29, 0x00	; 0
+			DPRINT("Awaiting BTSTATE:2 (Inquiring)\n");
+			break;
+		//BTBCSTATE_AWAITINGBTSTATE2 is merged above
+		case BTBCSTATE_AWAITCONNECTION:
+			DPRINT("BTSTATE2, Bluetooth Bee ready to receive connection\n");
+			btbcResponse = btbcResponse_BTSTATE4;
+ 560:	9c e9       	ldi	r25, 0x9C	; 156
+ 562:	a9 2e       	mov	r10, r25
+ 564:	90 e0       	ldi	r25, 0x00	; 0
+ 566:	b9 2e       	mov	r11, r25
+			//btbcState++;
+			btbcState = BTBCSTATE_SENDINGINQUIRE;
+			break;
+		//BTBCSTATE_SENDINGINQUIRE is merged above
+		case BTBCSTATE_AWAITBTSTATE2:
+			btbcResponse = btbcResponse_BTSTATE2;
+ 568:	8f e8       	ldi	r24, 0x8F	; 143
+ 56a:	c8 2e       	mov	r12, r24
+ 56c:	80 e0       	ldi	r24, 0x00	; 0
+ 56e:	d8 2e       	mov	r13, r24
+					btbcResponseIndex = 0;
+			}
+			break;
+		case BTBCSTATE_SENDINQUIRE:
+			DPRINT("BTSTATE1, Bluetooth Bee ready to receive INQ\n");
+			btbcCommand = btbcCmd_Inquire;
+ 570:	be e6       	ldi	r27, 0x6E	; 110
+ 572:	4b 2e       	mov	r4, r27
+ 574:	b0 e0       	ldi	r27, 0x00	; 0
+ 576:	5b 2e       	mov	r5, r27
+
+
+	switch(btbcState)
+	{
+		case BTBCSTATE_SENDRESET:
+			btbcCommand = btbcCmd_Reset;
+ 578:	a0 e6       	ldi	r26, 0x60	; 96
+ 57a:	2a 2e       	mov	r2, r26
+ 57c:	a0 e0       	ldi	r26, 0x00	; 0
+ 57e:	3a 2e       	mov	r3, r26
+
+	while(1)
+	{
+		togglepinPORT(HEART_PINNUM, HEART_PINPORT);
+ 580:	98 b3       	in	r25, 0x18	; 24
+ 582:	88 b3       	in	r24, 0x18	; 24
+ 584:	82 70       	andi	r24, 0x02	; 2
+ 586:	80 95       	com	r24
+ 588:	82 70       	andi	r24, 0x02	; 2
+ 58a:	9d 7f       	andi	r25, 0xFD	; 253
+ 58c:	89 2b       	or	r24, r25
+ 58e:	88 bb       	out	0x18, r24	; 24
+		tcnter_update();
+ 590:	ba dd       	rcall	.-1164   	; 0x106 <tcnter_update>
+//
+// Bit order might be reversed, (looks right, pseudo-verified)
+// I am, however, pretty sure that start-bits are 0 and stop-bits are 1
+//    so then the data-bits are directly-read from the pin (not inverted)
+
+	if(puat_txState[puatNum] == TXSTATE_IDLE)
+ 592:	80 91 cf 00 	lds	r24, 0x00CF
+ 596:	88 23       	and	r24, r24
+ 598:	89 f4       	brne	.+34     	; 0x5bc <main+0x134>
+	{
+	   if(puat_txDataWaiting[puatNum])
+ 59a:	80 91 fa 00 	lds	r24, 0x00FA
+ 59e:	88 23       	and	r24, r24
+ 5a0:	c9 f1       	breq	.+114    	; 0x614 <main+0x18c>
+		{
+			puat_shiftingByte[puatNum] = puat_txData[puatNum];
+ 5a2:	80 91 bf 00 	lds	r24, 0x00BF
+ 5a6:	80 93 cb 00 	sts	0x00CB, r24
+			puat_txDataWaiting[puatNum] = FALSE;
+ 5aa:	10 92 fa 00 	sts	0x00FA, r1
+
+			puat_txState[puatNum] = TXSTATE_SENDING_START;
+ 5ae:	10 93 cf 00 	sts	0x00CF, r17
+
+			//myTcnter = 0;
+			puat_lastTime[puatNum] = (tcnter8_t)(tcnter_get());
+ 5b2:	d0 dd       	rcall	.-1120   	; 0x154 <tcnter_get>
+ 5b4:	60 93 c1 00 	sts	0x00C1, r22
+
+//static 
+extern __inline__ void puat_writeOutput(uint8_t puatNum, uint8_t value)
+{
+	if(puatNum == 0)
+		writepinPORT(Tx0pin, Tx0PORT, value);
+ 5b8:	c4 98       	cbi	0x18, 4	; 24
+ 5ba:	22 c0       	rjmp	.+68     	; 0x600 <main+0x178>
+	//   not awaiting start
+//	else if(myTcnter >= puat_nextTcnter)
+#ifdef BIT_TCNT
+	else if(tcnter_isItTime8(&(puat_lastTime[puatNum]), BIT_TCNT))
+#else
+	else if(tcnter_isItTime8(&(puat_lastTime[puatNum]),
+ 5bc:	81 ec       	ldi	r24, 0xC1	; 193
+ 5be:	90 e0       	ldi	r25, 0x00	; 0
+ 5c0:	60 91 c3 00 	lds	r22, 0x00C3
+ 5c4:	d0 dd       	rcall	.-1120   	; 0x166 <tcnter_isItTime8>
+ 5c6:	88 23       	and	r24, r24
+ 5c8:	29 f1       	breq	.+74     	; 0x614 <main+0x18c>
+
+		// We *might* be able to get away without these tests
+		//  just making it an else case...
+		// (Though, intuitively, it makes more visual-sense this way)
+		//Transmit Data Bits...
+		if( (puat_txState[puatNum] >= TXSTATE_SENDING_START)
+ 5ca:	80 91 cf 00 	lds	r24, 0x00CF
+ 5ce:	98 2f       	mov	r25, r24
+ 5d0:	91 50       	subi	r25, 0x01	; 1
+ 5d2:	98 30       	cpi	r25, 0x08	; 8
+ 5d4:	80 f4       	brcc	.+32     	; 0x5f6 <main+0x16e>
+			 && (puat_txState[puatNum] < TXSTATE_SENDING_BIT8) )
+		{
+			puat_txState[puatNum]++;
+ 5d6:	8f 5f       	subi	r24, 0xFF	; 255
+ 5d8:	80 93 cf 00 	sts	0x00CF, r24
+			puat_writeOutput(puatNum, (puat_shiftingByte[puatNum])&0x01);
+ 5dc:	80 91 cb 00 	lds	r24, 0x00CB
+ 5e0:	98 2f       	mov	r25, r24
+ 5e2:	91 70       	andi	r25, 0x01	; 1
+ 5e4:	11 f0       	breq	.+4      	; 0x5ea <main+0x162>
+ 5e6:	c4 9a       	sbi	0x18, 4	; 24
+ 5e8:	01 c0       	rjmp	.+2      	; 0x5ec <main+0x164>
+ 5ea:	c4 98       	cbi	0x18, 4	; 24
+ 5ec:	98 b3       	in	r25, 0x18	; 24
+
+			DPRINT("Sending[%d]: Bit %d = %d\n", (int)(puatNum),
+								(int)(puat_txState[puatNum]-TXSTATE_SENDING_START-1),
+								(int)((puat_shiftingByte[puatNum])&0x01) );
+
+			puat_shiftingByte[puatNum] >>= 1;
+ 5ee:	86 95       	lsr	r24
+ 5f0:	80 93 cb 00 	sts	0x00CB, r24
+ 5f4:	0f c0       	rjmp	.+30     	; 0x614 <main+0x18c>
+		}
+		//Transmit Stop Bit...
+		else if( puat_txState[puatNum] == TXSTATE_SENDING_BIT8 ) 
+ 5f6:	89 30       	cpi	r24, 0x09	; 9
+ 5f8:	29 f4       	brne	.+10     	; 0x604 <main+0x17c>
+		{
+			puat_txState[puatNum] = TXSTATE_SENDING_STOP;
+ 5fa:	e0 92 cf 00 	sts	0x00CF, r14
+ 5fe:	c4 9a       	sbi	0x18, 4	; 24
+ 600:	88 b3       	in	r24, 0x18	; 24
+ 602:	08 c0       	rjmp	.+16     	; 0x614 <main+0x18c>
+			puat_writeOutput(puatNum, 1);
+
+			DPRINT("Sending[%d]: StopBit\n", (int)(puatNum));
+		}
+		else if(puat_txState[puatNum] == (TXSTATE_SENDING_STOP
+ 604:	8a 30       	cpi	r24, 0x0A	; 10
+ 606:	19 f4       	brne	.+6      	; 0x60e <main+0x186>
+														+PUAT_STOP_BITS - 1))
+		{
+			puat_txState[puatNum] = TXSTATE_IDLE;
+ 608:	10 92 cf 00 	sts	0x00CF, r1
+ 60c:	03 c0       	rjmp	.+6      	; 0x614 <main+0x18c>
+			DPRINT("Transmission[%d] Complete\n", (int)(puatNum));
+		}
+		else //Stop bits...
+		{
+			//Value has already been loaded we're just waiting...
+			puat_txState[puatNum]++;
+ 60e:	8f 5f       	subi	r24, 0xFF	; 255
+ 610:	80 93 cf 00 	sts	0x00CF, r24
+//
+// Bit order might be reversed, (looks right, pseudo-verified)
+// I am, however, pretty sure that start-bits are 0 and stop-bits are 1
+//    so then the data-bits are directly-read from the pin (not inverted)
+
+	if(puat_txState[puatNum] == TXSTATE_IDLE)
+ 614:	80 91 d0 00 	lds	r24, 0x00D0
+ 618:	88 23       	and	r24, r24
+ 61a:	89 f4       	brne	.+34     	; 0x63e <main+0x1b6>
+	{
+	   if(puat_txDataWaiting[puatNum])
+ 61c:	80 91 fb 00 	lds	r24, 0x00FB
+ 620:	88 23       	and	r24, r24
+ 622:	c9 f1       	breq	.+114    	; 0x696 <main+0x20e>
+		{
+			puat_shiftingByte[puatNum] = puat_txData[puatNum];
+ 624:	80 91 c0 00 	lds	r24, 0x00C0
+ 628:	80 93 cc 00 	sts	0x00CC, r24
+			puat_txDataWaiting[puatNum] = FALSE;
+ 62c:	10 92 fb 00 	sts	0x00FB, r1
+
+			puat_txState[puatNum] = TXSTATE_SENDING_START;
+ 630:	10 93 d0 00 	sts	0x00D0, r17
+
+			//myTcnter = 0;
+			puat_lastTime[puatNum] = (tcnter8_t)(tcnter_get());
+ 634:	8f dd       	rcall	.-1250   	; 0x154 <tcnter_get>
+ 636:	60 93 c2 00 	sts	0x00C2, r22
+	else
+		writepinPORT(Tx1pin, Tx1PORT, value);
+ 63a:	c0 98       	cbi	0x18, 0	; 24
+ 63c:	22 c0       	rjmp	.+68     	; 0x682 <main+0x1fa>
+	//   not awaiting start
+//	else if(myTcnter >= puat_nextTcnter)
+#ifdef BIT_TCNT
+	else if(tcnter_isItTime8(&(puat_lastTime[puatNum]), BIT_TCNT))
+#else
+	else if(tcnter_isItTime8(&(puat_lastTime[puatNum]),
+ 63e:	82 ec       	ldi	r24, 0xC2	; 194
+ 640:	90 e0       	ldi	r25, 0x00	; 0
+ 642:	60 91 c7 00 	lds	r22, 0x00C7
+ 646:	8f dd       	rcall	.-1250   	; 0x166 <tcnter_isItTime8>
+ 648:	88 23       	and	r24, r24
+ 64a:	29 f1       	breq	.+74     	; 0x696 <main+0x20e>
+
+		// We *might* be able to get away without these tests
+		//  just making it an else case...
+		// (Though, intuitively, it makes more visual-sense this way)
+		//Transmit Data Bits...
+		if( (puat_txState[puatNum] >= TXSTATE_SENDING_START)
+ 64c:	80 91 d0 00 	lds	r24, 0x00D0
+ 650:	98 2f       	mov	r25, r24
+ 652:	91 50       	subi	r25, 0x01	; 1
+ 654:	98 30       	cpi	r25, 0x08	; 8
+ 656:	80 f4       	brcc	.+32     	; 0x678 <main+0x1f0>
+			 && (puat_txState[puatNum] < TXSTATE_SENDING_BIT8) )
+		{
+			puat_txState[puatNum]++;
+ 658:	8f 5f       	subi	r24, 0xFF	; 255
+ 65a:	80 93 d0 00 	sts	0x00D0, r24
+			puat_writeOutput(puatNum, (puat_shiftingByte[puatNum])&0x01);
+ 65e:	80 91 cc 00 	lds	r24, 0x00CC
+ 662:	98 2f       	mov	r25, r24
+ 664:	91 70       	andi	r25, 0x01	; 1
+ 666:	11 f0       	breq	.+4      	; 0x66c <main+0x1e4>
+ 668:	c0 9a       	sbi	0x18, 0	; 24
+ 66a:	01 c0       	rjmp	.+2      	; 0x66e <main+0x1e6>
+ 66c:	c0 98       	cbi	0x18, 0	; 24
+ 66e:	98 b3       	in	r25, 0x18	; 24
+
+			DPRINT("Sending[%d]: Bit %d = %d\n", (int)(puatNum),
+								(int)(puat_txState[puatNum]-TXSTATE_SENDING_START-1),
+								(int)((puat_shiftingByte[puatNum])&0x01) );
+
+			puat_shiftingByte[puatNum] >>= 1;
+ 670:	86 95       	lsr	r24
+ 672:	80 93 cc 00 	sts	0x00CC, r24
+ 676:	0f c0       	rjmp	.+30     	; 0x696 <main+0x20e>
+		}
+		//Transmit Stop Bit...
+		else if( puat_txState[puatNum] == TXSTATE_SENDING_BIT8 ) 
+ 678:	89 30       	cpi	r24, 0x09	; 9
+ 67a:	29 f4       	brne	.+10     	; 0x686 <main+0x1fe>
+		{
+			puat_txState[puatNum] = TXSTATE_SENDING_STOP;
+ 67c:	e0 92 d0 00 	sts	0x00D0, r14
+ 680:	c0 9a       	sbi	0x18, 0	; 24
+ 682:	88 b3       	in	r24, 0x18	; 24
+ 684:	08 c0       	rjmp	.+16     	; 0x696 <main+0x20e>
+			puat_writeOutput(puatNum, 1);
+
+			DPRINT("Sending[%d]: StopBit\n", (int)(puatNum));
+		}
+		else if(puat_txState[puatNum] == (TXSTATE_SENDING_STOP
+ 686:	8a 30       	cpi	r24, 0x0A	; 10
+ 688:	19 f4       	brne	.+6      	; 0x690 <main+0x208>
+														+PUAT_STOP_BITS - 1))
+		{
+			puat_txState[puatNum] = TXSTATE_IDLE;
+ 68a:	10 92 d0 00 	sts	0x00D0, r1
+ 68e:	03 c0       	rjmp	.+6      	; 0x696 <main+0x20e>
+			DPRINT("Transmission[%d] Complete\n", (int)(puatNum));
+		}
+		else //Stop bits...
+		{
+			//Value has already been loaded we're just waiting...
+			puat_txState[puatNum]++;
+ 690:	8f 5f       	subi	r24, 0xFF	; 255
+ 692:	80 93 d0 00 	sts	0x00D0, r24
+//
+// Bit order might be reversed, (looks right, pseudo-verified)
+// I am, however, pretty sure that start-bits are 0 and stop-bits are 1
+//    so then the data-bits are directly-read from the pin (not inverted)
+
+	if(rxState[puarNum] == RXSTATE_AWAITING_START)
+ 696:	80 91 f8 00 	lds	r24, 0x00F8
+ 69a:	88 23       	and	r24, r24
+ 69c:	11 f5       	brne	.+68     	; 0x6e2 <main+0x25a>
+#include "pinout.h"
+
+extern __inline__ uint8_t puar_readInput(uint8_t puarNum)
+{
+   if(puarNum == 0)
+      return getpinPORT(Rx0pin, Rx0PORT);
+ 69e:	86 b3       	in	r24, 0x16	; 22
+	{
+	   if(!puar_readInput(puarNum)) //getbit(rxPin))
+ 6a0:	88 70       	andi	r24, 0x08	; 8
+ 6a2:	09 f0       	breq	.+2      	; 0x6a6 <main+0x21e>
+ 6a4:	6d c0       	rjmp	.+218    	; 0x780 <main+0x2f8>
+		{
+			rxState[puarNum] = RXSTATE_EXPECTING_START;
+ 6a6:	10 93 f8 00 	sts	0x00F8, r17
+			//Set it up to sample bits halfway...
+			//TCNT0 = HALF_TCNT;
+			//lastTcnt = thisTcnt;
+			//myTcnter = 0;
+			nextTcnter[puarNum] = tcnter_get() + puar_bitTcnt[puarNum]/2; //HALF_TCNT + tcnter_get();
+ 6aa:	54 dd       	rcall	.-1368   	; 0x154 <tcnter_get>
+ 6ac:	20 91 f0 00 	lds	r18, 0x00F0
+ 6b0:	30 91 f1 00 	lds	r19, 0x00F1
+ 6b4:	40 91 f2 00 	lds	r20, 0x00F2
+ 6b8:	50 91 f3 00 	lds	r21, 0x00F3
+ 6bc:	56 95       	lsr	r21
+ 6be:	47 95       	ror	r20
+ 6c0:	37 95       	ror	r19
+ 6c2:	27 95       	ror	r18
+ 6c4:	62 0f       	add	r22, r18
+ 6c6:	73 1f       	adc	r23, r19
+ 6c8:	84 1f       	adc	r24, r20
+ 6ca:	95 1f       	adc	r25, r21
+ 6cc:	60 93 b3 00 	sts	0x00B3, r22
+ 6d0:	70 93 b4 00 	sts	0x00B4, r23
+ 6d4:	80 93 b5 00 	sts	0x00B5, r24
+ 6d8:	90 93 b6 00 	sts	0x00B6, r25
+
+			//Depending on the timer resolution, it might be worthwhile
+			// to restart the timer...
+			// hopefully the res is high enough not to have to
+
+			thisByte[puarNum] = 0x00;
+ 6dc:	10 92 bb 00 	sts	0x00BB, r1
+ 6e0:	4f c0       	rjmp	.+158    	; 0x780 <main+0x2f8>
+	// Assuming that this function is called often enough that
+	// TCNT can never be >= 2* BIT_TCNT
+	// This test should be safe, since it only gets here when 
+	//   not awaiting start
+//	else if(myTcnter >= nextTcnter)
+	else if(tcnter_get() >= nextTcnter[puarNum])
+ 6e2:	38 dd       	rcall	.-1424   	; 0x154 <tcnter_get>
+ 6e4:	20 91 b3 00 	lds	r18, 0x00B3
+ 6e8:	30 91 b4 00 	lds	r19, 0x00B4
+ 6ec:	40 91 b5 00 	lds	r20, 0x00B5
+ 6f0:	50 91 b6 00 	lds	r21, 0x00B6
+ 6f4:	62 17       	cp	r22, r18
+ 6f6:	73 07       	cpc	r23, r19
+ 6f8:	84 07       	cpc	r24, r20
+ 6fa:	95 07       	cpc	r25, r21
+ 6fc:	08 f4       	brcc	.+2      	; 0x700 <main+0x278>
+ 6fe:	40 c0       	rjmp	.+128    	; 0x780 <main+0x2f8>
+	{
+		//This should be safe here for all cases below
+		//TCNT0 = thisTcnt - BIT_TCNT;
+		//lastTcnt = thisTcnt;
+		nextTcnter[puarNum] += puar_bitTcnt[puarNum]; //BIT_TCNT;
+ 700:	80 91 f0 00 	lds	r24, 0x00F0
+ 704:	90 91 f1 00 	lds	r25, 0x00F1
+ 708:	a0 91 f2 00 	lds	r26, 0x00F2
+ 70c:	b0 91 f3 00 	lds	r27, 0x00F3
+ 710:	82 0f       	add	r24, r18
+ 712:	93 1f       	adc	r25, r19
+ 714:	a4 1f       	adc	r26, r20
+ 716:	b5 1f       	adc	r27, r21
+ 718:	80 93 b3 00 	sts	0x00B3, r24
+ 71c:	90 93 b4 00 	sts	0x00B4, r25
+ 720:	a0 93 b5 00 	sts	0x00B5, r26
+ 724:	b0 93 b6 00 	sts	0x00B6, r27
+
+		if(rxState[puarNum] == RXSTATE_EXPECTING_START)
+ 728:	90 91 f8 00 	lds	r25, 0x00F8
+ 72c:	91 30       	cpi	r25, 0x01	; 1
+ 72e:	31 f4       	brne	.+12     	; 0x73c <main+0x2b4>
+ 730:	86 b3       	in	r24, 0x16	; 22
+		{
+   		//Make sure it wasn't just a glitch...
+   		if(!puar_readInput(puarNum)) //getbit(rxPin))
+ 732:	88 70       	andi	r24, 0x08	; 8
+ 734:	19 f5       	brne	.+70     	; 0x77c <main+0x2f4>
+   		{
+         	//TCNT0 = thisTcnt - BIT_TCNT;
+         	rxState[puarNum] = RXSTATE_FIRST_BIT;
+ 736:	f0 92 f8 00 	sts	0x00F8, r15
+ 73a:	22 c0       	rjmp	.+68     	; 0x780 <main+0x2f8>
+		}
+		// Receiving Data Bits...
+		// We *might* be able to get away without these tests
+		//  just making it an else case...
+		// (Though, intuitively, it makes more visual-sense this way)
+		else if( (rxState[puarNum] >= RXSTATE_FIRST_BIT) 
+ 73c:	89 2f       	mov	r24, r25
+ 73e:	82 50       	subi	r24, 0x02	; 2
+ 740:	88 30       	cpi	r24, 0x08	; 8
+ 742:	88 f4       	brcc	.+34     	; 0x766 <main+0x2de>
+ 744:	86 b3       	in	r24, 0x16	; 22
+
+			(thisByte[puarNum]) >>= 1;
+			//This is specific to 8-bit data-streams!
+			// (There may be a way to optimize this a bit)
+			// (Especially since getbit uses shifts already)
+			(thisByte[puarNum]) |= (pinVal<<7);
+ 746:	86 95       	lsr	r24
+ 748:	86 95       	lsr	r24
+ 74a:	86 95       	lsr	r24
+ 74c:	87 95       	ror	r24
+ 74e:	88 27       	eor	r24, r24
+ 750:	87 95       	ror	r24
+ 752:	20 91 bb 00 	lds	r18, 0x00BB
+ 756:	26 95       	lsr	r18
+ 758:	82 2b       	or	r24, r18
+ 75a:	80 93 bb 00 	sts	0x00BB, r24
+			(rxState[puarNum])++;
+ 75e:	9f 5f       	subi	r25, 0xFF	; 255
+ 760:	90 93 f8 00 	sts	0x00F8, r25
+ 764:	0d c0       	rjmp	.+26     	; 0x780 <main+0x2f8>
+			DPRINT("Sampled[%d]: Bit %d = %d\n", (int)puarNum,
+										(int)(rxState[puarNum]-RXSTATE_FIRST_BIT-1),
+										(int)pinVal);
+		}
+		else if(rxState[puarNum] == RXSTATE_EXPECTING_STOP)
+ 766:	9a 30       	cpi	r25, 0x0A	; 10
+ 768:	59 f4       	brne	.+22     	; 0x780 <main+0x2f8>
+ 76a:	86 b3       	in	r24, 0x16	; 22
+		{
+			//Make sure we got our stop-bit
+			if(puar_readInput(puarNum)) //getbit(rxPin))
+ 76c:	88 70       	andi	r24, 0x08	; 8
+ 76e:	31 f0       	breq	.+12     	; 0x77c <main+0x2f4>
+			{
+				//!!!LOAD DATA TO RX BUFFER
+				rxData[puarNum] = thisByte[puarNum];
+ 770:	80 91 bb 00 	lds	r24, 0x00BB
+ 774:	80 93 bd 00 	sts	0x00BD, r24
+				rxDataWaiting[puarNum] = TRUE;
+ 778:	10 93 cd 00 	sts	0x00CD, r17
+				// and load data anyhow...
+				// or just discard it
+				DPRINT("Error[%d]: Stop Not Received\n", (int)puarNum);
+			}
+
+			rxState[puarNum] = RXSTATE_AWAITING_START;
+ 77c:	10 92 f8 00 	sts	0x00F8, r1
+//
+// Bit order might be reversed, (looks right, pseudo-verified)
+// I am, however, pretty sure that start-bits are 0 and stop-bits are 1
+//    so then the data-bits are directly-read from the pin (not inverted)
+
+	if(rxState[puarNum] == RXSTATE_AWAITING_START)
+ 780:	80 91 f9 00 	lds	r24, 0x00F9
+ 784:	88 23       	and	r24, r24
+ 786:	11 f5       	brne	.+68     	; 0x7cc <main+0x344>
+   else
+      return getpinPORT(Rx1pin, Rx1PORT);
+ 788:	86 b3       	in	r24, 0x16	; 22
+	{
+	   if(!puar_readInput(puarNum)) //getbit(rxPin))
+ 78a:	84 70       	andi	r24, 0x04	; 4
+ 78c:	09 f0       	breq	.+2      	; 0x790 <main+0x308>
+ 78e:	6c c0       	rjmp	.+216    	; 0x868 <main+0x3e0>
+		{
+			rxState[puarNum] = RXSTATE_EXPECTING_START;
+ 790:	10 93 f9 00 	sts	0x00F9, r17
+			//Set it up to sample bits halfway...
+			//TCNT0 = HALF_TCNT;
+			//lastTcnt = thisTcnt;
+			//myTcnter = 0;
+			nextTcnter[puarNum] = tcnter_get() + puar_bitTcnt[puarNum]/2; //HALF_TCNT + tcnter_get();
+ 794:	df dc       	rcall	.-1602   	; 0x154 <tcnter_get>
+ 796:	20 91 f4 00 	lds	r18, 0x00F4
+ 79a:	30 91 f5 00 	lds	r19, 0x00F5
+ 79e:	40 91 f6 00 	lds	r20, 0x00F6
+ 7a2:	50 91 f7 00 	lds	r21, 0x00F7
+ 7a6:	56 95       	lsr	r21
+ 7a8:	47 95       	ror	r20
+ 7aa:	37 95       	ror	r19
+ 7ac:	27 95       	ror	r18
+ 7ae:	62 0f       	add	r22, r18
+ 7b0:	73 1f       	adc	r23, r19
+ 7b2:	84 1f       	adc	r24, r20
+ 7b4:	95 1f       	adc	r25, r21
+ 7b6:	60 93 b7 00 	sts	0x00B7, r22
+ 7ba:	70 93 b8 00 	sts	0x00B8, r23
+ 7be:	80 93 b9 00 	sts	0x00B9, r24
+ 7c2:	90 93 ba 00 	sts	0x00BA, r25
+
+			//Depending on the timer resolution, it might be worthwhile
+			// to restart the timer...
+			// hopefully the res is high enough not to have to
+
+			thisByte[puarNum] = 0x00;
+ 7c6:	10 92 bc 00 	sts	0x00BC, r1
+ 7ca:	4e c0       	rjmp	.+156    	; 0x868 <main+0x3e0>
+	// Assuming that this function is called often enough that
+	// TCNT can never be >= 2* BIT_TCNT
+	// This test should be safe, since it only gets here when 
+	//   not awaiting start
+//	else if(myTcnter >= nextTcnter)
+	else if(tcnter_get() >= nextTcnter[puarNum])
+ 7cc:	c3 dc       	rcall	.-1658   	; 0x154 <tcnter_get>
+ 7ce:	20 91 b7 00 	lds	r18, 0x00B7
+ 7d2:	30 91 b8 00 	lds	r19, 0x00B8
+ 7d6:	40 91 b9 00 	lds	r20, 0x00B9
+ 7da:	50 91 ba 00 	lds	r21, 0x00BA
+ 7de:	62 17       	cp	r22, r18
+ 7e0:	73 07       	cpc	r23, r19
+ 7e2:	84 07       	cpc	r24, r20
+ 7e4:	95 07       	cpc	r25, r21
+ 7e6:	08 f4       	brcc	.+2      	; 0x7ea <main+0x362>
+ 7e8:	3f c0       	rjmp	.+126    	; 0x868 <main+0x3e0>
+	{
+		//This should be safe here for all cases below
+		//TCNT0 = thisTcnt - BIT_TCNT;
+		//lastTcnt = thisTcnt;
+		nextTcnter[puarNum] += puar_bitTcnt[puarNum]; //BIT_TCNT;
+ 7ea:	80 91 f4 00 	lds	r24, 0x00F4
+ 7ee:	90 91 f5 00 	lds	r25, 0x00F5
+ 7f2:	a0 91 f6 00 	lds	r26, 0x00F6
+ 7f6:	b0 91 f7 00 	lds	r27, 0x00F7
+ 7fa:	82 0f       	add	r24, r18
+ 7fc:	93 1f       	adc	r25, r19
+ 7fe:	a4 1f       	adc	r26, r20
+ 800:	b5 1f       	adc	r27, r21
+ 802:	80 93 b7 00 	sts	0x00B7, r24
+ 806:	90 93 b8 00 	sts	0x00B8, r25
+ 80a:	a0 93 b9 00 	sts	0x00B9, r26
+ 80e:	b0 93 ba 00 	sts	0x00BA, r27
+
+		if(rxState[puarNum] == RXSTATE_EXPECTING_START)
+ 812:	90 91 f9 00 	lds	r25, 0x00F9
+ 816:	91 30       	cpi	r25, 0x01	; 1
+ 818:	31 f4       	brne	.+12     	; 0x826 <main+0x39e>
+ 81a:	86 b3       	in	r24, 0x16	; 22
+		{
+   		//Make sure it wasn't just a glitch...
+   		if(!puar_readInput(puarNum)) //getbit(rxPin))
+ 81c:	84 70       	andi	r24, 0x04	; 4
+ 81e:	11 f5       	brne	.+68     	; 0x864 <main+0x3dc>
+   		{
+         	//TCNT0 = thisTcnt - BIT_TCNT;
+         	rxState[puarNum] = RXSTATE_FIRST_BIT;
+ 820:	f0 92 f9 00 	sts	0x00F9, r15
+ 824:	21 c0       	rjmp	.+66     	; 0x868 <main+0x3e0>
+		}
+		// Receiving Data Bits...
+		// We *might* be able to get away without these tests
+		//  just making it an else case...
+		// (Though, intuitively, it makes more visual-sense this way)
+		else if( (rxState[puarNum] >= RXSTATE_FIRST_BIT) 
+ 826:	89 2f       	mov	r24, r25
+ 828:	82 50       	subi	r24, 0x02	; 2
+ 82a:	88 30       	cpi	r24, 0x08	; 8
+ 82c:	80 f4       	brcc	.+32     	; 0x84e <main+0x3c6>
+ 82e:	86 b3       	in	r24, 0x16	; 22
+
+			(thisByte[puarNum]) >>= 1;
+			//This is specific to 8-bit data-streams!
+			// (There may be a way to optimize this a bit)
+			// (Especially since getbit uses shifts already)
+			(thisByte[puarNum]) |= (pinVal<<7);
+ 830:	86 95       	lsr	r24
+ 832:	86 95       	lsr	r24
+ 834:	87 95       	ror	r24
+ 836:	88 27       	eor	r24, r24
+ 838:	87 95       	ror	r24
+ 83a:	20 91 bc 00 	lds	r18, 0x00BC
+ 83e:	26 95       	lsr	r18
+ 840:	82 2b       	or	r24, r18
+ 842:	80 93 bc 00 	sts	0x00BC, r24
+			(rxState[puarNum])++;
+ 846:	9f 5f       	subi	r25, 0xFF	; 255
+ 848:	90 93 f9 00 	sts	0x00F9, r25
+ 84c:	0d c0       	rjmp	.+26     	; 0x868 <main+0x3e0>
+			DPRINT("Sampled[%d]: Bit %d = %d\n", (int)puarNum,
+										(int)(rxState[puarNum]-RXSTATE_FIRST_BIT-1),
+										(int)pinVal);
+		}
+		else if(rxState[puarNum] == RXSTATE_EXPECTING_STOP)
+ 84e:	9a 30       	cpi	r25, 0x0A	; 10
+ 850:	59 f4       	brne	.+22     	; 0x868 <main+0x3e0>
+ 852:	86 b3       	in	r24, 0x16	; 22
+		{
+			//Make sure we got our stop-bit
+			if(puar_readInput(puarNum)) //getbit(rxPin))
+ 854:	84 70       	andi	r24, 0x04	; 4
+ 856:	31 f0       	breq	.+12     	; 0x864 <main+0x3dc>
+			{
+				//!!!LOAD DATA TO RX BUFFER
+				rxData[puarNum] = thisByte[puarNum];
+ 858:	80 91 bc 00 	lds	r24, 0x00BC
+ 85c:	80 93 be 00 	sts	0x00BE, r24
+				rxDataWaiting[puarNum] = TRUE;
+ 860:	10 93 ce 00 	sts	0x00CE, r17
+				// and load data anyhow...
+				// or just discard it
+				DPRINT("Error[%d]: Stop Not Received\n", (int)puarNum);
+			}
+
+			rxState[puarNum] = RXSTATE_AWAITING_START;
+ 864:	10 92 f9 00 	sts	0x00F9, r1
+
+//Inlining saved 12B (one call?)
+PUAR_INLINEABLE
+uint8_t puar_dataWaiting(uint8_t puarNum)
+{
+	return rxDataWaiting[puarNum];
+ 868:	80 91 cd 00 	lds	r24, 0x00CD
+ 86c:	88 23       	and	r24, r24
+ 86e:	21 f4       	brne	.+8      	; 0x878 <main+0x3f0>
+ 870:	88 24       	eor	r8, r8
+ 872:	8a 94       	dec	r8
+ 874:	98 2c       	mov	r9, r8
+ 876:	05 c0       	rjmp	.+10     	; 0x882 <main+0x3fa>
+// otherwise it will return garbage
+//Inlining saved 20B (one call?)
+PUAR_INLINEABLE
+uint8_t puar_getByte(uint8_t puarNum)
+{
+	rxDataWaiting[puarNum] = FALSE;
+ 878:	10 92 cd 00 	sts	0x00CD, r1
+		int16_t rxByteFromBTB = -1;
+		int16_t rxByteFromDevice = -1;
+
+		// If there's data received, then retransmit it
+		if(puar_dataWaiting(PUAR_FROM_BTB))
+			rxByteFromBTB = puar_getByte(PUAR_FROM_BTB);
+ 87c:	80 90 bd 00 	lds	r8, 0x00BD
+ 880:	99 24       	eor	r9, r9
+
+//Inlining saved 12B (one call?)
+PUAR_INLINEABLE
+uint8_t puar_dataWaiting(uint8_t puarNum)
+{
+	return rxDataWaiting[puarNum];
+ 882:	80 91 ce 00 	lds	r24, 0x00CE
+ 886:	88 23       	and	r24, r24
+ 888:	21 f4       	brne	.+8      	; 0x892 <main+0x40a>
+ 88a:	66 24       	eor	r6, r6
+ 88c:	6a 94       	dec	r6
+ 88e:	76 2c       	mov	r7, r6
+ 890:	05 c0       	rjmp	.+10     	; 0x89c <main+0x414>
+// otherwise it will return garbage
+//Inlining saved 20B (one call?)
+PUAR_INLINEABLE
+uint8_t puar_getByte(uint8_t puarNum)
+{
+	rxDataWaiting[puarNum] = FALSE;
+ 892:	10 92 ce 00 	sts	0x00CE, r1
+	
+		if(puar_dataWaiting(PUAR_FROM_DEVICE))
+			rxByteFromDevice = puar_getByte(PUAR_FROM_DEVICE);
+ 896:	60 90 be 00 	lds	r6, 0x00BE
+ 89a:	77 24       	eor	r7, r7
+{
+#warning "THIS SHOULD NOT BE TESTED WHILE CONNECTED! Or..?"
+	//OOOh FANCY! This could be merged into a single function
+	// to be made inline... with AWATING... states' functionality
+	// duh.
+	if(btbcErrorResponse[btbcErrorResponseIndex] == '\0')
+ 89c:	80 91 b2 00 	lds	r24, 0x00B2
+ 8a0:	e8 2f       	mov	r30, r24
+ 8a2:	f0 e0       	ldi	r31, 0x00	; 0
+ 8a4:	e3 58       	subi	r30, 0x83	; 131
+ 8a6:	ff 4f       	sbci	r31, 0xFF	; 255
+ 8a8:	90 81       	ld	r25, Z
+ 8aa:	99 23       	and	r25, r25
+ 8ac:	29 f4       	brne	.+10     	; 0x8b8 <main+0x430>
+	{
+		DPRINT("ERROR Received\n");
+		btbcErrorResponseIndex = 0;
+ 8ae:	10 92 b2 00 	sts	0x00B2, r1
+		btbcState = BTBCSTATE_SENDRESET;
+ 8b2:	10 92 d1 00 	sts	0x00D1, r1
+ 8b6:	19 c0       	rjmp	.+50     	; 0x8ea <main+0x462>
+	}
+	else if(rxByteFromBTB >= 0)
+ 8b8:	2f ef       	ldi	r18, 0xFF	; 255
+ 8ba:	82 16       	cp	r8, r18
+ 8bc:	2f ef       	ldi	r18, 0xFF	; 255
+ 8be:	92 06       	cpc	r9, r18
+ 8c0:	a1 f0       	breq	.+40     	; 0x8ea <main+0x462>
+	{
+		//Who knows where "Error" might come from... probably a good idea
+		// to look for it (?)
+		// But maybe not while connected...?
+		//Luckily 'E' is only used once in the error response
+		if(rxByteFromBTB == btbcErrorResponse[0])
+ 8c2:	20 91 7d 00 	lds	r18, 0x007D
+ 8c6:	30 e0       	ldi	r19, 0x00	; 0
+ 8c8:	82 16       	cp	r8, r18
+ 8ca:	93 06       	cpc	r9, r19
+ 8cc:	19 f4       	brne	.+6      	; 0x8d4 <main+0x44c>
+			btbcErrorResponseIndex = 1;
+ 8ce:	10 93 b2 00 	sts	0x00B2, r17
+ 8d2:	0b c0       	rjmp	.+22     	; 0x8ea <main+0x462>
+		else if(rxByteFromBTB == btbcErrorResponse[btbcErrorResponseIndex])
+ 8d4:	29 2f       	mov	r18, r25
+ 8d6:	30 e0       	ldi	r19, 0x00	; 0
+ 8d8:	82 16       	cp	r8, r18
+ 8da:	93 06       	cpc	r9, r19
+ 8dc:	21 f4       	brne	.+8      	; 0x8e6 <main+0x45e>
+			btbcErrorResponseIndex++;
+ 8de:	8f 5f       	subi	r24, 0xFF	; 255
+ 8e0:	80 93 b2 00 	sts	0x00B2, r24
+ 8e4:	02 c0       	rjmp	.+4      	; 0x8ea <main+0x462>
+		else
+			btbcErrorResponseIndex = 0;
+ 8e6:	10 92 b2 00 	sts	0x00B2, r1
+	}
+
+
+	switch(btbcState)
+ 8ea:	80 91 d1 00 	lds	r24, 0x00D1
+ 8ee:	e8 2f       	mov	r30, r24
+ 8f0:	f0 e0       	ldi	r31, 0x00	; 0
+ 8f2:	ed 30       	cpi	r30, 0x0D	; 13
+ 8f4:	f1 05       	cpc	r31, r1
+ 8f6:	08 f0       	brcs	.+2      	; 0x8fa <main+0x472>
+ 8f8:	43 ce       	rjmp	.-890    	; 0x580 <main+0xf8>
+ 8fa:	e1 5f       	subi	r30, 0xF1	; 241
+ 8fc:	ff 4f       	sbci	r31, 0xFF	; 255
+ 8fe:	09 94       	ijmp
+	{
+		case BTBCSTATE_SENDRESET:
+			btbcCommand = btbcCmd_Reset;
+ 900:	30 92 7c 00 	sts	0x007C, r3
+ 904:	20 92 7b 00 	sts	0x007B, r2
+			//btbcState++;
+			btbcState = BTBCSTATE_SENDINGRESET;
+ 908:	10 93 d1 00 	sts	0x00D1, r17
+ 90c:	39 ce       	rjmp	.-910    	; 0x580 <main+0xf8>
+// since btbcStuff is in a separate file-space... 
+// that should be changed soon (by inlining it, as well)
+PUAT_INLINEABLE
+uint8_t puat_dataWaiting(uint8_t puatNum)
+{
+	return puat_txDataWaiting[puatNum];
+ 90e:	90 91 fa 00 	lds	r25, 0x00FA
+ 912:	99 23       	and	r25, r25
+ 914:	09 f0       	breq	.+2      	; 0x918 <main+0x490>
+ 916:	34 ce       	rjmp	.-920    	; 0x580 <main+0xf8>
+			//	{
+			// Assumes btbcCommand[0] != '\0'
+			// should be safe state-wise
+					if(btbc_btbReadyForData())
+					{
+						btbc_sendByteToBTB(*btbcCommand);
+ 918:	a0 91 7b 00 	lds	r26, 0x007B
+ 91c:	b0 91 7c 00 	lds	r27, 0x007C
+ 920:	fd 01       	movw	r30, r26
+ 922:	91 91       	ld	r25, Z+
+//Must be called AFTER testing if data's waiting
+// otherwise it will return garbage
+PUAT_INLINEABLE
+void puat_sendByte(uint8_t puatNum, uint8_t data)
+{
+	puat_txDataWaiting[puatNum] = TRUE;
+ 924:	10 93 fa 00 	sts	0x00FA, r17
+	puat_txData[puatNum] = data;
+ 928:	90 93 bf 00 	sts	0x00BF, r25
+						btbcCommand++;
+ 92c:	f0 93 7c 00 	sts	0x007C, r31
+ 930:	e0 93 7b 00 	sts	0x007B, r30
+
+						if(*btbcCommand == '\0')
+ 934:	11 96       	adiw	r26, 0x01	; 1
+ 936:	9c 91       	ld	r25, X
+ 938:	11 97       	sbiw	r26, 0x01	; 1
+ 93a:	99 23       	and	r25, r25
+ 93c:	09 f0       	breq	.+2      	; 0x940 <main+0x4b8>
+ 93e:	20 ce       	rjmp	.-960    	; 0x580 <main+0xf8>
+ 940:	15 c0       	rjmp	.+42     	; 0x96c <main+0x4e4>
+			//	}
+			//	else
+			//		btbcState++;
+			break;
+		case BTBCSTATE_AWAITBTSTATE1:
+			btbcResponse = btbcResponse_BTSTATE1;
+ 942:	d0 93 aa 00 	sts	0x00AA, r29
+ 946:	c0 93 a9 00 	sts	0x00A9, r28
+			btbcResponseIndex = 0;
+ 94a:	10 92 b1 00 	sts	0x00B1, r1
+			//btbcState++;
+			btbcState = BTBCSTATE_AWAITINGBTSTATE1;
+ 94e:	83 e0       	ldi	r24, 0x03	; 3
+ 950:	80 93 d1 00 	sts	0x00D1, r24
+ 954:	15 ce       	rjmp	.-982    	; 0x580 <main+0xf8>
+			break;
+		//Receiving States:
+		case BTBCSTATE_AWAITINGBTSTATE1:
+		case BTBCSTATE_AWAITINGBTSTATE2:
+		case BTBCSTATE_AWAITINGCONNECTION:
+			if(btbcResponse[btbcResponseIndex] == '\0')
+ 956:	90 91 b1 00 	lds	r25, 0x00B1
+ 95a:	e0 91 a9 00 	lds	r30, 0x00A9
+ 95e:	f0 91 aa 00 	lds	r31, 0x00AA
+ 962:	e9 0f       	add	r30, r25
+ 964:	f1 1d       	adc	r31, r1
+ 966:	20 81       	ld	r18, Z
+ 968:	22 23       	and	r18, r18
+ 96a:	11 f4       	brne	.+4      	; 0x970 <main+0x4e8>
+				btbcState++;
+ 96c:	8f 5f       	subi	r24, 0xFF	; 255
+ 96e:	f0 cf       	rjmp	.-32     	; 0x950 <main+0x4c8>
+			else if(rxByteFromBTB >= 0)
+ 970:	8f ef       	ldi	r24, 0xFF	; 255
+ 972:	88 16       	cp	r8, r24
+ 974:	8f ef       	ldi	r24, 0xFF	; 255
+ 976:	98 06       	cpc	r9, r24
+ 978:	09 f4       	brne	.+2      	; 0x97c <main+0x4f4>
+ 97a:	02 ce       	rjmp	.-1020   	; 0x580 <main+0xf8>
+			{
+				if(rxByteFromBTB == btbcResponse[btbcResponseIndex])
+ 97c:	30 e0       	ldi	r19, 0x00	; 0
+ 97e:	82 16       	cp	r8, r18
+ 980:	93 06       	cpc	r9, r19
+ 982:	21 f4       	brne	.+8      	; 0x98c <main+0x504>
+					btbcResponseIndex++;
+ 984:	9f 5f       	subi	r25, 0xFF	; 255
+ 986:	90 93 b1 00 	sts	0x00B1, r25
+ 98a:	fa cd       	rjmp	.-1036   	; 0x580 <main+0xf8>
+				else
+					btbcResponseIndex = 0;
+ 98c:	10 92 b1 00 	sts	0x00B1, r1
+ 990:	f7 cd       	rjmp	.-1042   	; 0x580 <main+0xf8>
+			}
+			break;
+		case BTBCSTATE_SENDINQUIRE:
+			DPRINT("BTSTATE1, Bluetooth Bee ready to receive INQ\n");
+			btbcCommand = btbcCmd_Inquire;
+ 992:	50 92 7c 00 	sts	0x007C, r5
+ 996:	40 92 7b 00 	sts	0x007B, r4
+			//btbcState++;
+			btbcState = BTBCSTATE_SENDINGINQUIRE;
+ 99a:	25 e0       	ldi	r18, 0x05	; 5
+ 99c:	0f c0       	rjmp	.+30     	; 0x9bc <main+0x534>
+			break;
+		//BTBCSTATE_SENDINGINQUIRE is merged above
+		case BTBCSTATE_AWAITBTSTATE2:
+			btbcResponse = btbcResponse_BTSTATE2;
+ 99e:	d0 92 aa 00 	sts	0x00AA, r13
+ 9a2:	c0 92 a9 00 	sts	0x00A9, r12
+			btbcResponseIndex = 0;
+ 9a6:	10 92 b1 00 	sts	0x00B1, r1
+			//btbcState++;
+			btbcState = BTBCSTATE_AWAITINGBTSTATE2;
+ 9aa:	87 e0       	ldi	r24, 0x07	; 7
+ 9ac:	d1 cf       	rjmp	.-94     	; 0x950 <main+0x4c8>
+			DPRINT("Awaiting BTSTATE:2 (Inquiring)\n");
+			break;
+		//BTBCSTATE_AWAITINGBTSTATE2 is merged above
+		case BTBCSTATE_AWAITCONNECTION:
+			DPRINT("BTSTATE2, Bluetooth Bee ready to receive connection\n");
+			btbcResponse = btbcResponse_BTSTATE4;
+ 9ae:	b0 92 aa 00 	sts	0x00AA, r11
+ 9b2:	a0 92 a9 00 	sts	0x00A9, r10
+			btbcResponseIndex = 0;
+ 9b6:	10 92 b1 00 	sts	0x00B1, r1
+			//btbcState++;
+			btbcState = BTBCSTATE_AWAITINGCONNECTION;
+ 9ba:	29 e0       	ldi	r18, 0x09	; 9
+ 9bc:	20 93 d1 00 	sts	0x00D1, r18
+ 9c0:	df cd       	rjmp	.-1090   	; 0x580 <main+0xf8>
+				//static uint8_t withholding = FALSE;
+
+				//In most cases, this'll be retransmitted immediately after
+				// making sure it's not possibly the start of a
+				// btb disconnect message
+				if(rxByteFromBTB >= 0)
+ 9c2:	8f ef       	ldi	r24, 0xFF	; 255
+ 9c4:	88 16       	cp	r8, r24
+ 9c6:	8f ef       	ldi	r24, 0xFF	; 255
+ 9c8:	98 06       	cpc	r9, r24
+ 9ca:	29 f0       	breq	.+10     	; 0x9d6 <main+0x54e>
+					cirBuff_addByte(&btbCirBuff, rxByteFromBTB, TRUE);
+ 9cc:	8b ee       	ldi	r24, 0xEB	; 235
+ 9ce:	90 e0       	ldi	r25, 0x00	; 0
+ 9d0:	68 2d       	mov	r22, r8
+ 9d2:	41 e0       	ldi	r20, 0x01	; 1
+ 9d4:	20 dd       	rcall	.-1472   	; 0x416 <cirBuff_addByte>
+
+				//While connected, we repeat the data from the device
+				// to the host
+				// BUT it's halted if we're receiving a message from btb
+				if(rxByteFromDevice >= 0)
+ 9d6:	2f ef       	ldi	r18, 0xFF	; 255
+ 9d8:	62 16       	cp	r6, r18
+ 9da:	2f ef       	ldi	r18, 0xFF	; 255
+ 9dc:	72 06       	cpc	r7, r18
+ 9de:	29 f0       	breq	.+10     	; 0x9ea <main+0x562>
+					cirBuff_addByte(&btbDeviceBuff, rxByteFromDevice, TRUE);
+ 9e0:	86 ee       	ldi	r24, 0xE6	; 230
+ 9e2:	90 e0       	ldi	r25, 0x00	; 0
+ 9e4:	66 2d       	mov	r22, r6
+ 9e6:	41 e0       	ldi	r20, 0x01	; 1
+ 9e8:	16 dd       	rcall	.-1492   	; 0x416 <cirBuff_addByte>
+
+				if(rxByteFromBTB == '\r')
+ 9ea:	8d e0       	ldi	r24, 0x0D	; 13
+ 9ec:	88 16       	cp	r8, r24
+ 9ee:	91 04       	cpc	r9, r1
+ 9f0:	41 f4       	brne	.+16     	; 0xa02 <main+0x57a>
+					// When the host disconnects from the "serial port"
+					//  (via bluetooth)
+					// OR when bluetooth is disabled on the host
+					// the btb sends BTSTATE:1
+					// WHAT ABOUT OTHER DISCONNECTS?
+					btbcResponse = btbcResponse_BTSTATE1;
+ 9f2:	d0 93 aa 00 	sts	0x00AA, r29
+ 9f6:	c0 93 a9 00 	sts	0x00A9, r28
+					btbcResponseIndex = 0;	
+ 9fa:	10 92 b1 00 	sts	0x00B1, r1
+					btbcState = BTBCSTATE_VERIFYINGCONNECTION;
+ 9fe:	2c e0       	ldi	r18, 0x0C	; 12
+ a00:	dd cf       	rjmp	.-70     	; 0x9bc <main+0x534>
+// since btbcStuff is in a separate file-space... 
+// that should be changed soon (by inlining it, as well)
+PUAT_INLINEABLE
+uint8_t puat_dataWaiting(uint8_t puatNum)
+{
+	return puat_txDataWaiting[puatNum];
+ a02:	80 91 fb 00 	lds	r24, 0x00FB
+ a06:	88 23       	and	r24, r24
+ a08:	49 f4       	brne	.+18     	; 0xa1c <main+0x594>
+					//int16_t cirBuffByte = cirBuff_getByte(&btbCirBuff);
+
+//#warning "need to resend data in the other direction!"
+					if(btbc_deviceReadyForData())
+					{
+						int16_t cirBuffByte = cirBuff_getByte(&btbCirBuff);
+ a0a:	8b ee       	ldi	r24, 0xEB	; 235
+ a0c:	90 e0       	ldi	r25, 0x00	; 0
+ a0e:	20 dd       	rcall	.-1472   	; 0x450 <cirBuff_getByte>
+
+						if(cirBuffByte >= 0)
+ a10:	97 fd       	sbrc	r25, 7
+ a12:	04 c0       	rjmp	.+8      	; 0xa1c <main+0x594>
+//Must be called AFTER testing if data's waiting
+// otherwise it will return garbage
+PUAT_INLINEABLE
+void puat_sendByte(uint8_t puatNum, uint8_t data)
+{
+	puat_txDataWaiting[puatNum] = TRUE;
+ a14:	10 93 fb 00 	sts	0x00FB, r17
+	puat_txData[puatNum] = data;
+ a18:	80 93 c0 00 	sts	0x00C0, r24
+// since btbcStuff is in a separate file-space... 
+// that should be changed soon (by inlining it, as well)
+PUAT_INLINEABLE
+uint8_t puat_dataWaiting(uint8_t puatNum)
+{
+	return puat_txDataWaiting[puatNum];
+ a1c:	80 91 fa 00 	lds	r24, 0x00FA
+ a20:	88 23       	and	r24, r24
+ a22:	09 f0       	breq	.+2      	; 0xa26 <main+0x59e>
+ a24:	ad cd       	rjmp	.-1190   	; 0x580 <main+0xf8>
+						}
+					}
+
+					if(btbc_btbReadyForData())
+					{
+						int16_t cirBuffByte = cirBuff_getByte(&btbDeviceBuff);
+ a26:	86 ee       	ldi	r24, 0xE6	; 230
+ a28:	90 e0       	ldi	r25, 0x00	; 0
+ a2a:	12 dd       	rcall	.-1500   	; 0x450 <cirBuff_getByte>
+
+						if(cirBuffByte >= 0)
+ a2c:	97 fd       	sbrc	r25, 7
+ a2e:	a8 cd       	rjmp	.-1200   	; 0x580 <main+0xf8>
+//Must be called AFTER testing if data's waiting
+// otherwise it will return garbage
+PUAT_INLINEABLE
+void puat_sendByte(uint8_t puatNum, uint8_t data)
+{
+	puat_txDataWaiting[puatNum] = TRUE;
+ a30:	10 93 fa 00 	sts	0x00FA, r17
+	puat_txData[puatNum] = data;
+ a34:	80 93 bf 00 	sts	0x00BF, r24
+ a38:	a3 cd       	rjmp	.-1210   	; 0x580 <main+0xf8>
+
+			}
+			break;
+		case BTBCSTATE_VERIFYINGCONNECTION:
+			//Keep buffering Tablet Data in case we're still connected
+			if(rxByteFromDevice >= 0)
+ a3a:	8f ef       	ldi	r24, 0xFF	; 255
+ a3c:	68 16       	cp	r6, r24
+ a3e:	8f ef       	ldi	r24, 0xFF	; 255
+ a40:	78 06       	cpc	r7, r24
+ a42:	29 f0       	breq	.+10     	; 0xa4e <main+0x5c6>
+				   cirBuff_addByte(&btbDeviceBuff, rxByteFromDevice, TRUE);
+ a44:	86 ee       	ldi	r24, 0xE6	; 230
+ a46:	90 e0       	ldi	r25, 0x00	; 0
+ a48:	66 2d       	mov	r22, r6
+ a4a:	41 e0       	ldi	r20, 0x01	; 1
+ a4c:	e4 dc       	rcall	.-1592   	; 0x416 <cirBuff_addByte>
+
+			if(btbcResponse[btbcResponseIndex] == '\0')
+ a4e:	80 91 b1 00 	lds	r24, 0x00B1
+ a52:	e0 91 a9 00 	lds	r30, 0x00A9
+ a56:	f0 91 aa 00 	lds	r31, 0x00AA
+ a5a:	e8 0f       	add	r30, r24
+ a5c:	f1 1d       	adc	r31, r1
+ a5e:	80 81       	ld	r24, Z
+ a60:	88 23       	and	r24, r24
+ a62:	49 f4       	brne	.+18     	; 0xa76 <main+0x5ee>
+			{
+				DPRINT("Host disconnected\n");
+				//AWAITING_CONNECTION should work for most cases
+				// except if the bluetooth was disabled at the host
+				// then inquiry would be required...
+				btbcState = BTBCSTATE_SENDRESET; // or reset?
+ a64:	10 92 d1 00 	sts	0x00D1, r1
+
+				//Clear the circular buffer...
+				cirBuff_empty(&btbCirBuff);
+ a68:	8b ee       	ldi	r24, 0xEB	; 235
+ a6a:	90 e0       	ldi	r25, 0x00	; 0
+ a6c:	09 dd       	rcall	.-1518   	; 0x480 <cirBuff_empty>
+				cirBuff_empty(&btbDeviceBuff);
+ a6e:	86 ee       	ldi	r24, 0xE6	; 230
+ a70:	90 e0       	ldi	r25, 0x00	; 0
+ a72:	06 dd       	rcall	.-1524   	; 0x480 <cirBuff_empty>
+ a74:	85 cd       	rjmp	.-1270   	; 0x580 <main+0xf8>
+			}
+			else if(rxByteFromBTB >= 0)
+ a76:	2f ef       	ldi	r18, 0xFF	; 255
+ a78:	82 16       	cp	r8, r18
+ a7a:	2f ef       	ldi	r18, 0xFF	; 255
+ a7c:	92 06       	cpc	r9, r18
+ a7e:	09 f4       	brne	.+2      	; 0xa82 <main+0x5fa>
+ a80:	7f cd       	rjmp	.-1282   	; 0x580 <main+0xf8>
+			{
+				//Buffer the received bytes, they may be host commands to the
+				// tablet...
+				cirBuff_addByte(&btbCirBuff, rxByteFromBTB, TRUE);
+ a82:	8b ee       	ldi	r24, 0xEB	; 235
+ a84:	90 e0       	ldi	r25, 0x00	; 0
+ a86:	68 2d       	mov	r22, r8
+ a88:	41 e0       	ldi	r20, 0x01	; 1
+ a8a:	c5 dc       	rcall	.-1654   	; 0x416 <cirBuff_addByte>
+
+				// Unusual case, but it's happened in testing...
+				//  Device Sends '\r' then disconnects
+				//  (a second '\r' is sent, indicating the start of the 
+				//   disconnect message, but it won't be read, without this)
+				if(rxByteFromBTB == '\r')
+ a8c:	8d e0       	ldi	r24, 0x0D	; 13
+ a8e:	88 16       	cp	r8, r24
+ a90:	91 04       	cpc	r9, r1
+ a92:	11 f4       	brne	.+4      	; 0xa98 <main+0x610>
+					btbcResponseIndex = 0;
+ a94:	10 92 b1 00 	sts	0x00B1, r1
+				if(rxByteFromBTB == btbcResponse[btbcResponseIndex])
+ a98:	80 91 b1 00 	lds	r24, 0x00B1
+ a9c:	e0 91 a9 00 	lds	r30, 0x00A9
+ aa0:	f0 91 aa 00 	lds	r31, 0x00AA
+ aa4:	e8 0f       	add	r30, r24
+ aa6:	f1 1d       	adc	r31, r1
+ aa8:	20 81       	ld	r18, Z
+ aaa:	30 e0       	ldi	r19, 0x00	; 0
+ aac:	82 16       	cp	r8, r18
+ aae:	93 06       	cpc	r9, r19
+ ab0:	21 f4       	brne	.+8      	; 0xaba <main+0x632>
+					btbcResponseIndex++;
+ ab2:	8f 5f       	subi	r24, 0xFF	; 255
+ ab4:	80 93 b1 00 	sts	0x00B1, r24
+ ab8:	63 cd       	rjmp	.-1338   	; 0x580 <main+0xf8>
+				else	//Not an expected btb response...
+				{
+					DPRINT("... apparently wasn't a disconnect notice."
+							 " Need to Resend the buffered data\n");
+					btbcState = BTBCSTATE_CONNECTED;
+ aba:	00 93 d1 00 	sts	0x00D1, r16
+ abe:	60 cd       	rjmp	.-1344   	; 0x580 <main+0xf8>
+
+00000ac0 <vfprintf>:
+ ac0:	ab e0       	ldi	r26, 0x0B	; 11
+ ac2:	b0 e0       	ldi	r27, 0x00	; 0
+ ac4:	e5 e6       	ldi	r30, 0x65	; 101
+ ac6:	f5 e0       	ldi	r31, 0x05	; 5
+ ac8:	2d c1       	rjmp	.+602    	; 0xd24 <__prologue_saves__+0x8>
+ aca:	6c 01       	movw	r12, r24
+ acc:	4b 01       	movw	r8, r22
+ ace:	7a 01       	movw	r14, r20
+ ad0:	fc 01       	movw	r30, r24
+ ad2:	17 82       	std	Z+7, r1	; 0x07
+ ad4:	16 82       	std	Z+6, r1	; 0x06
+ ad6:	83 81       	ldd	r24, Z+3	; 0x03
+ ad8:	81 fd       	sbrc	r24, 1
+ ada:	08 c0       	rjmp	.+16     	; 0xaec <vfprintf+0x2c>
+ adc:	2f ef       	ldi	r18, 0xFF	; 255
+ ade:	3f ef       	ldi	r19, 0xFF	; 255
+ ae0:	fa c0       	rjmp	.+500    	; 0xcd6 <vfprintf+0x216>
+ ae2:	22 e0       	ldi	r18, 0x02	; 2
+ ae4:	30 e0       	ldi	r19, 0x00	; 0
+ ae6:	e2 0e       	add	r14, r18
+ ae8:	f3 1e       	adc	r15, r19
+ aea:	04 c0       	rjmp	.+8      	; 0xaf4 <vfprintf+0x34>
+ aec:	5e 01       	movw	r10, r28
+ aee:	08 94       	sec
+ af0:	a1 1c       	adc	r10, r1
+ af2:	b1 1c       	adc	r11, r1
+ af4:	f6 01       	movw	r30, r12
+ af6:	73 80       	ldd	r7, Z+3	; 0x03
+ af8:	f4 01       	movw	r30, r8
+ afa:	73 fc       	sbrc	r7, 3
+ afc:	85 91       	lpm	r24, Z+
+ afe:	73 fe       	sbrs	r7, 3
+ b00:	81 91       	ld	r24, Z+
+ b02:	4f 01       	movw	r8, r30
+ b04:	88 23       	and	r24, r24
+ b06:	09 f4       	brne	.+2      	; 0xb0a <vfprintf+0x4a>
+ b08:	e3 c0       	rjmp	.+454    	; 0xcd0 <vfprintf+0x210>
+ b0a:	85 32       	cpi	r24, 0x25	; 37
+ b0c:	51 f4       	brne	.+20     	; 0xb22 <vfprintf+0x62>
+ b0e:	73 fc       	sbrc	r7, 3
+ b10:	05 91       	lpm	r16, Z+
+ b12:	73 fe       	sbrs	r7, 3
+ b14:	01 91       	ld	r16, Z+
+ b16:	4f 01       	movw	r8, r30
+ b18:	05 32       	cpi	r16, 0x25	; 37
+ b1a:	11 f0       	breq	.+4      	; 0xb20 <vfprintf+0x60>
+ b1c:	10 e0       	ldi	r17, 0x00	; 0
+ b1e:	1a c0       	rjmp	.+52     	; 0xb54 <vfprintf+0x94>
+ b20:	85 e2       	ldi	r24, 0x25	; 37
+ b22:	90 e0       	ldi	r25, 0x00	; 0
+ b24:	29 c0       	rjmp	.+82     	; 0xb78 <vfprintf+0xb8>
+ b26:	00 23       	and	r16, r16
+ b28:	09 f4       	brne	.+2      	; 0xb2c <vfprintf+0x6c>
+ b2a:	d2 c0       	rjmp	.+420    	; 0xcd0 <vfprintf+0x210>
+ b2c:	86 ea       	ldi	r24, 0xA6	; 166
+ b2e:	90 e0       	ldi	r25, 0x00	; 0
+ b30:	60 2f       	mov	r22, r16
+ b32:	70 e0       	ldi	r23, 0x00	; 0
+ b34:	3e d1       	rcall	.+636    	; 0xdb2 <strchr_P>
+ b36:	00 97       	sbiw	r24, 0x00	; 0
+ b38:	39 f4       	brne	.+14     	; 0xb48 <vfprintf+0x88>
+ b3a:	03 32       	cpi	r16, 0x23	; 35
+ b3c:	11 f4       	brne	.+4      	; 0xb42 <vfprintf+0x82>
+ b3e:	10 61       	ori	r17, 0x10	; 16
+ b40:	03 c0       	rjmp	.+6      	; 0xb48 <vfprintf+0x88>
+ b42:	0c 36       	cpi	r16, 0x6C	; 108
+ b44:	61 f4       	brne	.+24     	; 0xb5e <vfprintf+0x9e>
+ b46:	10 68       	ori	r17, 0x80	; 128
+ b48:	f4 01       	movw	r30, r8
+ b4a:	73 fc       	sbrc	r7, 3
+ b4c:	05 91       	lpm	r16, Z+
+ b4e:	73 fe       	sbrs	r7, 3
+ b50:	01 91       	ld	r16, Z+
+ b52:	4f 01       	movw	r8, r30
+ b54:	17 ff       	sbrs	r17, 7
+ b56:	e7 cf       	rjmp	.-50     	; 0xb26 <vfprintf+0x66>
+ b58:	00 23       	and	r16, r16
+ b5a:	09 f4       	brne	.+2      	; 0xb5e <vfprintf+0x9e>
+ b5c:	b9 c0       	rjmp	.+370    	; 0xcd0 <vfprintf+0x210>
+ b5e:	8f e9       	ldi	r24, 0x9F	; 159
+ b60:	90 e0       	ldi	r25, 0x00	; 0
+ b62:	60 2f       	mov	r22, r16
+ b64:	70 e0       	ldi	r23, 0x00	; 0
+ b66:	25 d1       	rcall	.+586    	; 0xdb2 <strchr_P>
+ b68:	00 97       	sbiw	r24, 0x00	; 0
+ b6a:	49 f0       	breq	.+18     	; 0xb7e <vfprintf+0xbe>
+ b6c:	24 e0       	ldi	r18, 0x04	; 4
+ b6e:	30 e0       	ldi	r19, 0x00	; 0
+ b70:	e2 0e       	add	r14, r18
+ b72:	f3 1e       	adc	r15, r19
+ b74:	8f e3       	ldi	r24, 0x3F	; 63
+ b76:	90 e0       	ldi	r25, 0x00	; 0
+ b78:	b6 01       	movw	r22, r12
+ b7a:	26 d1       	rcall	.+588    	; 0xdc8 <fputc>
+ b7c:	bb cf       	rjmp	.-138    	; 0xaf4 <vfprintf+0x34>
+ b7e:	03 36       	cpi	r16, 0x63	; 99
+ b80:	29 f0       	breq	.+10     	; 0xb8c <vfprintf+0xcc>
+ b82:	03 37       	cpi	r16, 0x73	; 115
+ b84:	71 f0       	breq	.+28     	; 0xba2 <vfprintf+0xe2>
+ b86:	03 35       	cpi	r16, 0x53	; 83
+ b88:	e1 f4       	brne	.+56     	; 0xbc2 <vfprintf+0x102>
+ b8a:	0a c0       	rjmp	.+20     	; 0xba0 <vfprintf+0xe0>
+ b8c:	87 01       	movw	r16, r14
+ b8e:	0e 5f       	subi	r16, 0xFE	; 254
+ b90:	1f 4f       	sbci	r17, 0xFF	; 255
+ b92:	f7 01       	movw	r30, r14
+ b94:	80 81       	ld	r24, Z
+ b96:	91 81       	ldd	r25, Z+1	; 0x01
+ b98:	b6 01       	movw	r22, r12
+ b9a:	16 d1       	rcall	.+556    	; 0xdc8 <fputc>
+ b9c:	78 01       	movw	r14, r16
+ b9e:	aa cf       	rjmp	.-172    	; 0xaf4 <vfprintf+0x34>
+ ba0:	11 60       	ori	r17, 0x01	; 1
+ ba2:	f7 01       	movw	r30, r14
+ ba4:	60 80       	ld	r6, Z
+ ba6:	71 80       	ldd	r7, Z+1	; 0x01
+ ba8:	03 c0       	rjmp	.+6      	; 0xbb0 <vfprintf+0xf0>
+ baa:	90 e0       	ldi	r25, 0x00	; 0
+ bac:	b6 01       	movw	r22, r12
+ bae:	0c d1       	rcall	.+536    	; 0xdc8 <fputc>
+ bb0:	f3 01       	movw	r30, r6
+ bb2:	10 fd       	sbrc	r17, 0
+ bb4:	85 91       	lpm	r24, Z+
+ bb6:	10 ff       	sbrs	r17, 0
+ bb8:	81 91       	ld	r24, Z+
+ bba:	3f 01       	movw	r6, r30
+ bbc:	88 23       	and	r24, r24
+ bbe:	a9 f7       	brne	.-22     	; 0xbaa <vfprintf+0xea>
+ bc0:	90 cf       	rjmp	.-224    	; 0xae2 <vfprintf+0x22>
+ bc2:	04 36       	cpi	r16, 0x64	; 100
+ bc4:	11 f0       	breq	.+4      	; 0xbca <vfprintf+0x10a>
+ bc6:	09 36       	cpi	r16, 0x69	; 105
+ bc8:	29 f5       	brne	.+74     	; 0xc14 <vfprintf+0x154>
+ bca:	17 ff       	sbrs	r17, 7
+ bcc:	08 c0       	rjmp	.+16     	; 0xbde <vfprintf+0x11e>
+ bce:	f7 01       	movw	r30, r14
+ bd0:	60 81       	ld	r22, Z
+ bd2:	71 81       	ldd	r23, Z+1	; 0x01
+ bd4:	82 81       	ldd	r24, Z+2	; 0x02
+ bd6:	93 81       	ldd	r25, Z+3	; 0x03
+ bd8:	24 e0       	ldi	r18, 0x04	; 4
+ bda:	30 e0       	ldi	r19, 0x00	; 0
+ bdc:	0a c0       	rjmp	.+20     	; 0xbf2 <vfprintf+0x132>
+ bde:	f7 01       	movw	r30, r14
+ be0:	20 81       	ld	r18, Z
+ be2:	31 81       	ldd	r19, Z+1	; 0x01
+ be4:	b9 01       	movw	r22, r18
+ be6:	88 27       	eor	r24, r24
+ be8:	77 fd       	sbrc	r23, 7
+ bea:	80 95       	com	r24
+ bec:	98 2f       	mov	r25, r24
+ bee:	22 e0       	ldi	r18, 0x02	; 2
+ bf0:	30 e0       	ldi	r19, 0x00	; 0
+ bf2:	e2 0e       	add	r14, r18
+ bf4:	f3 1e       	adc	r15, r19
+ bf6:	1f 7e       	andi	r17, 0xEF	; 239
+ bf8:	97 ff       	sbrs	r25, 7
+ bfa:	08 c0       	rjmp	.+16     	; 0xc0c <vfprintf+0x14c>
+ bfc:	90 95       	com	r25
+ bfe:	80 95       	com	r24
+ c00:	70 95       	com	r23
+ c02:	61 95       	neg	r22
+ c04:	7f 4f       	sbci	r23, 0xFF	; 255
+ c06:	8f 4f       	sbci	r24, 0xFF	; 255
+ c08:	9f 4f       	sbci	r25, 0xFF	; 255
+ c0a:	10 64       	ori	r17, 0x40	; 64
+ c0c:	a5 01       	movw	r20, r10
+ c0e:	2a e0       	ldi	r18, 0x0A	; 10
+ c10:	30 e0       	ldi	r19, 0x00	; 0
+ c12:	33 c0       	rjmp	.+102    	; 0xc7a <vfprintf+0x1ba>
+ c14:	00 37       	cpi	r16, 0x70	; 112
+ c16:	a9 f0       	breq	.+42     	; 0xc42 <vfprintf+0x182>
+ c18:	01 37       	cpi	r16, 0x71	; 113
+ c1a:	30 f4       	brcc	.+12     	; 0xc28 <vfprintf+0x168>
+ c1c:	08 35       	cpi	r16, 0x58	; 88
+ c1e:	b1 f0       	breq	.+44     	; 0xc4c <vfprintf+0x18c>
+ c20:	0f 36       	cpi	r16, 0x6F	; 111
+ c22:	09 f0       	breq	.+2      	; 0xc26 <vfprintf+0x166>
+ c24:	55 c0       	rjmp	.+170    	; 0xcd0 <vfprintf+0x210>
+ c26:	06 c0       	rjmp	.+12     	; 0xc34 <vfprintf+0x174>
+ c28:	05 37       	cpi	r16, 0x75	; 117
+ c2a:	39 f0       	breq	.+14     	; 0xc3a <vfprintf+0x17a>
+ c2c:	08 37       	cpi	r16, 0x78	; 120
+ c2e:	09 f0       	breq	.+2      	; 0xc32 <vfprintf+0x172>
+ c30:	4f c0       	rjmp	.+158    	; 0xcd0 <vfprintf+0x210>
+ c32:	08 c0       	rjmp	.+16     	; 0xc44 <vfprintf+0x184>
+ c34:	28 e0       	ldi	r18, 0x08	; 8
+ c36:	30 e0       	ldi	r19, 0x00	; 0
+ c38:	0c c0       	rjmp	.+24     	; 0xc52 <vfprintf+0x192>
+ c3a:	1f 7e       	andi	r17, 0xEF	; 239
+ c3c:	2a e0       	ldi	r18, 0x0A	; 10
+ c3e:	30 e0       	ldi	r19, 0x00	; 0
+ c40:	08 c0       	rjmp	.+16     	; 0xc52 <vfprintf+0x192>
+ c42:	10 61       	ori	r17, 0x10	; 16
+ c44:	14 62       	ori	r17, 0x24	; 36
+ c46:	20 e1       	ldi	r18, 0x10	; 16
+ c48:	30 e0       	ldi	r19, 0x00	; 0
+ c4a:	03 c0       	rjmp	.+6      	; 0xc52 <vfprintf+0x192>
+ c4c:	14 60       	ori	r17, 0x04	; 4
+ c4e:	20 e1       	ldi	r18, 0x10	; 16
+ c50:	32 e0       	ldi	r19, 0x02	; 2
+ c52:	17 ff       	sbrs	r17, 7
+ c54:	08 c0       	rjmp	.+16     	; 0xc66 <vfprintf+0x1a6>
+ c56:	f7 01       	movw	r30, r14
+ c58:	60 81       	ld	r22, Z
+ c5a:	71 81       	ldd	r23, Z+1	; 0x01
+ c5c:	82 81       	ldd	r24, Z+2	; 0x02
+ c5e:	93 81       	ldd	r25, Z+3	; 0x03
+ c60:	44 e0       	ldi	r20, 0x04	; 4
+ c62:	50 e0       	ldi	r21, 0x00	; 0
+ c64:	07 c0       	rjmp	.+14     	; 0xc74 <vfprintf+0x1b4>
+ c66:	f7 01       	movw	r30, r14
+ c68:	60 81       	ld	r22, Z
+ c6a:	71 81       	ldd	r23, Z+1	; 0x01
+ c6c:	80 e0       	ldi	r24, 0x00	; 0
+ c6e:	90 e0       	ldi	r25, 0x00	; 0
+ c70:	42 e0       	ldi	r20, 0x02	; 2
+ c72:	50 e0       	ldi	r21, 0x00	; 0
+ c74:	e4 0e       	add	r14, r20
+ c76:	f5 1e       	adc	r15, r21
+ c78:	a5 01       	movw	r20, r10
+ c7a:	d2 d0       	rcall	.+420    	; 0xe20 <__ultoa_invert>
+ c7c:	08 2f       	mov	r16, r24
+ c7e:	0a 19       	sub	r16, r10
+ c80:	61 2e       	mov	r6, r17
+ c82:	77 24       	eor	r7, r7
+ c84:	16 ff       	sbrs	r17, 6
+ c86:	04 c0       	rjmp	.+8      	; 0xc90 <vfprintf+0x1d0>
+ c88:	8d e2       	ldi	r24, 0x2D	; 45
+ c8a:	90 e0       	ldi	r25, 0x00	; 0
+ c8c:	b6 01       	movw	r22, r12
+ c8e:	9c d0       	rcall	.+312    	; 0xdc8 <fputc>
+ c90:	64 fe       	sbrs	r6, 4
+ c92:	13 c0       	rjmp	.+38     	; 0xcba <vfprintf+0x1fa>
+ c94:	fe 01       	movw	r30, r28
+ c96:	e0 0f       	add	r30, r16
+ c98:	f1 1d       	adc	r31, r1
+ c9a:	80 81       	ld	r24, Z
+ c9c:	80 33       	cpi	r24, 0x30	; 48
+ c9e:	69 f0       	breq	.+26     	; 0xcba <vfprintf+0x1fa>
+ ca0:	80 e3       	ldi	r24, 0x30	; 48
+ ca2:	90 e0       	ldi	r25, 0x00	; 0
+ ca4:	b6 01       	movw	r22, r12
+ ca6:	90 d0       	rcall	.+288    	; 0xdc8 <fputc>
+ ca8:	62 fe       	sbrs	r6, 2
+ caa:	07 c0       	rjmp	.+14     	; 0xcba <vfprintf+0x1fa>
+ cac:	c3 01       	movw	r24, r6
+ cae:	80 72       	andi	r24, 0x20	; 32
+ cb0:	90 70       	andi	r25, 0x00	; 0
+ cb2:	88 5a       	subi	r24, 0xA8	; 168
+ cb4:	9f 4f       	sbci	r25, 0xFF	; 255
+ cb6:	b6 01       	movw	r22, r12
+ cb8:	87 d0       	rcall	.+270    	; 0xdc8 <fputc>
+ cba:	01 50       	subi	r16, 0x01	; 1
+ cbc:	f5 01       	movw	r30, r10
+ cbe:	e0 0f       	add	r30, r16
+ cc0:	f1 1d       	adc	r31, r1
+ cc2:	80 81       	ld	r24, Z
+ cc4:	90 e0       	ldi	r25, 0x00	; 0
+ cc6:	b6 01       	movw	r22, r12
+ cc8:	7f d0       	rcall	.+254    	; 0xdc8 <fputc>
+ cca:	00 23       	and	r16, r16
+ ccc:	b1 f7       	brne	.-20     	; 0xcba <vfprintf+0x1fa>
+ cce:	12 cf       	rjmp	.-476    	; 0xaf4 <vfprintf+0x34>
+ cd0:	f6 01       	movw	r30, r12
+ cd2:	26 81       	ldd	r18, Z+6	; 0x06
+ cd4:	37 81       	ldd	r19, Z+7	; 0x07
+ cd6:	c9 01       	movw	r24, r18
+ cd8:	2b 96       	adiw	r28, 0x0b	; 11
+ cda:	ee e0       	ldi	r30, 0x0E	; 14
+ cdc:	3f c0       	rjmp	.+126    	; 0xd5c <__epilogue_restores__+0x8>
+
+00000cde <__udivmodqi4>:
+ cde:	99 1b       	sub	r25, r25
+ ce0:	79 e0       	ldi	r23, 0x09	; 9
+ ce2:	04 c0       	rjmp	.+8      	; 0xcec <__udivmodqi4_ep>
+
+00000ce4 <__udivmodqi4_loop>:
+ ce4:	99 1f       	adc	r25, r25
+ ce6:	96 17       	cp	r25, r22
+ ce8:	08 f0       	brcs	.+2      	; 0xcec <__udivmodqi4_ep>
+ cea:	96 1b       	sub	r25, r22
+
+00000cec <__udivmodqi4_ep>:
+ cec:	88 1f       	adc	r24, r24
+ cee:	7a 95       	dec	r23
+ cf0:	c9 f7       	brne	.-14     	; 0xce4 <__udivmodqi4_loop>
+ cf2:	80 95       	com	r24
+ cf4:	08 95       	ret
+
+00000cf6 <__divmodhi4>:
+ cf6:	97 fb       	bst	r25, 7
+ cf8:	09 2e       	mov	r0, r25
+ cfa:	07 26       	eor	r0, r23
+ cfc:	0a d0       	rcall	.+20     	; 0xd12 <__divmodhi4_neg1>
+ cfe:	77 fd       	sbrc	r23, 7
+ d00:	04 d0       	rcall	.+8      	; 0xd0a <__divmodhi4_neg2>
+ d02:	43 d0       	rcall	.+134    	; 0xd8a <__udivmodhi4>
+ d04:	06 d0       	rcall	.+12     	; 0xd12 <__divmodhi4_neg1>
+ d06:	00 20       	and	r0, r0
+ d08:	1a f4       	brpl	.+6      	; 0xd10 <__divmodhi4_exit>
+
+00000d0a <__divmodhi4_neg2>:
+ d0a:	70 95       	com	r23
+ d0c:	61 95       	neg	r22
+ d0e:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000d10 <__divmodhi4_exit>:
+ d10:	08 95       	ret
+
+00000d12 <__divmodhi4_neg1>:
+ d12:	f6 f7       	brtc	.-4      	; 0xd10 <__divmodhi4_exit>
+ d14:	90 95       	com	r25
+ d16:	81 95       	neg	r24
+ d18:	9f 4f       	sbci	r25, 0xFF	; 255
+ d1a:	08 95       	ret
+
+00000d1c <__prologue_saves__>:
+ d1c:	2f 92       	push	r2
+ d1e:	3f 92       	push	r3
+ d20:	4f 92       	push	r4
+ d22:	5f 92       	push	r5
+ d24:	6f 92       	push	r6
+ d26:	7f 92       	push	r7
+ d28:	8f 92       	push	r8
+ d2a:	9f 92       	push	r9
+ d2c:	af 92       	push	r10
+ d2e:	bf 92       	push	r11
+ d30:	cf 92       	push	r12
+ d32:	df 92       	push	r13
+ d34:	ef 92       	push	r14
+ d36:	ff 92       	push	r15
+ d38:	0f 93       	push	r16
+ d3a:	1f 93       	push	r17
+ d3c:	cf 93       	push	r28
+ d3e:	df 93       	push	r29
+ d40:	cd b7       	in	r28, 0x3d	; 61
+ d42:	de b7       	in	r29, 0x3e	; 62
+ d44:	ca 1b       	sub	r28, r26
+ d46:	db 0b       	sbc	r29, r27
+ d48:	0f b6       	in	r0, 0x3f	; 63
+ d4a:	f8 94       	cli
+ d4c:	de bf       	out	0x3e, r29	; 62
+ d4e:	0f be       	out	0x3f, r0	; 63
+ d50:	cd bf       	out	0x3d, r28	; 61
+ d52:	09 94       	ijmp
+
+00000d54 <__epilogue_restores__>:
+ d54:	2a 88       	ldd	r2, Y+18	; 0x12
+ d56:	39 88       	ldd	r3, Y+17	; 0x11
+ d58:	48 88       	ldd	r4, Y+16	; 0x10
+ d5a:	5f 84       	ldd	r5, Y+15	; 0x0f
+ d5c:	6e 84       	ldd	r6, Y+14	; 0x0e
+ d5e:	7d 84       	ldd	r7, Y+13	; 0x0d
+ d60:	8c 84       	ldd	r8, Y+12	; 0x0c
+ d62:	9b 84       	ldd	r9, Y+11	; 0x0b
+ d64:	aa 84       	ldd	r10, Y+10	; 0x0a
+ d66:	b9 84       	ldd	r11, Y+9	; 0x09
+ d68:	c8 84       	ldd	r12, Y+8	; 0x08
+ d6a:	df 80       	ldd	r13, Y+7	; 0x07
+ d6c:	ee 80       	ldd	r14, Y+6	; 0x06
+ d6e:	fd 80       	ldd	r15, Y+5	; 0x05
+ d70:	0c 81       	ldd	r16, Y+4	; 0x04
+ d72:	1b 81       	ldd	r17, Y+3	; 0x03
+ d74:	aa 81       	ldd	r26, Y+2	; 0x02
+ d76:	b9 81       	ldd	r27, Y+1	; 0x01
+ d78:	ce 0f       	add	r28, r30
+ d7a:	d1 1d       	adc	r29, r1
+ d7c:	0f b6       	in	r0, 0x3f	; 63
+ d7e:	f8 94       	cli
+ d80:	de bf       	out	0x3e, r29	; 62
+ d82:	0f be       	out	0x3f, r0	; 63
+ d84:	cd bf       	out	0x3d, r28	; 61
+ d86:	ed 01       	movw	r28, r26
+ d88:	08 95       	ret
+
+00000d8a <__udivmodhi4>:
+ d8a:	aa 1b       	sub	r26, r26
+ d8c:	bb 1b       	sub	r27, r27
+ d8e:	51 e1       	ldi	r21, 0x11	; 17
+ d90:	07 c0       	rjmp	.+14     	; 0xda0 <__udivmodhi4_ep>
+
+00000d92 <__udivmodhi4_loop>:
+ d92:	aa 1f       	adc	r26, r26
+ d94:	bb 1f       	adc	r27, r27
+ d96:	a6 17       	cp	r26, r22
+ d98:	b7 07       	cpc	r27, r23
+ d9a:	10 f0       	brcs	.+4      	; 0xda0 <__udivmodhi4_ep>
+ d9c:	a6 1b       	sub	r26, r22
+ d9e:	b7 0b       	sbc	r27, r23
+
+00000da0 <__udivmodhi4_ep>:
+ da0:	88 1f       	adc	r24, r24
+ da2:	99 1f       	adc	r25, r25
+ da4:	5a 95       	dec	r21
+ da6:	a9 f7       	brne	.-22     	; 0xd92 <__udivmodhi4_loop>
+ da8:	80 95       	com	r24
+ daa:	90 95       	com	r25
+ dac:	bc 01       	movw	r22, r24
+ dae:	cd 01       	movw	r24, r26
+ db0:	08 95       	ret
+
+00000db2 <strchr_P>:
+ db2:	fc 01       	movw	r30, r24
+ db4:	05 90       	lpm	r0, Z+
+ db6:	06 16       	cp	r0, r22
+ db8:	21 f0       	breq	.+8      	; 0xdc2 <strchr_P+0x10>
+ dba:	00 20       	and	r0, r0
+ dbc:	d9 f7       	brne	.-10     	; 0xdb4 <strchr_P+0x2>
+ dbe:	c0 01       	movw	r24, r0
+ dc0:	08 95       	ret
+ dc2:	31 97       	sbiw	r30, 0x01	; 1
+ dc4:	cf 01       	movw	r24, r30
+ dc6:	08 95       	ret
+
+00000dc8 <fputc>:
+ dc8:	0f 93       	push	r16
+ dca:	1f 93       	push	r17
+ dcc:	cf 93       	push	r28
+ dce:	df 93       	push	r29
+ dd0:	8c 01       	movw	r16, r24
+ dd2:	eb 01       	movw	r28, r22
+ dd4:	8b 81       	ldd	r24, Y+3	; 0x03
+ dd6:	81 ff       	sbrs	r24, 1
+ dd8:	1b c0       	rjmp	.+54     	; 0xe10 <fputc+0x48>
+ dda:	82 ff       	sbrs	r24, 2
+ ddc:	0d c0       	rjmp	.+26     	; 0xdf8 <fputc+0x30>
+ dde:	2e 81       	ldd	r18, Y+6	; 0x06
+ de0:	3f 81       	ldd	r19, Y+7	; 0x07
+ de2:	8c 81       	ldd	r24, Y+4	; 0x04
+ de4:	9d 81       	ldd	r25, Y+5	; 0x05
+ de6:	28 17       	cp	r18, r24
+ de8:	39 07       	cpc	r19, r25
+ dea:	64 f4       	brge	.+24     	; 0xe04 <fputc+0x3c>
+ dec:	e8 81       	ld	r30, Y
+ dee:	f9 81       	ldd	r31, Y+1	; 0x01
+ df0:	01 93       	st	Z+, r16
+ df2:	f9 83       	std	Y+1, r31	; 0x01
+ df4:	e8 83       	st	Y, r30
+ df6:	06 c0       	rjmp	.+12     	; 0xe04 <fputc+0x3c>
+ df8:	e8 85       	ldd	r30, Y+8	; 0x08
+ dfa:	f9 85       	ldd	r31, Y+9	; 0x09
+ dfc:	80 2f       	mov	r24, r16
+ dfe:	09 95       	icall
+ e00:	00 97       	sbiw	r24, 0x00	; 0
+ e02:	31 f4       	brne	.+12     	; 0xe10 <fputc+0x48>
+ e04:	8e 81       	ldd	r24, Y+6	; 0x06
+ e06:	9f 81       	ldd	r25, Y+7	; 0x07
+ e08:	01 96       	adiw	r24, 0x01	; 1
+ e0a:	9f 83       	std	Y+7, r25	; 0x07
+ e0c:	8e 83       	std	Y+6, r24	; 0x06
+ e0e:	02 c0       	rjmp	.+4      	; 0xe14 <fputc+0x4c>
+ e10:	0f ef       	ldi	r16, 0xFF	; 255
+ e12:	1f ef       	ldi	r17, 0xFF	; 255
+ e14:	c8 01       	movw	r24, r16
+ e16:	df 91       	pop	r29
+ e18:	cf 91       	pop	r28
+ e1a:	1f 91       	pop	r17
+ e1c:	0f 91       	pop	r16
+ e1e:	08 95       	ret
+
+00000e20 <__ultoa_invert>:
+ e20:	fa 01       	movw	r30, r20
+ e22:	aa 27       	eor	r26, r26
+ e24:	28 30       	cpi	r18, 0x08	; 8
+ e26:	61 f1       	breq	.+88     	; 0xe80 <__ultoa_invert+0x60>
+ e28:	20 31       	cpi	r18, 0x10	; 16
+ e2a:	91 f1       	breq	.+100    	; 0xe90 <__ultoa_invert+0x70>
+ e2c:	e8 94       	clt
+ e2e:	6f 93       	push	r22
+ e30:	6e 7f       	andi	r22, 0xFE	; 254
+ e32:	6e 5f       	subi	r22, 0xFE	; 254
+ e34:	7f 4f       	sbci	r23, 0xFF	; 255
+ e36:	8f 4f       	sbci	r24, 0xFF	; 255
+ e38:	9f 4f       	sbci	r25, 0xFF	; 255
+ e3a:	af 4f       	sbci	r26, 0xFF	; 255
+ e3c:	b1 e0       	ldi	r27, 0x01	; 1
+ e3e:	40 d0       	rcall	.+128    	; 0xec0 <__ultoa_invert+0xa0>
+ e40:	b4 e0       	ldi	r27, 0x04	; 4
+ e42:	3e d0       	rcall	.+124    	; 0xec0 <__ultoa_invert+0xa0>
+ e44:	67 0f       	add	r22, r23
+ e46:	78 1f       	adc	r23, r24
+ e48:	89 1f       	adc	r24, r25
+ e4a:	9a 1f       	adc	r25, r26
+ e4c:	a1 1d       	adc	r26, r1
+ e4e:	68 0f       	add	r22, r24
+ e50:	79 1f       	adc	r23, r25
+ e52:	8a 1f       	adc	r24, r26
+ e54:	91 1d       	adc	r25, r1
+ e56:	a1 1d       	adc	r26, r1
+ e58:	6a 0f       	add	r22, r26
+ e5a:	71 1d       	adc	r23, r1
+ e5c:	81 1d       	adc	r24, r1
+ e5e:	91 1d       	adc	r25, r1
+ e60:	a1 1d       	adc	r26, r1
+ e62:	22 d0       	rcall	.+68     	; 0xea8 <__ultoa_invert+0x88>
+ e64:	09 f4       	brne	.+2      	; 0xe68 <__ultoa_invert+0x48>
+ e66:	68 94       	set
+ e68:	3f 91       	pop	r19
+ e6a:	06 2e       	mov	r0, r22
+ e6c:	00 0c       	add	r0, r0
+ e6e:	30 19       	sub	r19, r0
+ e70:	00 0c       	add	r0, r0
+ e72:	00 0c       	add	r0, r0
+ e74:	30 19       	sub	r19, r0
+ e76:	30 5d       	subi	r19, 0xD0	; 208
+ e78:	31 93       	st	Z+, r19
+ e7a:	ce f6       	brtc	.-78     	; 0xe2e <__ultoa_invert+0xe>
+ e7c:	cf 01       	movw	r24, r30
+ e7e:	08 95       	ret
+ e80:	46 2f       	mov	r20, r22
+ e82:	47 70       	andi	r20, 0x07	; 7
+ e84:	40 5d       	subi	r20, 0xD0	; 208
+ e86:	41 93       	st	Z+, r20
+ e88:	b3 e0       	ldi	r27, 0x03	; 3
+ e8a:	0f d0       	rcall	.+30     	; 0xeaa <__ultoa_invert+0x8a>
+ e8c:	c9 f7       	brne	.-14     	; 0xe80 <__ultoa_invert+0x60>
+ e8e:	f6 cf       	rjmp	.-20     	; 0xe7c <__ultoa_invert+0x5c>
+ e90:	46 2f       	mov	r20, r22
+ e92:	4f 70       	andi	r20, 0x0F	; 15
+ e94:	40 5d       	subi	r20, 0xD0	; 208
+ e96:	4a 33       	cpi	r20, 0x3A	; 58
+ e98:	18 f0       	brcs	.+6      	; 0xea0 <__ultoa_invert+0x80>
+ e9a:	49 5d       	subi	r20, 0xD9	; 217
+ e9c:	31 fd       	sbrc	r19, 1
+ e9e:	40 52       	subi	r20, 0x20	; 32
+ ea0:	41 93       	st	Z+, r20
+ ea2:	02 d0       	rcall	.+4      	; 0xea8 <__ultoa_invert+0x88>
+ ea4:	a9 f7       	brne	.-22     	; 0xe90 <__ultoa_invert+0x70>
+ ea6:	ea cf       	rjmp	.-44     	; 0xe7c <__ultoa_invert+0x5c>
+ ea8:	b4 e0       	ldi	r27, 0x04	; 4
+ eaa:	a6 95       	lsr	r26
+ eac:	97 95       	ror	r25
+ eae:	87 95       	ror	r24
+ eb0:	77 95       	ror	r23
+ eb2:	67 95       	ror	r22
+ eb4:	ba 95       	dec	r27
+ eb6:	c9 f7       	brne	.-14     	; 0xeaa <__ultoa_invert+0x8a>
+ eb8:	00 97       	sbiw	r24, 0x00	; 0
+ eba:	61 05       	cpc	r22, r1
+ ebc:	71 05       	cpc	r23, r1
+ ebe:	08 95       	ret
+ ec0:	9b 01       	movw	r18, r22
+ ec2:	ac 01       	movw	r20, r24
+ ec4:	0a 2e       	mov	r0, r26
+ ec6:	06 94       	lsr	r0
+ ec8:	57 95       	ror	r21
+ eca:	47 95       	ror	r20
+ ecc:	37 95       	ror	r19
+ ece:	27 95       	ror	r18
+ ed0:	ba 95       	dec	r27
+ ed2:	c9 f7       	brne	.-14     	; 0xec6 <__ultoa_invert+0xa6>
+ ed4:	62 0f       	add	r22, r18
+ ed6:	73 1f       	adc	r23, r19
+ ed8:	84 1f       	adc	r24, r20
+ eda:	95 1f       	adc	r25, r21
+ edc:	a0 1d       	adc	r26, r0
+ ede:	08 95       	ret
+
+00000ee0 <_exit>:
+ ee0:	f8 94       	cli
+
+00000ee2 <__stop_program>:
+ ee2:	ff cf       	rjmp	.-2      	; 0xee2 <__stop_program>

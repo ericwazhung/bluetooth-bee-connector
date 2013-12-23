@@ -1,0 +1,615 @@
+Archive member included because of file (symbol)
+
+/usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+                              (vfprintf)
+/usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodqi4.o)
+                              _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o (__udivmodqi4)
+/usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_divmodhi4.o)
+                              _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o (__divmodhi4)
+/usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_prologue.o)
+                              /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o) (__prologue_saves__)
+/usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_epilogue.o)
+                              /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o) (__epilogue_restores__)
+/usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_exit.o)
+                              /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o (exit)
+/usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_copy_data.o)
+                              _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o (__do_copy_data)
+/usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_clear_bss.o)
+                              _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o (__do_clear_bss)
+/usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodhi4.o)
+                              /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_divmodhi4.o) (__udivmodhi4)
+/usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(strchr_P.o)
+                              /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o) (strchr_P)
+/usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(fputc.o)
+                              /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o) (fputc)
+/usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(ultoa_invert.o)
+                              /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o) (__ultoa_invert)
+
+Allocating common symbols
+Common symbol       size              file
+
+rxData              0x2               _BUILD/main.o
+puat_txData         0x2               _BUILD/main.o
+puat_lastTime       0x2               _BUILD/main.o
+puat_bitTcnt        0x8               _BUILD/main.o
+puat_shiftingByte   0x2               _BUILD/main.o
+rxDataWaiting       0x2               _BUILD/main.o
+puat_txState        0x2               _BUILD/main.o
+btbcState           0x1               _BUILD/main.o
+btbDeviceBuffer     0x14              _BUILD/main.o
+btbDeviceBuff       0x5               _BUILD/main.o
+btbCirBuff          0x5               _BUILD/main.o
+puar_bitTcnt        0x8               _BUILD/main.o
+rxState             0x2               _BUILD/main.o
+puat_txDataWaiting  0x2               _BUILD/main.o
+btbBuffer           0x14              _BUILD/main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+LOAD _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+LOAD _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+LOAD _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+LOAD _BUILD/main.o
+LOAD /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a
+LOAD /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a
+LOAD /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a
+LOAD /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xee4
+ *(.vectors)
+ .vectors       0x00000000       0x1e /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x0000001e       0x1a _BUILD/main.o
+ *(.progmem*)
+ .progmem.data  0x00000038       0x67 _BUILD/main.o
+                0x00000038                header0
+                0x00000071                header1
+                0x00000090                headerOpt
+ .progmem.data  0x0000009f       0x17 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+                0x000000b6                . = ALIGN (0x2)
+                0x000000b6                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000b6        0x0 linker stubs
+ *(.trampolines*)
+                0x000000b6                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000b6                __ctors_start = .
+ *(.ctors)
+                0x000000b6                __ctors_end = .
+                0x000000b6                __dtors_start = .
+ *(.dtors)
+                0x000000b6                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000b6        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+                0x000000b6                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000b6        0xc /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000c2       0x16 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_copy_data.o)
+                0x000000c2                __do_copy_data
+ .init4         0x000000d8       0x10 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_clear_bss.o)
+                0x000000d8                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000e8        0x4 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+ *(.init9)
+ *(.text)
+ .text          0x000000ec        0x2 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+                0x000000ec                __vector_10
+                0x000000ec                __vector_12
+                0x000000ec                __bad_interrupt
+                0x000000ec                __vector_6
+                0x000000ec                __vector_3
+                0x000000ec                __vector_11
+                0x000000ec                __vector_13
+                0x000000ec                __vector_7
+                0x000000ec                __vector_5
+                0x000000ec                __vector_4
+                0x000000ec                __vector_9
+                0x000000ec                __vector_2
+                0x000000ec                __vector_8
+                0x000000ec                __vector_14
+                0x000000ec                __vector_1
+ .text          0x000000ee      0x10e _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+                0x000000ee                tcnter_init
+                0x00000106                tcnter_update
+                0x00000154                tcnter_get
+                0x00000166                tcnter_isItTime8
+                0x00000184                tcnter_isItTime
+ .text          0x000001fc      0x20a _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+                0x000001fc                timer_setOutputModes
+                0x0000028e                timer_selectDivisor
+                0x000002e0                timer_setWGM
+                0x00000316                timer_init
+                0x0000033a                timer_compareMatchIntSetup
+                0x000003da                timer_overflowIntEnable
+ .text          0x00000406       0x82 _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+                0x00000406                cirBuff_init
+                0x00000416                cirBuff_addByte
+                0x00000450                cirBuff_getByte
+                0x00000480                cirBuff_empty
+ .text          0x00000488      0x638 _BUILD/main.o
+                0x00000488                main
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodqi4.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_divmodhi4.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_prologue.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_epilogue.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_exit.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_copy_data.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_clear_bss.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodhi4.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(strchr_P.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(fputc.o)
+ .text          0x00000ac0        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(ultoa_invert.o)
+                0x00000ac0                . = ALIGN (0x2)
+ *(.text.*)
+ .text.avr-libc
+                0x00000ac0      0x21e /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+                0x00000ac0                vfprintf
+ .text.libgcc   0x00000cde       0x18 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodqi4.o)
+                0x00000cde                __udivmodqi4
+ .text.libgcc   0x00000cf6       0x26 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_divmodhi4.o)
+                0x00000cf6                __divmodhi4
+                0x00000cf6                _div
+ .text.libgcc   0x00000d1c       0x38 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_prologue.o)
+                0x00000d1c                __prologue_saves__
+ .text.libgcc   0x00000d54       0x36 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_epilogue.o)
+                0x00000d54                __epilogue_restores__
+ .text.libgcc   0x00000d8a        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_exit.o)
+ .text.libgcc   0x00000d8a        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000d8a        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000d8a       0x28 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodhi4.o)
+                0x00000d8a                __udivmodhi4
+ .text.avr-libc
+                0x00000db2       0x16 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(strchr_P.o)
+                0x00000db2                strchr_P
+ .text.avr-libc
+                0x00000dc8       0x58 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(fputc.o)
+                0x00000dc8                fputc
+ .text.avr-libc
+                0x00000e20       0xc0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(ultoa_invert.o)
+                0x00000e20                __ultoa_invert
+                0x00000ee0                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000ee0        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_exit.o)
+                0x00000ee0                exit
+                0x00000ee0                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000ee0        0x4 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000ee4                _etext = .
+
+.data           0x00800060       0x4c load address 0x00000ee4
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+ .data          0x00800060        0x0 _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+ .data          0x00800060        0x0 _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+ .data          0x00800060        0x0 _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+ .data          0x00800060       0x4b _BUILD/main.o
+                0x00800060                btbcCmd_Reset
+                0x0080006e                btbcCmd_Inquire
+                0x0080007b                btbcCommand
+                0x0080007d                btbcErrorResponse
+                0x00800083                btbcResponse_BTSTATE1
+                0x0080008f                btbcResponse_BTSTATE2
+                0x0080009c                btbcResponse_BTSTATE4
+                0x008000a9                btbcResponse
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodqi4.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_divmodhi4.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_prologue.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_epilogue.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_exit.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_copy_data.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_clear_bss.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodhi4.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(strchr_P.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(fputc.o)
+ .data          0x008000ab        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(ultoa_invert.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008000ac                . = ALIGN (0x2)
+ *fill*         0x008000ab        0x1 00
+                0x008000ac                _edata = .
+                0x008000ac                PROVIDE (__data_end, .)
+
+.bss            0x008000ac       0x64
+                0x008000ac                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008000ac        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+ .bss           0x008000ac        0x5 _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+                0x008000ac                tcnter_myTcnter
+                0x008000b0                tcnter_lastTcnt
+ .bss           0x008000b1        0x0 _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+ .bss           0x008000b1        0x0 _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+ .bss           0x008000b1        0xc _BUILD/main.o
+                0x008000b1                btbcResponseIndex
+                0x008000b2                btbcErrorResponseIndex
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodqi4.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_divmodhi4.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_prologue.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_epilogue.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_exit.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_copy_data.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_clear_bss.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodhi4.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(strchr_P.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(fputc.o)
+ .bss           0x008000bd        0x0 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(ultoa_invert.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008000bd       0x53 _BUILD/main.o
+                0x008000bd                rxData
+                0x008000bf                puat_txData
+                0x008000c1                puat_lastTime
+                0x008000c3                puat_bitTcnt
+                0x008000cb                puat_shiftingByte
+                0x008000cd                rxDataWaiting
+                0x008000cf                puat_txState
+                0x008000d1                btbcState
+                0x008000d2                btbDeviceBuffer
+                0x008000e6                btbDeviceBuff
+                0x008000eb                btbCirBuff
+                0x008000f0                puar_bitTcnt
+                0x008000f8                rxState
+                0x008000fa                puat_txDataWaiting
+                0x008000fc                btbBuffer
+                0x00800110                PROVIDE (__bss_end, .)
+                0x00000ee4                __data_load_start = LOADADDR (.data)
+                0x00000f30                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800110        0x0
+                0x00800110                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800110                PROVIDE (__noinit_end, .)
+                0x00800110                _end = .
+                0x00800110                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.stab           0x00000000     0x35ac
+ *(.stab)
+ .stab          0x00000000      0x6cc /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+ .stab          0x000006cc      0x5d0 _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+                                0x5dc (size before relaxing)
+ .stab          0x00000c9c      0x6b4 _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+                                0x870 (size before relaxing)
+ .stab          0x00001350      0x3b4 _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+                                0x540 (size before relaxing)
+ .stab          0x00001704      0xf84 _BUILD/main.o
+                               0x1134 (size before relaxing)
+ .stab          0x00002688      0x81c /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+                                0x864 (size before relaxing)
+ .stab          0x00002ea4       0x9c /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(strchr_P.o)
+                                 0xa8 (size before relaxing)
+ .stab          0x00002f40      0x1d4 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(fputc.o)
+                                0x3b4 (size before relaxing)
+ .stab          0x00003114      0x498 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(ultoa_invert.o)
+                                0x4a4 (size before relaxing)
+
+.stabstr        0x00000000     0x1d57
+ *(.stabstr)
+ .stabstr       0x00000000     0x1d57 /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(_BUILD/tabletBluetoother.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+__bad_interrupt                                   /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__bss_end                                         /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_copy_data.o)
+__data_start                                      /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_copy_data.o)
+__divmodhi4                                       /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_divmodhi4.o)
+                                                  _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+__do_clear_bss                                    /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_clear_bss.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(fputc.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+                                                  _BUILD/main.o
+                                                  _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+                                                  _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+                                                  _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+__do_copy_data                                    /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_copy_data.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(fputc.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+                                                  _BUILD/main.o
+                                                  _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+                                                  _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+                                                  _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+__epilogue_restores__                             /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_epilogue.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+__heap_end                                        /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__init                                            /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__prologue_saves__                                /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_prologue.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+__stack                                           /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__udivmodhi4                                      /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodhi4.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_divmodhi4.o)
+__udivmodqi4                                      /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_udivmodqi4.o)
+                                                  _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+__ultoa_invert                                    /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(ultoa_invert.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+__vector_1                                        /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_10                                       /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_11                                       /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_12                                       /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_13                                       /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_14                                       /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_2                                        /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_3                                        /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_4                                        /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_5                                        /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_6                                        /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_7                                        /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_8                                        /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_9                                        /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vector_default                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+__vectors                                         /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+_div                                              /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_divmodhi4.o)
+_exit                                             /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_exit.o)
+btbBuffer                                         _BUILD/main.o
+btbCirBuff                                        _BUILD/main.o
+btbDeviceBuff                                     _BUILD/main.o
+btbDeviceBuffer                                   _BUILD/main.o
+btbcCmd_Inquire                                   _BUILD/main.o
+btbcCmd_Reset                                     _BUILD/main.o
+btbcCommand                                       _BUILD/main.o
+btbcErrorResponse                                 _BUILD/main.o
+btbcErrorResponseIndex                            _BUILD/main.o
+btbcResponse                                      _BUILD/main.o
+btbcResponseIndex                                 _BUILD/main.o
+btbcResponse_BTSTATE1                             _BUILD/main.o
+btbcResponse_BTSTATE2                             _BUILD/main.o
+btbcResponse_BTSTATE4                             _BUILD/main.o
+btbcState                                         _BUILD/main.o
+cirBuff_addByte                                   _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+                                                  _BUILD/main.o
+cirBuff_empty                                     _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+                                                  _BUILD/main.o
+cirBuff_getByte                                   _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+                                                  _BUILD/main.o
+cirBuff_init                                      _BUILD/_commonCode_localized/cirBuff/0.99/cirBuff.o
+                                                  _BUILD/main.o
+exit                                              /usr/local/lib/gcc/avr/4.4.5/avr25/libgcc.a(_exit.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+fputc                                             /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(fputc.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+header0                                           _BUILD/main.o
+header1                                           _BUILD/main.o
+headerOpt                                         _BUILD/main.o
+main                                              _BUILD/main.o
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/crttn45.o
+puar_bitTcnt                                      _BUILD/main.o
+puat_bitTcnt                                      _BUILD/main.o
+puat_lastTime                                     _BUILD/main.o
+puat_shiftingByte                                 _BUILD/main.o
+puat_txData                                       _BUILD/main.o
+puat_txDataWaiting                                _BUILD/main.o
+puat_txState                                      _BUILD/main.o
+rxData                                            _BUILD/main.o
+rxDataWaiting                                     _BUILD/main.o
+rxState                                           _BUILD/main.o
+strchr_P                                          /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libc.a(strchr_P.o)
+                                                  /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)
+tcnter_get                                        _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+                                                  _BUILD/main.o
+tcnter_init                                       _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+                                                  _BUILD/main.o
+tcnter_isItTime                                   _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+tcnter_isItTime8                                  _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+                                                  _BUILD/main.o
+tcnter_lastTcnt                                   _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+tcnter_myTcnter                                   _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+tcnter_update                                     _BUILD/_commonCode_localized/tcnter/0.20/tcnter.o
+                                                  _BUILD/main.o
+timer_compareMatchIntSetup                        _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+timer_init                                        _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+                                                  _BUILD/main.o
+timer_overflowIntEnable                           _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+timer_selectDivisor                               _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+timer_setOutputModes                              _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+timer_setWGM                                      _BUILD/_commonCode_localized/timerCommon/1.21/timerCommon.o
+vfprintf                                          /usr/local/lib/gcc/avr/4.4.5/../../../../avr/lib/avr25/libprintf_min.a(vfprintf_min.o)

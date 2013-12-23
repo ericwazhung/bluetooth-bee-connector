@@ -1,0 +1,520 @@
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s 			page 1
+
+
+   1               		.file	"tcnter.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.global __do_copy_data
+   8               		.global __do_clear_bss
+   9               		.stabs	"/Users/meh/_avrProjects/tabletBluetoother/8-gittifying/",100,0,2,.Ltext0
+  10               		.stabs	"_commonCode_localized/tcnter/0.20/tcnter.c",100,0,2,.Ltext0
+  11               		.text
+  12               	.Ltext0:
+  13               		.stabs	"gcc2_compiled.",60,0,0,0
+  14               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,1,0
+  15               		.stabs	"char:t(0,2)=@s8;r(0,2);0;255;",128,0,1,0
+  16               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,1,0
+  17               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,1,0
+  18               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,1,0
+  19               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,1,
+  20               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,1,0
+  21               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,1,0
+  22               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,1,0
+  23               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,1,0
+  24               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,1,0
+  25               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,1,0
+  26               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,1,0
+  27               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,1,0
+  28               		.stabs	"void:t(0,15)=(0,15)",128,0,1,0
+  29               		.stabs	"./_commonCode_localized/tcnter/0.20/tcnter.h",130,0,0,0
+  30               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/stdint.h",130,0,0,0
+  31               		.stabs	"int8_t:t(2,1)=(0,10)",128,0,121,0
+  32               		.stabs	"uint8_t:t(2,2)=(0,11)",128,0,122,0
+  33               		.stabs	"int16_t:t(2,3)=(0,1)",128,0,123,0
+  34               		.stabs	"uint16_t:t(2,4)=(0,4)",128,0,124,0
+  35               		.stabs	"int32_t:t(2,5)=(0,3)",128,0,125,0
+  36               		.stabs	"uint32_t:t(2,6)=(0,5)",128,0,126,0
+  37               		.stabs	"int64_t:t(2,7)=(0,6)",128,0,128,0
+  38               		.stabs	"uint64_t:t(2,8)=(0,7)",128,0,129,0
+  39               		.stabs	"intptr_t:t(2,9)=(2,3)",128,0,142,0
+  40               		.stabs	"uintptr_t:t(2,10)=(2,4)",128,0,147,0
+  41               		.stabs	"int_least8_t:t(2,11)=(2,1)",128,0,159,0
+  42               		.stabs	"uint_least8_t:t(2,12)=(2,2)",128,0,164,0
+  43               		.stabs	"int_least16_t:t(2,13)=(2,3)",128,0,169,0
+  44               		.stabs	"uint_least16_t:t(2,14)=(2,4)",128,0,174,0
+  45               		.stabs	"int_least32_t:t(2,15)=(2,5)",128,0,179,0
+  46               		.stabs	"uint_least32_t:t(2,16)=(2,6)",128,0,184,0
+  47               		.stabs	"int_least64_t:t(2,17)=(2,7)",128,0,192,0
+  48               		.stabs	"uint_least64_t:t(2,18)=(2,8)",128,0,199,0
+  49               		.stabs	"int_fast8_t:t(2,19)=(2,1)",128,0,213,0
+  50               		.stabs	"uint_fast8_t:t(2,20)=(2,2)",128,0,218,0
+  51               		.stabs	"int_fast16_t:t(2,21)=(2,3)",128,0,223,0
+  52               		.stabs	"uint_fast16_t:t(2,22)=(2,4)",128,0,228,0
+  53               		.stabs	"int_fast32_t:t(2,23)=(2,5)",128,0,233,0
+  54               		.stabs	"uint_fast32_t:t(2,24)=(2,6)",128,0,238,0
+  55               		.stabs	"int_fast64_t:t(2,25)=(2,7)",128,0,246,0
+  56               		.stabs	"uint_fast64_t:t(2,26)=(2,8)",128,0,253,0
+  57               		.stabs	"intmax_t:t(2,27)=(2,7)",128,0,273,0
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s 			page 2
+
+
+  58               		.stabs	"uintmax_t:t(2,28)=(2,8)",128,0,278,0
+  59               		.stabn	162,0,0,0
+  60               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/avr/io.h",130,0,0,0
+  61               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/avr/sfr_defs.h",130,0,0,0
+  62               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/inttypes.h",130,0,0,0
+  63               		.stabs	"int_farptr_t:t(5,1)=(2,5)",128,0,77,0
+  64               		.stabs	"uint_farptr_t:t(5,2)=(2,6)",128,0,81,0
+  65               		.stabn	162,0,0,0
+  66               		.stabn	162,0,0,0
+  67               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/avr/fuse.h",130,0,0,0
+  68               		.stabs	"__fuse_t:t(6,1)=(6,2)=s3low:(0,11),0,8;high:(0,11),8,8;extended:(0,11),16,8;;",128,0,244,0
+  69               		.stabn	162,0,0,0
+  70               		.stabn	162,0,0,0
+  71               		.stabn	162,0,0,0
+  72               		.stabs	"tcnter_init:F(0,15)",36,0,39,tcnter_init
+  73               	.global	tcnter_init
+  74               		.type	tcnter_init, @function
+  75               	tcnter_init:
+  76               		.stabd	46,0,0
+   1:_commonCode_localized/tcnter/0.20/tcnter.c **** //tcnter 0.10
+   2:_commonCode_localized/tcnter/0.20/tcnter.c **** #ifdef _TCNTER_HEADER_
+   3:_commonCode_localized/tcnter/0.20/tcnter.c ****  #include _TCNTER_HEADER_
+   4:_commonCode_localized/tcnter/0.20/tcnter.c **** #else
+   5:_commonCode_localized/tcnter/0.20/tcnter.c ****  #include "tcnter.h"
+   6:_commonCode_localized/tcnter/0.20/tcnter.c **** #endif
+   7:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+   8:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+   9:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  10:_commonCode_localized/tcnter/0.20/tcnter.c **** #if (defined(PU_PC_DEBUG) && PU_PC_DEBUG)
+  11:_commonCode_localized/tcnter/0.20/tcnter.c **** 	#include <stdio.h>
+  12:_commonCode_localized/tcnter/0.20/tcnter.c **** 	#define DPRINT	printf
+  13:_commonCode_localized/tcnter/0.20/tcnter.c **** #else
+  14:_commonCode_localized/tcnter/0.20/tcnter.c **** 	#define DPRINT(...) {}
+  15:_commonCode_localized/tcnter/0.20/tcnter.c **** #endif
+  16:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  17:_commonCode_localized/tcnter/0.20/tcnter.c **** #if (defined(TCNTER_SOURCE_EXTERNED) && TCNTER_SOURCE_EXTERNED)
+  18:_commonCode_localized/tcnter/0.20/tcnter.c **** 	extern tcnter_source_t	TCNTER_SOURCE_VAR;
+  19:_commonCode_localized/tcnter/0.20/tcnter.c **** #endif
+  20:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  21:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  22:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  23:_commonCode_localized/tcnter/0.20/tcnter.c **** //DON'T CHANGE THIS WITHOUT CHANGING both!
+  24:_commonCode_localized/tcnter/0.20/tcnter.c **** //#define tcnter_source_t	uint8_t
+  25:_commonCode_localized/tcnter/0.20/tcnter.c **** //#define tcnter_compare_t	int16_t
+  26:_commonCode_localized/tcnter/0.20/tcnter.c **** //#define tcnter_t	uint32_t
+  27:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  28:_commonCode_localized/tcnter/0.20/tcnter.c **** //Running TCNTs since last init
+  29:_commonCode_localized/tcnter/0.20/tcnter.c **** tcnter_t tcnter_myTcnter = 0;
+  30:_commonCode_localized/tcnter/0.20/tcnter.c **** //Last TCNT value read in update()
+  31:_commonCode_localized/tcnter/0.20/tcnter.c **** // this is not used, except internally
+  32:_commonCode_localized/tcnter/0.20/tcnter.c **** // (global for reset on init)
+  33:_commonCode_localized/tcnter/0.20/tcnter.c **** tcnter_source_t tcnter_lastTcnt = 0;
+  34:_commonCode_localized/tcnter/0.20/tcnter.c **** // Before inlining functions:
+  35:_commonCode_localized/tcnter/0.20/tcnter.c **** //INLINING EXPERIMENTS: INLINE=FALSE 4098B INLINE=TRUE 4240B
+  36:_commonCode_localized/tcnter/0.20/tcnter.c **** //   after all inlining, it's still bigger than without inlining!
+  37:_commonCode_localized/tcnter/0.20/tcnter.c **** //Inlined: Saved 24B (4216)	
+  38:_commonCode_localized/tcnter/0.20/tcnter.c **** TCNTER_INLINEABLE
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s 			page 3
+
+
+  39:_commonCode_localized/tcnter/0.20/tcnter.c **** void tcnter_init(void)
+  40:_commonCode_localized/tcnter/0.20/tcnter.c **** {
+  77               		.stabn	68,0,40,.LM0-.LFBB1
+  78               	.LM0:
+  79               	.LFBB1:
+  80               	/* prologue: function */
+  81               	/* frame size = 0 */
+  41:_commonCode_localized/tcnter/0.20/tcnter.c **** 	tcnter_lastTcnt = TCNTER_SOURCE_VAR;
+  82               		.stabn	68,0,41,.LM1-.LFBB1
+  83               	.LM1:
+  84 0000 82B7      		in r24,82-0x20
+  85 0002 8093 0000 		sts tcnter_lastTcnt,r24
+  42:_commonCode_localized/tcnter/0.20/tcnter.c **** 	tcnter_myTcnter = 0;
+  86               		.stabn	68,0,42,.LM2-.LFBB1
+  87               	.LM2:
+  88 0006 1092 0000 		sts tcnter_myTcnter,__zero_reg__
+  89 000a 1092 0000 		sts (tcnter_myTcnter)+1,__zero_reg__
+  90 000e 1092 0000 		sts (tcnter_myTcnter)+2,__zero_reg__
+  91 0012 1092 0000 		sts (tcnter_myTcnter)+3,__zero_reg__
+  92               	/* epilogue start */
+  43:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  44:_commonCode_localized/tcnter/0.20/tcnter.c **** 	DPRINT("tcnter_init()\n");
+  45:_commonCode_localized/tcnter/0.20/tcnter.c **** }
+  93               		.stabn	68,0,45,.LM3-.LFBB1
+  94               	.LM3:
+  95 0016 0895      		ret
+  96               		.size	tcnter_init, .-tcnter_init
+  97               	.Lscope1:
+  98               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+  99               		.stabd	78,0,0
+ 100               		.stabs	"tcnter_update:F(0,15)",36,0,59,tcnter_update
+ 101               	.global	tcnter_update
+ 102               		.type	tcnter_update, @function
+ 103               	tcnter_update:
+ 104               		.stabd	46,0,0
+  46:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  47:_commonCode_localized/tcnter/0.20/tcnter.c **** //#warning "Changing TCNT for this purpose makes the timer unusable for more than one UAR/T or othe
+  48:_commonCode_localized/tcnter/0.20/tcnter.c **** // What about a tcnt DIFFERENCE, instead?
+  49:_commonCode_localized/tcnter/0.20/tcnter.c **** // How difficult would this be with wraparound and/or resets at arbitary
+  50:_commonCode_localized/tcnter/0.20/tcnter.c **** // values?
+  51:_commonCode_localized/tcnter/0.20/tcnter.c **** // Can we use the other devices' (e.g. DMS) OCR values?
+  52:_commonCode_localized/tcnter/0.20/tcnter.c **** // What about an xyTracker for more precision and less cumulative error?
+  53:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  54:_commonCode_localized/tcnter/0.20/tcnter.c **** //Inlined: WTF?! 4240->4880B! (used twice... once on init)
+  55:_commonCode_localized/tcnter/0.20/tcnter.c **** //  Also seems to cause the main loop to not function
+  56:_commonCode_localized/tcnter/0.20/tcnter.c **** //  (how could it take *more* instructions?!)
+  57:_commonCode_localized/tcnter/0.20/tcnter.c **** //   trying to shuffle registers?
+  58:_commonCode_localized/tcnter/0.20/tcnter.c **** //TCNTER_INLINEABLE
+  59:_commonCode_localized/tcnter/0.20/tcnter.c **** void tcnter_update(void)
+  60:_commonCode_localized/tcnter/0.20/tcnter.c **** {
+ 105               		.stabn	68,0,60,.LM4-.LFBB2
+ 106               	.LM4:
+ 107               	.LFBB2:
+ 108               	/* prologue: function */
+ 109               	/* frame size = 0 */
+  61:_commonCode_localized/tcnter/0.20/tcnter.c **** 	tcnter_source_t thisTcnt = TCNTER_SOURCE_VAR;	//e.g. TCNT0
+ 110               		.stabn	68,0,61,.LM5-.LFBB2
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s 			page 4
+
+
+ 111               	.LM5:
+ 112 0018 22B7      		in r18,82-0x20
+  62:_commonCode_localized/tcnter/0.20/tcnter.c **** 	
+  63:_commonCode_localized/tcnter/0.20/tcnter.c **** 	tcnter_compare_t deltaTcnt = (tcnter_compare_t)thisTcnt 
+ 113               		.stabn	68,0,63,.LM6-.LFBB2
+ 114               	.LM6:
+ 115 001a 3091 0000 		lds r19,tcnter_lastTcnt
+  64:_commonCode_localized/tcnter/0.20/tcnter.c **** 										- (tcnter_compare_t)tcnter_lastTcnt;
+ 116               		.stabn	68,0,64,.LM7-.LFBB2
+ 117               	.LM7:
+ 118 001e 822F      		mov r24,r18
+ 119 0020 90E0      		ldi r25,lo8(0)
+ 120 0022 831B      		sub r24,r19
+ 121 0024 9109      		sbc r25,__zero_reg__
+  65:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  66:_commonCode_localized/tcnter/0.20/tcnter.c **** 	// Handle wrap-around...
+  67:_commonCode_localized/tcnter/0.20/tcnter.c **** 	if (thisTcnt < tcnter_lastTcnt)
+ 122               		.stabn	68,0,67,.LM8-.LFBB2
+ 123               	.LM8:
+ 124 0026 2317      		cp r18,r19
+ 125 0028 00F4      		brsh .L4
+  68:_commonCode_localized/tcnter/0.20/tcnter.c **** 		deltaTcnt += (tcnter_compare_t)(TCNTER_SOURCE_OVERFLOW_VAL);
+ 126               		.stabn	68,0,68,.LM9-.LFBB2
+ 127               	.LM9:
+ 128 002a 8050      		subi r24,lo8(-(256))
+ 129 002c 9F4F      		sbci r25,hi8(-(256))
+ 130               	.L4:
+  69:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  70:_commonCode_localized/tcnter/0.20/tcnter.c **** 	tcnter_lastTcnt = thisTcnt;
+ 131               		.stabn	68,0,70,.LM10-.LFBB2
+ 132               	.LM10:
+ 133 002e 2093 0000 		sts tcnter_lastTcnt,r18
+  71:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  72:_commonCode_localized/tcnter/0.20/tcnter.c **** 	tcnter_myTcnter += (tcnter_t)deltaTcnt;
+ 134               		.stabn	68,0,72,.LM11-.LFBB2
+ 135               	.LM11:
+ 136 0032 9C01      		movw r18,r24
+ 137 0034 4427      		clr r20
+ 138 0036 37FD      		sbrc r19,7
+ 139 0038 4095      		com r20
+ 140 003a 542F      		mov r21,r20
+ 141 003c 8091 0000 		lds r24,tcnter_myTcnter
+ 142 0040 9091 0000 		lds r25,(tcnter_myTcnter)+1
+ 143 0044 A091 0000 		lds r26,(tcnter_myTcnter)+2
+ 144 0048 B091 0000 		lds r27,(tcnter_myTcnter)+3
+ 145 004c 820F      		add r24,r18
+ 146 004e 931F      		adc r25,r19
+ 147 0050 A41F      		adc r26,r20
+ 148 0052 B51F      		adc r27,r21
+ 149 0054 8093 0000 		sts tcnter_myTcnter,r24
+ 150 0058 9093 0000 		sts (tcnter_myTcnter)+1,r25
+ 151 005c A093 0000 		sts (tcnter_myTcnter)+2,r26
+ 152 0060 B093 0000 		sts (tcnter_myTcnter)+3,r27
+ 153               	/* epilogue start */
+  73:_commonCode_localized/tcnter/0.20/tcnter.c **** }
+ 154               		.stabn	68,0,73,.LM12-.LFBB2
+ 155               	.LM12:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s 			page 5
+
+
+ 156 0064 0895      		ret
+ 157               		.size	tcnter_update, .-tcnter_update
+ 158               		.stabs	"thisTcnt:r(2,2)",64,0,61,18
+ 159               		.stabs	"deltaTcnt:r(2,3)",64,0,63,24
+ 160               		.stabn	192,0,0,.LFBB2-.LFBB2
+ 161               		.stabn	224,0,0,.Lscope2-.LFBB2
+ 162               	.Lscope2:
+ 163               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 164               		.stabd	78,0,0
+ 165               		.stabs	"tcnter_get:F(2,6)",36,0,77,tcnter_get
+ 166               	.global	tcnter_get
+ 167               		.type	tcnter_get, @function
+ 168               	tcnter_get:
+ 169               		.stabd	46,0,0
+  74:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  75:_commonCode_localized/tcnter/0.20/tcnter.c **** //Inlined: Saved 40B
+  76:_commonCode_localized/tcnter/0.20/tcnter.c **** TCNTER_INLINEABLE
+  77:_commonCode_localized/tcnter/0.20/tcnter.c **** tcnter_t tcnter_get(void)
+  78:_commonCode_localized/tcnter/0.20/tcnter.c **** {
+ 170               		.stabn	68,0,78,.LM13-.LFBB3
+ 171               	.LM13:
+ 172               	.LFBB3:
+ 173               	/* prologue: function */
+ 174               	/* frame size = 0 */
+ 175               		.stabn	68,0,78,.LM14-.LFBB3
+ 176               	.LM14:
+ 177 0066 6091 0000 		lds r22,tcnter_myTcnter
+ 178 006a 7091 0000 		lds r23,tcnter_myTcnter+1
+  79:_commonCode_localized/tcnter/0.20/tcnter.c **** 	return tcnter_myTcnter;
+  80:_commonCode_localized/tcnter/0.20/tcnter.c **** }
+ 179               		.stabn	68,0,80,.LM15-.LFBB3
+ 180               	.LM15:
+ 181 006e 8091 0000 		lds r24,tcnter_myTcnter+2
+ 182 0072 9091 0000 		lds r25,tcnter_myTcnter+3
+ 183               	/* epilogue start */
+ 184 0076 0895      		ret
+ 185               		.size	tcnter_get, .-tcnter_get
+ 186               	.Lscope3:
+ 187               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 188               		.stabd	78,0,0
+ 189               		.stabs	"tcnter_isItTime8:F(2,2)",36,0,104,tcnter_isItTime8
+ 190               		.stabs	"startTime:P(0,16)=*(2,2)",64,0,104,30
+ 191               		.stabs	"deltaTime:P(2,2)",64,0,104,22
+ 192               	.global	tcnter_isItTime8
+ 193               		.type	tcnter_isItTime8, @function
+ 194               	tcnter_isItTime8:
+ 195               		.stabd	46,0,0
+  81:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  82:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+  83:_commonCode_localized/tcnter/0.20/tcnter.c **** //This is a recurring dilemma... dms6sec_t had issues as well
+  84:_commonCode_localized/tcnter/0.20/tcnter.c **** // Should create such a function there, as well..
+  85:_commonCode_localized/tcnter/0.20/tcnter.c **** // e.g. 
+  86:_commonCode_localized/tcnter/0.20/tcnter.c **** //thisTime Wraps at 0xff... (8bit)
+  87:_commonCode_localized/tcnter/0.20/tcnter.c **** // nextTime is in 16 units (timeDiff) (nextTime=0x00)
+  88:_commonCode_localized/tcnter/0.20/tcnter.c **** // thisTime is at 0xf0
+  89:_commonCode_localized/tcnter/0.20/tcnter.c **** // then nextTime is met when thisTime = 0x00
+  90:_commonCode_localized/tcnter/0.20/tcnter.c **** //Can't say if(thisTime > nextTime) (obviously)
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s 			page 6
+
+
+  91:_commonCode_localized/tcnter/0.20/tcnter.c **** // but could do (thisTime - timeDiff) > startTime) ???
+  92:_commonCode_localized/tcnter/0.20/tcnter.c **** // or maybe even (startTime + timeDiff > thisTime) ???
+  93:_commonCode_localized/tcnter/0.20/tcnter.c **** // or (thisTime - startTime > timeDiff) ???
+  94:_commonCode_localized/tcnter/0.20/tcnter.c **** //  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ---- GOOD
+  95:_commonCode_localized/tcnter/0.20/tcnter.c **** //  Wrapping Math handles this case...
+  96:_commonCode_localized/tcnter/0.20/tcnter.c **** //  Additionally, nice(?), no calculation necessary for nextTime... 
+  97:_commonCode_localized/tcnter/0.20/tcnter.c **** // (thisTime > nextTime)
+  98:_commonCode_localized/tcnter/0.20/tcnter.c **** // *** StartTime is updated so that no cumulative error occurs...
+  99:_commonCode_localized/tcnter/0.20/tcnter.c **** // THE WHOLE POINT OF THIS IS TO REDUCE INSTRUCTIONS....
+ 100:_commonCode_localized/tcnter/0.20/tcnter.c **** //  The old method (thisTime > nextTime)
+ 101:_commonCode_localized/tcnter/0.20/tcnter.c **** //   resulted in sometimes 12 instructions (4=readThisTime, 4=readNextTime
+ 102:_commonCode_localized/tcnter/0.20/tcnter.c **** //    4=compare) Then 4=calcNextTime...
+ 103:_commonCode_localized/tcnter/0.20/tcnter.c **** TCNTER_INLINEABLE
+ 104:_commonCode_localized/tcnter/0.20/tcnter.c **** uint8_t tcnter_isItTime8(tcnter8_t *startTime, tcnter8_t deltaTime)
+ 105:_commonCode_localized/tcnter/0.20/tcnter.c **** {
+ 196               		.stabn	68,0,105,.LM16-.LFBB4
+ 197               	.LM16:
+ 198               	.LFBB4:
+ 199               	/* prologue: function */
+ 200               	/* frame size = 0 */
+ 201 0078 FC01      		movw r30,r24
+ 106:_commonCode_localized/tcnter/0.20/tcnter.c **** 	tcnter8_t thisDelta = (uint8_t)tcnter_myTcnter - (uint8_t)(*startTime);
+ 202               		.stabn	68,0,106,.LM17-.LFBB4
+ 203               	.LM17:
+ 204 007a 9091 0000 		lds r25,tcnter_myTcnter
+ 205 007e 8081      		ld r24,Z
+ 206 0080 292F      		mov r18,r25
+ 207 0082 281B      		sub r18,r24
+ 107:_commonCode_localized/tcnter/0.20/tcnter.c **** 	
+ 108:_commonCode_localized/tcnter/0.20/tcnter.c **** 	if(thisDelta >= deltaTime)
+ 208               		.stabn	68,0,108,.LM18-.LFBB4
+ 209               	.LM18:
+ 210 0084 2617      		cp r18,r22
+ 211 0086 00F4      		brsh .L10
+ 212 0088 80E0      		ldi r24,lo8(0)
+ 213 008a 0895      		ret
+ 214               	.L10:
+ 109:_commonCode_localized/tcnter/0.20/tcnter.c **** 	{
+ 110:_commonCode_localized/tcnter/0.20/tcnter.c **** 		//Say thisDelta = 5, deltaTime = 4
+ 111:_commonCode_localized/tcnter/0.20/tcnter.c **** 		// that means we're 1 after the desired time
+ 112:_commonCode_localized/tcnter/0.20/tcnter.c **** 		//  (thisDelta - deltaTime) = 1
+ 113:_commonCode_localized/tcnter/0.20/tcnter.c **** 		// So set startTime (for the next go-round) to thisTime - 1
+ 114:_commonCode_localized/tcnter/0.20/tcnter.c **** 		//  (to hopefully eliminate cumulative error)
+ 115:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+ 116:_commonCode_localized/tcnter/0.20/tcnter.c **** 		// Could this math be combined with >= above?
+ 117:_commonCode_localized/tcnter/0.20/tcnter.c **** 		*startTime = (uint8_t)tcnter_myTcnter - (thisDelta - deltaTime);
+ 215               		.stabn	68,0,117,.LM19-.LFBB4
+ 216               	.LM19:
+ 217 008c 690F      		add r22,r25
+ 218 008e 621B      		sub r22,r18
+ 219 0090 6083      		st Z,r22
+ 220 0092 81E0      		ldi r24,lo8(1)
+ 118:_commonCode_localized/tcnter/0.20/tcnter.c **** 		return TRUE;
+ 119:_commonCode_localized/tcnter/0.20/tcnter.c **** 	}
+ 120:_commonCode_localized/tcnter/0.20/tcnter.c **** 	else
+ 121:_commonCode_localized/tcnter/0.20/tcnter.c **** 		return FALSE;
+ 122:_commonCode_localized/tcnter/0.20/tcnter.c **** // return (((uint8_t)tcnter_myTcnter - (uint8_t)startTime) > (uint8_t)deltaTime);
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s 			page 7
+
+
+ 123:_commonCode_localized/tcnter/0.20/tcnter.c **** }
+ 221               		.stabn	68,0,123,.LM20-.LFBB4
+ 222               	.LM20:
+ 223 0094 0895      		ret
+ 224               		.size	tcnter_isItTime8, .-tcnter_isItTime8
+ 225               		.stabs	"thisDelta:r(2,2)",64,0,106,24
+ 226               		.stabn	192,0,0,.LFBB4-.LFBB4
+ 227               		.stabn	224,0,0,.Lscope4-.LFBB4
+ 228               	.Lscope4:
+ 229               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 230               		.stabd	78,0,0
+ 231               		.stabs	"tcnter_isItTime:F(2,2)",36,0,127,tcnter_isItTime
+ 232               		.stabs	"startTime:P(0,17)=*(2,6)",64,0,127,30
+ 233               		.stabs	"deltaTime:P(2,6)",64,0,127,14
+ 234               	.global	tcnter_isItTime
+ 235               		.type	tcnter_isItTime, @function
+ 236               	tcnter_isItTime:
+ 237               		.stabd	46,0,0
+ 124:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+ 125:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+ 126:_commonCode_localized/tcnter/0.20/tcnter.c **** TCNTER_INLINEABLE
+ 127:_commonCode_localized/tcnter/0.20/tcnter.c **** uint8_t tcnter_isItTime(tcnter_t *startTime, tcnter_t deltaTime)
+ 128:_commonCode_localized/tcnter/0.20/tcnter.c **** {
+ 238               		.stabn	68,0,128,.LM21-.LFBB5
+ 239               	.LM21:
+ 240               	.LFBB5:
+ 241 0096 AF92      		push r10
+ 242 0098 BF92      		push r11
+ 243 009a CF92      		push r12
+ 244 009c DF92      		push r13
+ 245 009e EF92      		push r14
+ 246 00a0 FF92      		push r15
+ 247 00a2 0F93      		push r16
+ 248 00a4 1F93      		push r17
+ 249               	/* prologue: function */
+ 250               	/* frame size = 0 */
+ 251 00a6 FC01      		movw r30,r24
+ 252 00a8 7A01      		movw r14,r20
+ 253 00aa 8B01      		movw r16,r22
+ 129:_commonCode_localized/tcnter/0.20/tcnter.c **** 	tcnter_t thisDelta = tcnter_myTcnter - *startTime;
+ 254               		.stabn	68,0,129,.LM22-.LFBB5
+ 255               	.LM22:
+ 256 00ac 2091 0000 		lds r18,tcnter_myTcnter
+ 257 00b0 3091 0000 		lds r19,(tcnter_myTcnter)+1
+ 258 00b4 4091 0000 		lds r20,(tcnter_myTcnter)+2
+ 259 00b8 5091 0000 		lds r21,(tcnter_myTcnter)+3
+ 260 00bc 8081      		ld r24,Z
+ 261 00be 9181      		ldd r25,Z+1
+ 262 00c0 A281      		ldd r26,Z+2
+ 263 00c2 B381      		ldd r27,Z+3
+ 264 00c4 5901      		movw r10,r18
+ 265 00c6 6A01      		movw r12,r20
+ 266 00c8 A81A      		sub r10,r24
+ 267 00ca B90A      		sbc r11,r25
+ 268 00cc CA0A      		sbc r12,r26
+ 269 00ce DB0A      		sbc r13,r27
+ 130:_commonCode_localized/tcnter/0.20/tcnter.c **** 
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s 			page 8
+
+
+ 131:_commonCode_localized/tcnter/0.20/tcnter.c **** 	if(thisDelta >= deltaTime)
+ 270               		.stabn	68,0,131,.LM23-.LFBB5
+ 271               	.LM23:
+ 272 00d0 AE14      		cp r10,r14
+ 273 00d2 BF04      		cpc r11,r15
+ 274 00d4 C006      		cpc r12,r16
+ 275 00d6 D106      		cpc r13,r17
+ 276 00d8 00F4      		brsh .L14
+ 277 00da 80E0      		ldi r24,lo8(0)
+ 278 00dc 00C0      		rjmp .L15
+ 279               	.L14:
+ 132:_commonCode_localized/tcnter/0.20/tcnter.c **** 	{
+ 133:_commonCode_localized/tcnter/0.20/tcnter.c **** 		*startTime = tcnter_myTcnter - (thisDelta - deltaTime);
+ 280               		.stabn	68,0,133,.LM24-.LFBB5
+ 281               	.LM24:
+ 282 00de BA01      		movw r22,r20
+ 283 00e0 A901      		movw r20,r18
+ 284 00e2 4E0D      		add r20,r14
+ 285 00e4 5F1D      		adc r21,r15
+ 286 00e6 601F      		adc r22,r16
+ 287 00e8 711F      		adc r23,r17
+ 288 00ea 4A19      		sub r20,r10
+ 289 00ec 5B09      		sbc r21,r11
+ 290 00ee 6C09      		sbc r22,r12
+ 291 00f0 7D09      		sbc r23,r13
+ 292 00f2 4083      		st Z,r20
+ 293 00f4 5183      		std Z+1,r21
+ 294 00f6 6283      		std Z+2,r22
+ 295 00f8 7383      		std Z+3,r23
+ 296 00fa 81E0      		ldi r24,lo8(1)
+ 297               	.L15:
+ 298               	/* epilogue start */
+ 134:_commonCode_localized/tcnter/0.20/tcnter.c **** 		return TRUE;
+ 135:_commonCode_localized/tcnter/0.20/tcnter.c **** 	}
+ 136:_commonCode_localized/tcnter/0.20/tcnter.c **** 	else
+ 137:_commonCode_localized/tcnter/0.20/tcnter.c **** 		return FALSE;
+ 138:_commonCode_localized/tcnter/0.20/tcnter.c **** }
+ 299               		.stabn	68,0,138,.LM25-.LFBB5
+ 300               	.LM25:
+ 301 00fc 1F91      		pop r17
+ 302 00fe 0F91      		pop r16
+ 303 0100 FF90      		pop r15
+ 304 0102 EF90      		pop r14
+ 305 0104 DF90      		pop r13
+ 306 0106 CF90      		pop r12
+ 307 0108 BF90      		pop r11
+ 308 010a AF90      		pop r10
+ 309 010c 0895      		ret
+ 310               		.size	tcnter_isItTime, .-tcnter_isItTime
+ 311               		.stabs	"thisDelta:r(2,6)",64,0,129,24
+ 312               		.stabn	192,0,0,.LFBB5-.LFBB5
+ 313               		.stabn	224,0,0,.Lscope5-.LFBB5
+ 314               	.Lscope5:
+ 315               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 316               		.stabd	78,0,0
+ 317               	.global	tcnter_myTcnter
+ 318               	.global	tcnter_myTcnter
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s 			page 9
+
+
+ 319               		.section .bss
+ 320               		.type	tcnter_myTcnter, @object
+ 321               		.size	tcnter_myTcnter, 4
+ 322               	tcnter_myTcnter:
+ 323 0000 0000 0000 		.skip 4,0
+ 324               	.global	tcnter_lastTcnt
+ 325               	.global	tcnter_lastTcnt
+ 326               		.type	tcnter_lastTcnt, @object
+ 327               		.size	tcnter_lastTcnt, 1
+ 328               	tcnter_lastTcnt:
+ 329 0004 00        		.skip 1,0
+ 330               		.stabs	"tcnter_myTcnter:G(2,6)",32,0,29,0
+ 331               		.stabs	"tcnter_lastTcnt:G(2,2)",32,0,33,0
+ 332               		.text
+ 333               		.stabs	"",100,0,0,.Letext0
+ 334               	.Letext0:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 tcnter.c
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:2      *ABS*:0000003f __SREG__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:3      *ABS*:0000003e __SP_H__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:4      *ABS*:0000003d __SP_L__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:5      *ABS*:00000000 __tmp_reg__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:6      *ABS*:00000001 __zero_reg__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:75     .text:00000000 tcnter_init
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:328    .bss:00000004 tcnter_lastTcnt
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:322    .bss:00000000 tcnter_myTcnter
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:103    .text:00000018 tcnter_update
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:168    .text:00000066 tcnter_get
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:194    .text:00000078 tcnter_isItTime8
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//ccBymQNq.s:236    .text:00000096 tcnter_isItTime
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss

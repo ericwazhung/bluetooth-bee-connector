@@ -1,0 +1,3131 @@
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 1
+
+
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.global __do_copy_data
+   8               		.global __do_clear_bss
+   9               		.stabs	"/Users/meh/_avrProjects/tabletBluetoother/8-gittifying/",100,0,2,.Ltext0
+  10               		.stabs	"main.c",100,0,2,.Ltext0
+  11               		.text
+  12               	.Ltext0:
+  13               		.stabs	"gcc2_compiled.",60,0,0,0
+  14               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,1,0
+  15               		.stabs	"char:t(0,2)=@s8;r(0,2);0;255;",128,0,1,0
+  16               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,1,0
+  17               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,1,0
+  18               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,1,0
+  19               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,1,
+  20               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,1,0
+  21               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,1,0
+  22               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,1,0
+  23               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,1,0
+  24               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,1,0
+  25               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,1,0
+  26               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,1,0
+  27               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,1,0
+  28               		.stabs	"void:t(0,15)=(0,15)",128,0,1,0
+  29               		.stabs	"projInfo.h",130,0,0,0
+  30               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/inttypes.h",130,0,0,0
+  31               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/stdint.h",130,0,0,0
+  32               		.stabs	"int8_t:t(3,1)=(0,10)",128,0,121,0
+  33               		.stabs	"uint8_t:t(3,2)=(0,11)",128,0,122,0
+  34               		.stabs	"int16_t:t(3,3)=(0,1)",128,0,123,0
+  35               		.stabs	"uint16_t:t(3,4)=(0,4)",128,0,124,0
+  36               		.stabs	"int32_t:t(3,5)=(0,3)",128,0,125,0
+  37               		.stabs	"uint32_t:t(3,6)=(0,5)",128,0,126,0
+  38               		.stabs	"int64_t:t(3,7)=(0,6)",128,0,128,0
+  39               		.stabs	"uint64_t:t(3,8)=(0,7)",128,0,129,0
+  40               		.stabs	"intptr_t:t(3,9)=(3,3)",128,0,142,0
+  41               		.stabs	"uintptr_t:t(3,10)=(3,4)",128,0,147,0
+  42               		.stabs	"int_least8_t:t(3,11)=(3,1)",128,0,159,0
+  43               		.stabs	"uint_least8_t:t(3,12)=(3,2)",128,0,164,0
+  44               		.stabs	"int_least16_t:t(3,13)=(3,3)",128,0,169,0
+  45               		.stabs	"uint_least16_t:t(3,14)=(3,4)",128,0,174,0
+  46               		.stabs	"int_least32_t:t(3,15)=(3,5)",128,0,179,0
+  47               		.stabs	"uint_least32_t:t(3,16)=(3,6)",128,0,184,0
+  48               		.stabs	"int_least64_t:t(3,17)=(3,7)",128,0,192,0
+  49               		.stabs	"uint_least64_t:t(3,18)=(3,8)",128,0,199,0
+  50               		.stabs	"int_fast8_t:t(3,19)=(3,1)",128,0,213,0
+  51               		.stabs	"uint_fast8_t:t(3,20)=(3,2)",128,0,218,0
+  52               		.stabs	"int_fast16_t:t(3,21)=(3,3)",128,0,223,0
+  53               		.stabs	"uint_fast16_t:t(3,22)=(3,4)",128,0,228,0
+  54               		.stabs	"int_fast32_t:t(3,23)=(3,5)",128,0,233,0
+  55               		.stabs	"uint_fast32_t:t(3,24)=(3,6)",128,0,238,0
+  56               		.stabs	"int_fast64_t:t(3,25)=(3,7)",128,0,246,0
+  57               		.stabs	"uint_fast64_t:t(3,26)=(3,8)",128,0,253,0
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 2
+
+
+  58               		.stabs	"intmax_t:t(3,27)=(3,7)",128,0,273,0
+  59               		.stabs	"uintmax_t:t(3,28)=(3,8)",128,0,278,0
+  60               		.stabn	162,0,0,0
+  61               		.stabs	"int_farptr_t:t(2,1)=(3,5)",128,0,77,0
+  62               		.stabs	"uint_farptr_t:t(2,2)=(3,6)",128,0,81,0
+  63               		.stabn	162,0,0,0
+  64               		.stabn	162,0,0,0
+  65               		.stabs	"main.h",130,0,0,0
+  66               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/avr/io.h",130,0,0,0
+  67               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/avr/fuse.h",130,0,0,0
+  68               		.stabs	"__fuse_t:t(6,1)=(6,2)=s3low:(0,11),0,8;high:(0,11),8,8;extended:(0,11),16,8;;",128,0,244,0
+  69               		.stabn	162,0,0,0
+  70               		.stabn	162,0,0,0
+  71               		.stabs	"_commonCode_localized/btbConnector/0.20/btbConnector.h",130,0,0,0
+  72               		.stabs	"./_commonCode_localized/cirBuff/0.99/cirBuff.h",130,0,0,0
+  73               		.stabs	"cirBuff_t:t(8,1)=(8,2)=s5writePosition:(8,3)=B(3,2),0,8;readPosition:(8,3),8,8;length:(3,2
+  74               		.stabn	162,0,0,0
+  75               		.stabs	"_commonCode_localized/btbConnector/0.20/btbConnector.c",130,0,0,0
+  76               		.stabs	"./btbcStuff.h",130,0,0,0
+  77               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/../../../../avr/include/stdio.h",130,0,0,0
+  78               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/include/stdarg.h",130,0,0,0
+  79               		.stabs	"__gnuc_va_list:t(12,1)=(12,2)=*(0,15)",128,0,40,0
+  80               		.stabs	"va_list:t(12,3)=(12,1)",128,0,102,0
+  81               		.stabn	162,0,0,0
+  82               		.stabs	"/usr/local/lib/gcc/avr/4.4.5/include/stddef.h",130,0,0,0
+  83               		.stabs	"size_t:t(13,1)=(0,4)",128,0,211,0
+  84               		.stabn	162,0,0,0
+  85               		.stabs	"__file:T(11,1)=s14buf:(11,2)=*(0,2),0,16;unget:(0,11),16,8;flags:(3,2),24,8;size:(0,1),32,
+  86               		.stabn	162,0,0,0
+  87               		.stabn	162,0,0,0
+  88               		.stabn	162,0,0,0
+  89               		.stabn	162,0,0,0
+  90               		.stabn	162,0,0,0
+  91               		.stabs	"main:F(0,1)",36,0,82,main
+  92               	.global	main
+  93               		.type	main, @function
+  94               	main:
+  95               		.stabd	46,0,0
+   1:main.c        **** #include "projInfo.h"	//Don't include in main.h 'cause that's included in other .c's?
+   2:main.c        **** #include "main.h"
+   3:main.c        **** 
+   4:main.c        **** 
+   5:main.c        **** #warning "TODO: Use Disconnect. E.G. btbc resets while btb is connected. Reset Command is interpret
+   6:main.c        **** #if !defined(__AVR_ARCH__)
+   7:main.c        ****  #error "__AVR_ARCH__ not defined!"
+   8:main.c        **** #endif
+   9:main.c        **** 
+  10:main.c        **** #include "pinout.h"
+  11:main.c        **** /*
+  12:main.c        **** //J1 puart0: (To Bluetooth Bee)
+  13:main.c        **** // 1 +
+  14:main.c        **** // 2 Rx0 = PB2
+  15:main.c        **** // 3 Tx0 = PB0
+  16:main.c        **** // 4 GND
+  17:main.c        **** 
+  18:main.c        **** #define Rx0pin    PB2 //SCL_PIN
+  19:main.c        **** #define Rx0PORT   PORTB //SCLPORT
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 3
+
+
+  20:main.c        **** 
+  21:main.c        **** #define Tx0pin		PB0 //SDA_PIN
+  22:main.c        **** #define Tx0PORT	PORTB //SDAPORT
+  23:main.c        **** 
+  24:main.c        **** #define PUAT_TO_BTB		0
+  25:main.c        **** #define PUAR_FROM_BTB	0
+  26:main.c        **** 
+  27:main.c        **** //J2 puart1: (To Tablet)
+  28:main.c        **** // 1 +
+  29:main.c        **** // 2 Rx1 = PB3
+  30:main.c        **** // 3 Tx1 = PB4
+  31:main.c        **** // 4 GND
+  32:main.c        **** 
+  33:main.c        **** #define Rx1pin    PB3
+  34:main.c        **** #define Rx1PORT   PORTB
+  35:main.c        **** 
+  36:main.c        **** #define Tx1pin		PB4
+  37:main.c        **** #define Tx1PORT	PORTB
+  38:main.c        **** 
+  39:main.c        **** #define PUAT_TO_DEVICE		1
+  40:main.c        **** #define PUAR_FROM_DEVICE	1
+  41:main.c        **** */
+  42:main.c        **** 
+  43:main.c        **** // Heartbeat on PB1 / MISO
+  44:main.c        **** //J4 AVRProg:
+  45:main.c        **** // 1 GND
+  46:main.c        **** // 2 +
+  47:main.c        **** // 3 SCK		PB2 / Rx0
+  48:main.c        **** // 4 MOSI	PB0 / Tx0
+  49:main.c        **** // 5 /RST	(PB5 unusable)
+  50:main.c        **** // 6 MISO 	PB1 / Heartbeat / HeartInput (active-low)
+  51:main.c        **** //uint8_t heartBlinkInternal = 0;
+  52:main.c        **** 
+  53:main.c        **** //#define  LED_R PB4
+  54:main.c        **** //#define  LED_G PB3
+  55:main.c        **** //#define	LED_B HEART_PINNUM   //NYI
+  56:main.c        **** //#define LED_PORT PORTB
+  57:main.c        **** 
+  58:main.c        **** /*
+  59:main.c        **** //static __inline__
+  60:main.c        **** void puat_writeOutput(uint8_t puatNum, uint8_t value)
+  61:main.c        **** 	__attribute__((__always_inline__));
+  62:main.c        **** 
+  63:main.c        **** void puat_writeOutput(uint8_t puatNum, uint8_t value)
+  64:main.c        **** {
+  65:main.c        **** //	if(puatNum == 0)
+  66:main.c        **** 		writepinPORT(Tx0pin, Tx0PORT, value);
+  67:main.c        **** //	else
+  68:main.c        **** //		writepinPORT(Tx1pin, Tx1PORT, value);
+  69:main.c        **** }
+  70:main.c        **** */
+  71:main.c        **** //extern __inline__ uint8_t puar_readInput(uint8_t puarNum)
+  72:main.c        **** //{
+  73:main.c        **** //	if(puarNum == 0)
+  74:main.c        **** //		return getpinPORT(Rx0pin, Rx0PORT);
+  75:main.c        **** //	else
+  76:main.c        **** //		return getpinPORT(Rx1pin, Rx1PORT);
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 4
+
+
+  77:main.c        **** //}
+  78:main.c        **** 
+  79:main.c        **** 
+  80:main.c        **** //int main(void) __attribute__((flatten));
+  81:main.c        **** 
+  82:main.c        **** int main(void)
+  83:main.c        **** {
+  96               		.stabn	68,0,83,.LM0-.LFBB1
+  97               	.LM0:
+  98               	.LFBB1:
+  99 0000 2F92      		push r2
+ 100 0002 3F92      		push r3
+ 101 0004 4F92      		push r4
+ 102 0006 5F92      		push r5
+ 103 0008 6F92      		push r6
+ 104 000a 7F92      		push r7
+ 105 000c 8F92      		push r8
+ 106 000e 9F92      		push r9
+ 107 0010 AF92      		push r10
+ 108 0012 BF92      		push r11
+ 109 0014 CF92      		push r12
+ 110 0016 DF92      		push r13
+ 111 0018 EF92      		push r14
+ 112 001a FF92      		push r15
+ 113 001c 0F93      		push r16
+ 114 001e 1F93      		push r17
+ 115 0020 CF93      		push r28
+ 116 0022 DF93      		push r29
+ 117               	/* prologue: function */
+ 118               	/* frame size = 0 */
+  84:main.c        **** 	//Found experimentally: assuming the free-running ADC is always 13
+  85:main.c        **** 	// cycles per interrupt...
+  86:main.c        **** 	// The default value was read to be 0x9f
+  87:main.c        **** 	// This is of course device-specific
+  88:main.c        **** //	OSCCAL = 0x9a;
+  89:main.c        **** 
+  90:main.c        **** 	//*** Initializations ***
+  91:main.c        **** 
+  92:main.c        **** 	//!!! WDT could cause problems... this probably should be inited earlier and called everywhere...
+  93:main.c        **** 	//INIT_HEARTBEAT(HEARTBEATPIN, HEARTBEAT, HEARTCONNECTION);
+  94:main.c        **** 
+  95:main.c        **** 
+  96:main.c        **** 	setoutPORT(Tx0pin, Tx0PORT);
+ 119               		.stabn	68,0,96,.LM1-.LFBB1
+ 120               	.LM1:
+ 121 0024 BC9A      		sbi 55-0x20,4
+  97:main.c        **** 	setinpuPORT(Rx0pin, Rx0PORT);
+ 122               		.stabn	68,0,97,.LM2-.LFBB1
+ 123               	.LM2:
+ 124 0026 BB98      		cbi 55-0x20,3
+ 125 0028 C39A      		sbi 56-0x20,3
+  98:main.c        **** 
+  99:main.c        **** 	setoutPORT(Tx1pin, Tx1PORT);
+ 126               		.stabn	68,0,99,.LM3-.LFBB1
+ 127               	.LM3:
+ 128 002a B89A      		sbi 55-0x20,0
+ 100:main.c        **** 	setinpuPORT(Rx1pin, Rx1PORT);
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 5
+
+
+ 129               		.stabn	68,0,100,.LM4-.LFBB1
+ 130               	.LM4:
+ 131 002c BA98      		cbi 55-0x20,2
+ 132 002e C29A      		sbi 56-0x20,2
+ 101:main.c        **** 
+ 102:main.c        **** //	init_heartBeat();
+ 103:main.c        **** //	setHeartRate(0);
+ 104:main.c        **** 
+ 105:main.c        **** 
+ 106:main.c        **** 
+ 107:main.c        **** 	//Timer0 TCNT0 increments at 1MHz, 0-255->0-255 (OCR value not used)
+ 108:main.c        **** 	// Not using DMS, because I'd rather not use interrupts
+ 109:main.c        **** 	// so there's no lag-time in the main-loop (for polling)
+ 110:main.c        **** 	// TODO: timer_common doesn't address this device, specifically
+ 111:main.c        **** 	//   so there would be some wisdom in verifying its functionality
+ 112:main.c        **** 	//   esp. 8-bit, etc.
+ 113:main.c        **** 	timer_init(0, CLKDIV8, WGM_NORMAL);
+ 133               		.stabn	68,0,113,.LM5-.LFBB1
+ 134               	.LM5:
+ 135 0030 80E0      		ldi r24,lo8(0)
+ 136 0032 63E0      		ldi r22,lo8(3)
+ 137 0034 40E0      		ldi r20,lo8(0)
+ 138 0036 00D0      		rcall timer_init
+ 114:main.c        **** 	tcnter_init();
+ 139               		.stabn	68,0,114,.LM6-.LFBB1
+ 140               	.LM6:
+ 141 0038 00D0      		rcall tcnter_init
+ 142               	.LBB214:
+ 143               	.LBB215:
+ 144               		.stabs	"_commonCode_localized/btbConnector/0.20/btbConnector.c",132,0,0,.Ltext1
+ 145               	.Ltext1:
+   1:_commonCode_localized/btbConnector/0.20/btbConnector.c **** // btbConnector.c 0.10
+   2:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+   3:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #include _BTBCONNECTOR_HEADER_
+   4:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #include "btbcStuff.h"
+   5:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+   6:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+   7:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #if (defined(BTBC_PC_DEBUG) && BTBC_PC_DEBUG)
+   8:_commonCode_localized/btbConnector/0.20/btbConnector.c ****    #include <stdio.h>
+   9:_commonCode_localized/btbConnector/0.20/btbConnector.c ****    #define DPRINT printf
+  10:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #else
+  11:_commonCode_localized/btbConnector/0.20/btbConnector.c ****    #define DPRINT(...) {}
+  12:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #endif
+  13:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+  14:_commonCode_localized/btbConnector/0.20/btbConnector.c **** //Can't think of a name for this...
+  15:_commonCode_localized/btbConnector/0.20/btbConnector.c **** // data coming from the Bluetooth Bee, itself, rather than from a host
+  16:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBBUFFLEN 20
+  17:_commonCode_localized/btbConnector/0.20/btbConnector.c **** uint8_t btbBuffer[BTBBUFFLEN];
+  18:_commonCode_localized/btbConnector/0.20/btbConnector.c **** cirBuff_t btbCirBuff;
+  19:_commonCode_localized/btbConnector/0.20/btbConnector.c **** uint8_t btbDeviceBuffer[BTBBUFFLEN];
+  20:_commonCode_localized/btbConnector/0.20/btbConnector.c **** cirBuff_t btbDeviceBuff;
+  21:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+  22:_commonCode_localized/btbConnector/0.20/btbConnector.c **** //Inlining saves 6 Bytes
+  23:_commonCode_localized/btbConnector/0.20/btbConnector.c **** BTBC_INLINEABLE
+  24:_commonCode_localized/btbConnector/0.20/btbConnector.c **** void btbc_init(void)
+  25:_commonCode_localized/btbConnector/0.20/btbConnector.c **** {
+  26:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	cirBuff_init(&btbCirBuff, BTBBUFFLEN, btbBuffer);
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 6
+
+
+ 146               		.stabn	68,0,26,.LM7-.LFBB1
+ 147               	.LM7:
+ 148 003a 80E0      		ldi r24,lo8(btbCirBuff)
+ 149 003c 90E0      		ldi r25,hi8(btbCirBuff)
+ 150 003e 64E1      		ldi r22,lo8(20)
+ 151 0040 40E0      		ldi r20,lo8(btbBuffer)
+ 152 0042 50E0      		ldi r21,hi8(btbBuffer)
+ 153 0044 00D0      		rcall cirBuff_init
+  27:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	cirBuff_init(&btbDeviceBuff, BTBBUFFLEN, btbDeviceBuffer);
+ 154               		.stabn	68,0,27,.LM8-.LFBB1
+ 155               	.LM8:
+ 156 0046 80E0      		ldi r24,lo8(btbDeviceBuff)
+ 157 0048 90E0      		ldi r25,hi8(btbDeviceBuff)
+ 158 004a 64E1      		ldi r22,lo8(20)
+ 159 004c 40E0      		ldi r20,lo8(btbDeviceBuffer)
+ 160 004e 50E0      		ldi r21,hi8(btbDeviceBuffer)
+ 161 0050 00D0      		rcall cirBuff_init
+ 162               	.LBE215:
+ 163               	.LBE214:
+ 164               		.stabs	"main.c",132,0,0,.Ltext2
+ 165               	.Ltext2:
+ 115:main.c        **** 
+ 116:main.c        **** 	btbc_init();
+ 117:main.c        **** 
+ 118:main.c        **** 	myTcnter_t puar0_bitTcnt;
+ 119:main.c        **** 
+ 120:main.c        **** 
+ 121:main.c        **** 	//Just add a delay so the pull-up works, etc...
+ 122:main.c        **** 	// ALSO check the heart-input, if low, go into puatTest mode
+ 123:main.c        **** 	uint8_t puatTest = FALSE;
+ 124:main.c        **** 	puar0_bitTcnt = tcnter_get();
+ 166               		.stabn	68,0,124,.LM9-.LFBB1
+ 167               	.LM9:
+ 168 0052 00D0      		rcall tcnter_get
+ 169 0054 7B01      		movw r14,r22
+ 170 0056 8C01      		movw r16,r24
+ 125:main.c        **** 	while(tcnter_get() - puar0_bitTcnt < 3000000)
+ 171               		.stabn	68,0,125,.LM10-.LFBB1
+ 172               	.LM10:
+ 173 0058 00C0      		rjmp .L2
+ 174               	.L3:
+ 126:main.c        **** 	{
+ 127:main.c        **** 		tcnter_update();
+ 175               		.stabn	68,0,127,.LM11-.LFBB1
+ 176               	.LM11:
+ 177 005a 00D0      		rcall tcnter_update
+ 178               	.L2:
+ 125:main.c        **** 	while(tcnter_get() - puar0_bitTcnt < 3000000)
+ 179               		.stabn	68,0,125,.LM12-.LFBB1
+ 180               	.LM12:
+ 181 005c 00D0      		rcall tcnter_get
+ 182 005e 6E19      		sub r22,r14
+ 183 0060 7F09      		sbc r23,r15
+ 184 0062 800B      		sbc r24,r16
+ 185 0064 910B      		sbc r25,r17
+ 186 0066 603C      		cpi r22,lo8(3000000)
+ 187 0068 26EC      		ldi r18,hi8(3000000)
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 7
+
+
+ 188 006a 7207      		cpc r23,r18
+ 189 006c 2DE2      		ldi r18,hlo8(3000000)
+ 190 006e 8207      		cpc r24,r18
+ 191 0070 20E0      		ldi r18,hhi8(3000000)
+ 192 0072 9207      		cpc r25,r18
+ 193 0074 00F0      		brlo .L3
+ 194               	.LBB216:
+ 195               	.LBB217:
+ 196               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext3
+ 197               	.Ltext3:
+   1:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //polled_uar 0.30
+   2:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //#ifdef _POLLED_UAR_HEADER_
+   3:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #include _POLLED_UAR_HEADER_
+   4:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //#include _TCNTER_HEADER_
+   5:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //#else
+   6:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // #include "polled_uar.h"
+   7:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //#endif
+   8:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+   9:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //This file needs to be located in the project's include path...
+  10:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // e.g. in the main folder
+  11:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // It's project-specific for writeOutput()
+  12:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #include "puarStuff.h"
+  13:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  14:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  15:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  16:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #if (defined(PU_PC_DEBUG) && PU_PC_DEBUG)
+  17:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	#define DPRINT	printf
+  18:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	//This is a hack... not sure what to do about it yet
+  19:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	extern int	TCNT0;
+  20:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	extern int	getbit(a);
+  21:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #else
+  22:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	#define DPRINT(...) {}
+  23:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #endif
+  24:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  25:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //********** POLLED UART Defines **********//
+  26:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  27:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #define DATA_BITS                 8
+  28:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #define START_BIT                 1
+  29:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #define STOP_BIT                  1
+  30:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  31:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //#define TIMER0_SEED (256 - ( (SYSTEM_CLOCK / BAUDRATE) / TIMER_PRESCALER ))
+  32:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  33:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  34:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //#define BIT_TCNT	 //THIS NEEDS TO BE CALCULATED!!!
+  35:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //#define HALF_TCNT (BIT_TCNT/2)
+  36:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  37:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** uint8_t rxData[NUMPUARS];
+  38:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** uint8_t rxDataWaiting[NUMPUARS];//=FALSE;
+  39:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  40:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //Inlining saved 12B (one call?)
+  41:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** PUAR_INLINEABLE
+  42:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** uint8_t puar_dataWaiting(uint8_t puarNum)
+  43:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** {
+  44:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	return rxDataWaiting[puarNum];
+  45:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** }
+  46:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  47:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //Must be called AFTER testing if data's waiting
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 8
+
+
+  48:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // otherwise it will return garbage
+  49:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //Inlining saved 20B (one call?)
+  50:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** PUAR_INLINEABLE
+  51:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** uint8_t puar_getByte(uint8_t puarNum)
+  52:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** {
+  53:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	rxDataWaiting[puarNum] = FALSE;
+  54:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	return rxData[puarNum];
+  55:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** }
+  56:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  57:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** uint8_t rxState[NUMPUARS];
+  58:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #define RXSTATE_AWAITING_START	0	//Waiting for the edge
+  59:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #define RXSTATE_EXPECTING_START  1	//Waiting to sample the start bit
+  60:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #define RXSTATE_FIRST_BIT			2  //Waiting to sample the first bit
+  61:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // Bits are received here
+  62:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #define RXSTATE_EXPECTING_STOP	(RXSTATE_FIRST_BIT + DATA_BITS)
+  63:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  64:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  65:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  66:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //#warning "Changing TCNT for this purpose makes the timer unusable for more than one UAR/T or othe
+  67:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // What about a tcnt DIFFERENCE, instead?
+  68:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // How difficult would this be with wraparound and/or resets at arbitary
+  69:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // values?
+  70:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // Can we use the other devices' (e.g. DMS) OCR values?
+  71:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // What about an xyTracker for more precision and less cumulative error?
+  72:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  73:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // Wait for a 'U' to be sent, to determine BIT_TCNT
+  74:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** myTcnter_t puar_bitTcnt[NUMPUARS];
+  75:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  76:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #ifndef BIT_TCNT
+  77:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  78:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  79:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #if 0 //auto calibrating doesn't work...
+  80:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    ?G?G?V
+  81:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    vvvvvv
+  82:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // ___             ___             ___
+  83:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    \/\/\___/\/\/   \/\/\___/\/\/   \/\/\___
+  84:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    ^    ^  ^
+  85:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    \____|__/<-- Bit Duration
+  86:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    .    |  .
+  87:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    .    Verified
+  88:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    .    ^  .
+  89:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // ..______/\______/\______/\____
+  90:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //   0.      1.      2       3		detectFilteredEdge call #
+  91:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    ^       ^
+  92:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //   ST0     ST1
+  93:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+  94:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #define BIT_TCNT_MIN	2//5//12
+  95:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //Internal for calibrateBitTcnt()
+  96:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** PUAR_INLINEABLE
+  97:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** myTcnter_t detectFilteredEdge(uint8_t puarNum)
+  98:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** {
+  99:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	uint8_t checkingEdge = FALSE;
+ 100:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	uint8_t startLevel = puar_readInput(puarNum);
+ 101:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	myTcnter_t thisEdgeStartTime = 0;
+ 102:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	myTcnter_t firstEdgeStartTime = 0;
+ 103:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 104:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	//tcnter_update();
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 9
+
+
+ 105:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	//startTime = tcnter_get();
+ 106:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 107:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 108:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	while(1)	//continue until break
+ 109:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	{
+ 110:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		tcnter_update();
+ 111:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 112:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		if(puar_readInput(puarNum) != startLevel)
+ 113:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		{
+ 114:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			if(checkingEdge)
+ 115:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			{
+ 116:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				//the level has been stable for enough time...
+ 117:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				if(tcnter_get() - thisEdgeStartTime > BIT_TCNT_MIN)
+ 118:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 					break;
+ 119:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			}
+ 120:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			else	//Not Yet Checking Edge, start doing-so
+ 121:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			{
+ 122:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				checkingEdge = TRUE;
+ 123:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				thisEdgeStartTime = tcnter_get();
+ 124:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 125:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				if(firstEdgeStartTime == 0)
+ 126:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 					firstEdgeStartTime = tcnter_get();
+ 127:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			}
+ 128:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 129:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		}
+ 130:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		else
+ 131:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		{
+ 132:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			//[Back] at the start-level... reset the edge-timer
+ 133:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			checkingEdge = FALSE;
+ 134:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			thisEdgeStartTime = 0;
+ 135:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		}
+ 136:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 137:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	}
+ 138:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 139:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	return firstEdgeStartTime;
+ 140:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 141:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** }
+ 142:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 143:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //On the plus side, by inlining both this and the above,
+ 144:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // if this isn't called, it doesn't take *any* code-space (?!)
+ 145:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // finally this inlining thing seems to work as expected...
+ 146:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** PUAR_INLINEABLE
+ 147:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** myTcnter_t puar_calibrateBitTcnt(uint8_t puarNum)
+ 148:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** {
+ 149:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	myTcnter_t bitStartTcnt[9];
+ 150:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	uint8_t bitNum = 0;
+ 151:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 152:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 153:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	for(bitNum = 0; bitNum < 4; bitNum++)
+ 154:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	{
+ 155:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		bitStartTcnt[bitNum] = detectFilteredEdge(puarNum);
+ 156:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	}
+ 157:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 158:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 159:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	//myTcnter_t totalTcnt = bitStartTcnt[8] - bitStartTcnt[0];
+ 160:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 161:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	//puar_bitTcnt[puarNum] = totalTcnt / 9;
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 10
+
+
+ 162:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 163:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	puar_bitTcnt[puarNum] = bitStartTcnt[2] - bitStartTcnt[1];
+ 164:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	//So the same bit-rate can be used for Tx, etc.
+ 165:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	return puar_bitTcnt[puarNum];
+ 166:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** }
+ 167:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #endif //FALSE (calibrated stuff doesn't work)
+ 168:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 169:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //Inlining saved 26 bytes (one call?!)
+ 170:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** PUAR_INLINEABLE
+ 171:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** void puar_setBitTcnt(uint8_t puarNum, myTcnter_t tcnt)
+ 172:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** {
+ 173:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	puar_bitTcnt[puarNum] = tcnt;
+ 198               		.stabn	68,0,173,.LM13-.LFBB1
+ 199               	.LM13:
+ 200 0076 88E6      		ldi r24,lo8(104)
+ 201 0078 90E0      		ldi r25,hi8(104)
+ 202 007a A0E0      		ldi r26,hlo8(104)
+ 203 007c B0E0      		ldi r27,hhi8(104)
+ 204 007e 8093 0000 		sts puar_bitTcnt,r24
+ 205 0082 9093 0000 		sts (puar_bitTcnt)+1,r25
+ 206 0086 A093 0000 		sts (puar_bitTcnt)+2,r26
+ 207 008a B093 0000 		sts (puar_bitTcnt)+3,r27
+ 208 008e 8093 0000 		sts puar_bitTcnt+4,r24
+ 209 0092 9093 0000 		sts (puar_bitTcnt+4)+1,r25
+ 210 0096 A093 0000 		sts (puar_bitTcnt+4)+2,r26
+ 211 009a B093 0000 		sts (puar_bitTcnt+4)+3,r27
+ 212               	.LBE217:
+ 213               	.LBE216:
+ 214               	.LBB218:
+ 215               	.LBB219:
+ 216               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext4
+ 217               	.Ltext4:
+   1:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //polled_uat 0.30
+   2:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#ifdef _POLLED_UAT_HEADER_
+   3:_commonCode_localized/polled_uat/0.40/polled_uat.c ****  #include _POLLED_UAT_HEADER_
+   4:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#else
+   5:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // #include "polled_uat.h"
+   6:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#endif
+   7:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+   8:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //This file needs to be located in the project's include path...
+   9:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // e.g. in the main folder
+  10:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // It's project-specific for writeOutput()
+  11:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #include "puatStuff.h"
+  12:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  13:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #if (defined(PU_PC_DEBUG) && PU_PC_DEBUG)
+  14:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	#define DPRINT	printf
+  15:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	//This is a hack... not sure what to do about it yet
+  16:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //	extern int	TCNT0;
+  17:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //	extern int	puat_writeOutput(a,b);
+  18:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  19:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // This should no longer be used... since puatStuff.h... right?
+  20:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //	extern int lineVal[NUMPUATS];	//This is also quite hokey...
+  21:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 								// it's exclusive to uat->uar test code
+  22:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 								// it shouldn't matter otherwise, 'cause it's
+  23:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 								// never referenced elsewhere (right?)
+  24:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #else
+  25:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	#define DPRINT(...) {}
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 11
+
+
+  26:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #endif
+  27:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  28:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //********** POLLED UART Defines **********//
+  29:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  30:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#define DATA_BITS                 8
+  31:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#define START_BIT                 1
+  32:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #define PUAT_STOP_BITS              1//2
+  33:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  34:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#define TIMER0_SEED (256 - ( (SYSTEM_CLOCK / BAUDRATE) / TIMER_PRESCALER ))
+  35:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  36:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //myTcnter_t puat_bitTcnt[NUMPUATS];
+  37:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  38:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #ifndef BIT_TCNT
+  39:_commonCode_localized/polled_uat/0.40/polled_uat.c **** myTcnter_t puat_bitTcnt[NUMPUATS];
+  40:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //Inlining this saved nearly 30Bytes! (in a for loop for two puats)
+  41:_commonCode_localized/polled_uat/0.40/polled_uat.c **** PUAT_INLINEABLE
+  42:_commonCode_localized/polled_uat/0.40/polled_uat.c **** void puat_setBitTcnt(uint8_t puatNum, myTcnter_t tcnt)
+  43:_commonCode_localized/polled_uat/0.40/polled_uat.c **** {
+  44:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	puat_bitTcnt[puatNum] = tcnt;
+ 218               		.stabn	68,0,44,.LM14-.LFBB1
+ 219               	.LM14:
+ 220 009e 8093 0000 		sts puat_bitTcnt,r24
+ 221 00a2 9093 0000 		sts (puat_bitTcnt)+1,r25
+ 222 00a6 A093 0000 		sts (puat_bitTcnt)+2,r26
+ 223 00aa B093 0000 		sts (puat_bitTcnt)+3,r27
+ 224               	.LBE219:
+ 225               	.LBE218:
+ 226               	.LBB221:
+ 227               	.LBB222:
+ 228               	.LBB223:
+ 229               		.stabs	"./puatStuff.h",132,0,0,.Ltext5
+ 230               	.Ltext5:
+   1:./puatStuff.h **** // This needn't (shouldn't?) be included anywhere in the project code...
+   2:./puatStuff.h **** //  It's included in polled_uat.c
+   3:./puatStuff.h **** // Not sure how to tie it all together with main.h or whatever, for e.g.
+   4:./puatStuff.h **** //   the #defines for Tx0pin, or if global variables were used, etc.
+   5:./puatStuff.h **** 
+   6:./puatStuff.h **** //#define Tx0pin    PB0 //SDA_PIN
+   7:./puatStuff.h **** //#define Tx0PORT   PORTB //SDAPORT
+   8:./puatStuff.h **** /*
+   9:./puatStuff.h **** #define Tx0pin    PB0 //SDA_PIN
+  10:./puatStuff.h **** #define Tx0PORT   PORTB //SDAPORT
+  11:./puatStuff.h **** 
+  12:./puatStuff.h **** #define Tx1pin    PB4
+  13:./puatStuff.h **** #define Tx1PORT   PORTB
+  14:./puatStuff.h **** */
+  15:./puatStuff.h **** #include "pinout.h"
+  16:./puatStuff.h **** 
+  17:./puatStuff.h **** //void puat_writeOutput(uint8_t puatNum, uint8_t value)
+  18:./puatStuff.h **** //	   __attribute__((__always_inline__));
+  19:./puatStuff.h **** 
+  20:./puatStuff.h **** //static 
+  21:./puatStuff.h **** extern __inline__ void puat_writeOutput(uint8_t puatNum, uint8_t value)
+  22:./puatStuff.h **** {
+  23:./puatStuff.h **** 	if(puatNum == 0)
+  24:./puatStuff.h **** 		writepinPORT(Tx0pin, Tx0PORT, value);
+ 231               		.stabn	68,0,24,.LM15-.LFBB1
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 12
+
+
+ 232               	.LM15:
+ 233 00ae C49A      		sbi 56-0x20,4
+ 234 00b0 28B3      		in r18,56-0x20
+ 235               	.LBE223:
+ 236               	.LBE222:
+ 237               	.LBE221:
+ 238               	.LBB226:
+ 239               	.LBB220:
+ 240               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext6
+ 241               	.Ltext6:
+ 242               		.stabn	68,0,44,.LM16-.LFBB1
+ 243               	.LM16:
+ 244 00b2 8093 0000 		sts puat_bitTcnt+4,r24
+ 245 00b6 9093 0000 		sts (puat_bitTcnt+4)+1,r25
+ 246 00ba A093 0000 		sts (puat_bitTcnt+4)+2,r26
+ 247 00be B093 0000 		sts (puat_bitTcnt+4)+3,r27
+ 248               	.LBE220:
+ 249               	.LBE226:
+ 250               	.LBB227:
+ 251               	.LBB225:
+ 252               	.LBB224:
+ 253               		.stabs	"./puatStuff.h",132,0,0,.Ltext7
+ 254               	.Ltext7:
+  25:./puatStuff.h **** 	else
+  26:./puatStuff.h **** 		writepinPORT(Tx1pin, Tx1PORT, value);
+ 255               		.stabn	68,0,26,.LM17-.LFBB1
+ 256               	.LM17:
+ 257 00c2 C09A      		sbi 56-0x20,0
+ 258 00c4 88B3      		in r24,56-0x20
+ 259               	.LBE224:
+ 260               	.LBE225:
+ 261               	.LBE227:
+ 262               		.stabs	"main.c",132,0,0,.Ltext8
+ 263               	.Ltext8:
+ 128:main.c        **** //		if(!heartPinInputPoll())
+ 129:main.c        **** //			puatTest = TRUE;
+ 130:main.c        **** //		heartUpdate();
+ 131:main.c        **** 
+ 132:main.c        **** 	}
+ 133:main.c        **** 
+ 134:main.c        **** /*
+ 135:main.c        **** 	puar0_bitTcnt = puar_calibrateBitTcnt(0);
+ 136:main.c        **** 
+ 137:main.c        **** 	//Don't forget, nibbles are reversed, so 0x23 blinks as
+ 138:main.c        **** 	// 3 blinks, then 2
+ 139:main.c        **** 	set_heartBlink(puar0_bitTcnt);
+ 140:main.c        **** */
+ 141:main.c        **** 
+ 142:main.c        **** 	//1MHz/38400 = 26.04 (104=9600)
+ 143:main.c        **** 	// Now running at 16MHz->2MHz 
+ 144:main.c        **** 	puar0_bitTcnt = 104; //52; //26; //104; //26;
+ 145:main.c        **** 
+ 146:main.c        **** 	uint8_t puar;
+ 147:main.c        **** 	for(puar=0; puar<NUMPUARS; puar++)
+ 148:main.c        **** 	{
+ 149:main.c        **** 		puar_setBitTcnt(puar, puar0_bitTcnt);
+ 150:main.c        **** 		puar_init(puar);
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 13
+
+
+ 151:main.c        **** 	}
+ 152:main.c        **** 
+ 153:main.c        **** 	uint8_t puat;
+ 154:main.c        **** 	for(puat=0; puat<NUMPUATS; puat++)
+ 155:main.c        **** 	{
+ 156:main.c        **** 		puat_setBitTcnt(puat, puar0_bitTcnt);
+ 157:main.c        **** 		puat_init(puat);
+ 158:main.c        **** 	}
+ 159:main.c        **** 
+ 160:main.c        **** /*
+ 161:main.c        **** 	uint8_t osccalling = TRUE;
+ 162:main.c        **** 	myTcnter_t nextOsccalTime = tcnter_get() + 2000000;
+ 163:main.c        **** 	myTcnter_t nextByteTime = tcnter_get() + 20000;
+ 164:main.c        **** 
+ 165:main.c        **** 
+ 166:main.c        **** 	if(puatTest)
+ 167:main.c        **** 	{
+ 168:main.c        **** 		set_heartBlink(1);
+ 169:main.c        **** 		while(1)
+ 170:main.c        **** 		{
+ 171:main.c        **** 		 //	heartUpdate();	
+ 172:main.c        **** 			tcnter_update();
+ 173:main.c        **** 			puat_update(0);
+ 174:main.c        **** 			puar_update(0);
+ 175:main.c        **** 			if(!puat_dataWaiting(0) && (tcnter_get() >= nextByteTime))
+ 176:main.c        **** 			{
+ 177:main.c        **** 				//10ms...
+ 178:main.c        **** 				nextByteTime = tcnter_get() + 20000;
+ 179:main.c        **** 				puat_sendByte(0, 'V');
+ 180:main.c        **** 			}
+ 181:main.c        **** 
+ 182:main.c        **** 			if((osccalling) && (tcnter_get() >= nextOsccalTime))
+ 183:main.c        **** 			{
+ 184:main.c        **** 				OSCCAL++;
+ 185:main.c        **** 				nextOsccalTime += 2000000;	//a second for each value...
+ 186:main.c        **** 			}
+ 187:main.c        **** 			
+ 188:main.c        **** 			if(!heartPinInputPoll())
+ 189:main.c        **** 			{
+ 190:main.c        **** 				nextOsccalTime = tcnter_get() + 2000000;
+ 191:main.c        **** 				osccalling = !osccalling; //FALSE;
+ 192:main.c        **** 			}
+ 193:main.c        **** 		}
+ 194:main.c        **** 	}
+ 195:main.c        **** */
+ 196:main.c        **** 
+ 197:main.c        **** 	//Timer0 TCNT0 increments at 1MHz, 0-255->0-255 (OCR value not used)
+ 198:main.c        **** 	// Not using DMS, because I'd rather not use interrupts
+ 199:main.c        **** 	// so there's no lag-time in the main-loop (for polling)
+ 200:main.c        **** 	// TODO: timer_common doesn't address this device, specifically
+ 201:main.c        **** 	//   so there would be some wisdom in verifying its functionality
+ 202:main.c        **** 	//   esp. 8-bit, etc.
+ 203:main.c        **** 	//timer_init(0, CLKDIV8, WGM_NORMAL);
+ 204:main.c        **** 
+ 205:main.c        **** 	//tcnter_init();
+ 206:main.c        **** 
+ 207:main.c        **** 
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 14
+
+
+ 208:main.c        **** 
+ 209:main.c        **** //	init_heartBeat();
+ 210:main.c        **** 
+ 211:main.c        **** //	setHeartRate(0);	
+ 212:main.c        **** 
+ 213:main.c        **** 	//Blink until the EDID is read...
+ 214:main.c        **** 	//set_heartBlink(1);
+ 215:main.c        **** 
+ 216:main.c        **** 	//This was only necessary for debugging timer initialization bugs...
+ 217:main.c        **** 	// which have been resolved
+ 218:main.c        **** //	set_heartBlink(retVal);
+ 219:main.c        **** 
+ 220:main.c        **** 	setoutPORT(HEART_PINNUM, HEART_PINPORT);
+ 264               		.stabn	68,0,220,.LM18-.LFBB1
+ 265               	.LM18:
+ 266 00c6 B99A      		sbi 55-0x20,1
+ 267               	.LBB228:
+ 268               	.LBB229:
+ 269               	.LBB230:
+ 270               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext9
+ 271               	.Ltext9:
+  45:_commonCode_localized/polled_uat/0.40/polled_uat.c **** }
+  46:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #endif
+  47:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  48:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //Inlining this saves 14Bytes (for loop, two puats)
+  49:_commonCode_localized/polled_uat/0.40/polled_uat.c **** PUAT_INLINEABLE 
+  50:_commonCode_localized/polled_uat/0.40/polled_uat.c **** void puat_init(uint8_t puatNum)
+  51:_commonCode_localized/polled_uat/0.40/polled_uat.c **** {
+  52:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #if(!defined(TCNTER_STUFF_IN_MAIN) || !TCNTER_STUFF_IN_MAIN)
+  53:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	tcnter_init();
+  54:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #endif
+  55:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  56:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	//Set the line to IDLE...
+  57:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	puat_writeOutput(puatNum, 1);
+  58:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  59:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#ifdef BIT_TCNT
+  60:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //	puat_bitTcnt[puatNum] = BIT_TCNT;
+  61:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#endif
+  62:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  63:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #warning "NYI: most init stuff is unnecessary at boot, but it's not a bad idea"
+  64:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  65:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	DPRINT("puat_init(%d)\n", (int)puatNum);
+  66:_commonCode_localized/polled_uat/0.40/polled_uat.c **** }
+  67:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  68:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#define BIT_TCNT	 //THIS NEEDS TO BE CALCULATED!!!
+  69:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#define HALF_TCNT (BIT_TCNT/2)
+  70:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  71:_commonCode_localized/polled_uat/0.40/polled_uat.c **** uint8_t puat_txData[NUMPUATS];
+  72:_commonCode_localized/polled_uat/0.40/polled_uat.c **** uint8_t puat_txDataWaiting[NUMPUATS]; //=FALSE;
+  73:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  74:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#warning "puat_dataWaiting/sendByte can't be inlined with btbcStuff?!"
+  75:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // since btbcStuff is in a separate file-space... 
+  76:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // that should be changed soon (by inlining it, as well)
+  77:_commonCode_localized/polled_uat/0.40/polled_uat.c **** PUAT_INLINEABLE
+  78:_commonCode_localized/polled_uat/0.40/polled_uat.c **** uint8_t puat_dataWaiting(uint8_t puatNum)
+  79:_commonCode_localized/polled_uat/0.40/polled_uat.c **** {
+  80:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	return puat_txDataWaiting[puatNum];
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 15
+
+
+  81:_commonCode_localized/polled_uat/0.40/polled_uat.c **** }
+  82:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  83:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //Must be called AFTER testing if data's waiting
+  84:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // otherwise it will return garbage
+  85:_commonCode_localized/polled_uat/0.40/polled_uat.c **** PUAT_INLINEABLE
+  86:_commonCode_localized/polled_uat/0.40/polled_uat.c **** void puat_sendByte(uint8_t puatNum, uint8_t data)
+  87:_commonCode_localized/polled_uat/0.40/polled_uat.c **** {
+  88:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	puat_txDataWaiting[puatNum] = TRUE;
+  89:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	puat_txData[puatNum] = data;
+  90:_commonCode_localized/polled_uat/0.40/polled_uat.c **** }
+  91:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  92:_commonCode_localized/polled_uat/0.40/polled_uat.c **** uint8_t puat_txState[NUMPUATS];
+  93:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #define TXSTATE_IDLE					0	//Waiting for data
+  94:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #define TXSTATE_SENDING_START  	1	//Waiting to complete the start bit
+  95:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #define TXSTATE_SENDING_BIT8		(TXSTATE_SENDING_START + DATA_BITS) //Waiting to complete the last da
+  96:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // Bits are received here
+  97:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #define TXSTATE_SENDING_STOP	(TXSTATE_SENDING_BIT8+1)
+  98:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+  99:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 100:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 101:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //#warning "Changing TCNT for this purpose makes the timer unusable for more than one UAR/T or othe
+ 102:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // What about a tcnt DIFFERENCE, instead?
+ 103:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // How difficult would this be with wraparound and/or resets at arbitary
+ 104:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // values?
+ 105:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // Can we use the other devices' (e.g. DMS) OCR values?
+ 106:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // What about an xyTracker for more precision and less cumulative error?
+ 107:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 108:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 109:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //Apparently inline functions aren't allowed to have static variables...
+ 110:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // so let's make 'em global, YAY!
+ 111:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // HAH! Code-size has increased!
+ 112:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // whereas before it was using a register, now it's using SRAM
+ 113:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // (which is to be expected... but the bss/data spaces haven't changed...
+ 114:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //  so is it treating them as volatile, or something?)
+ 115:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // e.g.:
+ 116:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //shiftingByte[puatNum] = txData[puatNum];
+ 117:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //lds	r13, 0x00D6
+ 118:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // is now
+ 119:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //puat_shiftingByte[puatNum] = puat_txData[puatNum];
+ 120:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //lds	r24, 0x00CE
+ 121:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //sts	0x00D6, r24
+ 122:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // Or Worse:
+ 123:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //		nextTcnter[puatNum] = tcnter_get() + BIT_TCNT;
+ 124:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //e0 90 86 00 	lds	r14, 0x0086
+ 125:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //f0 90 87 00 	lds	r15, 0x0087
+ 126:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //00 91 88 00 	lds	r16, 0x0088
+ 127:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //10 91 89 00 	lds	r17, 0x0089
+ 128:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //8a e1       	ldi	r24, 0x1A	; 26
+ 129:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //90 e0       	ldi	r25, 0x00	; 0
+ 130:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //a0 e0       	ldi	r26, 0x00	; 0
+ 131:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //b0 e0       	ldi	r27, 0x00	; 0
+ 132:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //e8 0e       	add	r14, r24
+ 133:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //f9 1e       	adc	r15, r25
+ 134:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //0a 1f       	adc	r16, r26
+ 135:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //1b 1f       	adc	r17, r27
+ 136:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // is now (note 2-cycle instructions)
+ 137:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //		puat_nextTcnter[puatNum] = tcnter_get() + BIT_TCNT;
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 16
+
+
+ 138:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //80 91 86 00 	lds	r24, 0x0086
+ 139:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //90 91 87 00 	lds	r25, 0x0087
+ 140:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //a0 91 88 00 	lds	r26, 0x0088
+ 141:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //b0 91 89 00 	lds	r27, 0x0089
+ 142:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //4a 96       	adiw	r24, 0x1a	; 26
+ 143:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //a1 1d       	adc	r26, r1
+ 144:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //b1 1d       	adc	r27, r1
+ 145:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //80 93 cf 00 	sts	0x00CF, r24
+ 146:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //90 93 d0 00 	sts	0x00D0, r25
+ 147:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //a0 93 d1 00 	sts	0x00D1, r26
+ 148:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //b0 93 d2 00 	sts	0x00D2, r27
+ 149:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // using asm("r2") decreased code-size by 30 bytes!
+ 150:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // but it doesn't work too well with an array...
+ 151:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // feel free to revisit 0.40r but it ain't here.
+ 152:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #if(defined(_PUAT_INLINE_) && _PUAT_INLINE_)
+ 153:_commonCode_localized/polled_uat/0.40/polled_uat.c ****  uint8_t puat_shiftingByte[NUMPUATS]; // asm("r2"); // = 0x00;
+ 154:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #if(defined(BIT_TCNT) && (BIT_TCNT > 128))
+ 155:_commonCode_localized/polled_uat/0.40/polled_uat.c ****  #error "large BIT_TCNTs won't work with tcnter_isItTime()"
+ 156:_commonCode_localized/polled_uat/0.40/polled_uat.c ****  #error "though this is a bit conservative"
+ 157:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #endif
+ 158:_commonCode_localized/polled_uat/0.40/polled_uat.c ****  tcnter8_t puat_lastTime[NUMPUATS];
+ 159:_commonCode_localized/polled_uat/0.40/polled_uat.c ****  //myTcnter_t puat_nextTcnter[NUMPUATS]; // = 0; 
+ 160:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		   //When the next action should occur
+ 161:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		                                    // wrt: myTcnter
+ 162:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #endif
+ 163:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 164:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 165:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 166:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //Inlining this saved 18Bytes (one call, otherwise it'd go HUGE)
+ 167:_commonCode_localized/polled_uat/0.40/polled_uat.c **** PUAT_INLINEABLE
+ 168:_commonCode_localized/polled_uat/0.40/polled_uat.c **** void puat_update(uint8_t puatNum)
+ 169:_commonCode_localized/polled_uat/0.40/polled_uat.c **** {
+ 170:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #if(!defined(_PUAT_INLINE_) || !_PUAT_INLINE_)
+ 171:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	static uint8_t puat_shiftingByte[NUMPUATS]; // = 0x00;
+ 172:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 173:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	static tcnter8_t puat_lastTime[NUMPUATS];	
+ 174:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //	static myTcnter_t puat_nextTcnter[NUMPUATS]; // = 0;	
+ 175:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	//When the next action should occur
+ 176:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 												// wrt: myTcnter
+ 177:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #endif
+ 178:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 179:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #if(!defined(TCNTER_STUFF_IN_MAIN) || !TCNTER_STUFF_IN_MAIN)
+ 180:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	   tcnter_update();
+ 181:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #endif
+ 182:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 183:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 184:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //	int16_t deltaTcnt = (int16_t)thisTcnt - (int16_t)lastTcnt;
+ 185:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 186:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	// Handle wrap-around...
+ 187:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //	if (thisTcnt < lastTcnt)
+ 188:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //		deltaTcnt += (int16_t)(OCR0A);
+ 189:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 190:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //	lastTcnt = thisTcnt;
+ 191:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 192:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //	myTcnter += deltaTcnt;
+ 193:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 194:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            start                                stop
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 17
+
+
+ 195:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // bits:        v   0   1   2   3   4   5   6   7   v 
+ 196:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //    .....___     ___ ___ ___ ___ ___ ___ ___ ___ ___ .......
+ 197:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            \___/___X___X___X___X___X___X___X___/
+ 198:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            ^ ^   ^   ^   ^   ^   ^   ^   ^   ^   ^
+ 199:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            | |   |   |   |   |   |   |   |   |   |
+ 200:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            | |   \---+-Data Bits Sampled-+---/   |
+ 201:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            | |                                   |
+ 202:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            | \--Start Tested             Stop Bit Sampled
+ 203:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            |
+ 204:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            \--Start Detected
+ 205:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            
+ 206:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //    .....___     ___ ___ ___ ___ ___ ___ ___ ___ ___ .......
+ 207:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //            \___/___X___X___X___X___X___X___X___/
+ 208:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //
+ 209:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //    ..._____^_ _^____ 7 States Unnamed _____^_ _^_ _^_______IDLE (2)
+ 210:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //      |       |                               |   |
+ 211:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //      |       |                 SENDING_BIT8--/   \--SENDING_STOP
+ 212:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //      |       |
+ 213:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //      |       \--SENDING_START
+ 214:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //      |
+ 215:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //      \--IDLE
+ 216:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //
+ 217:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // Bit order might be reversed, (looks right, pseudo-verified)
+ 218:_commonCode_localized/polled_uat/0.40/polled_uat.c **** // I am, however, pretty sure that start-bits are 0 and stop-bits are 1
+ 219:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //    so then the data-bits are directly-read from the pin (not inverted)
+ 220:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 221:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	if(puat_txState[puatNum] == TXSTATE_IDLE)
+ 222:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	{
+ 223:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	   if(puat_txDataWaiting[puatNum])
+ 224:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		{
+ 225:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_shiftingByte[puatNum] = puat_txData[puatNum];
+ 226:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txDataWaiting[puatNum] = FALSE;
+ 227:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 228:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum] = TXSTATE_SENDING_START;
+ 272               		.stabn	68,0,228,.LM19-.LFBB1
+ 273               	.LM19:
+ 274 00c8 11E0      		ldi r17,lo8(1)
+ 229:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 230:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			//myTcnter = 0;
+ 231:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_lastTime[puatNum] = (tcnter8_t)(tcnter_get());
+ 232:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			//puat_nextTcnter[puatNum] = tcnter_get() + puat_bitTcnt[puatNum]; //BIT_TCNT + tcnter_get();
+ 233:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			
+ 234:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			//Depending on the timer resolution, it might be worthwhile
+ 235:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			// to restart the timer...
+ 236:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			// hopefully the res is high enough not to have to
+ 237:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 238:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_writeOutput(puatNum, 0);
+ 239:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			DPRINT("Sending[%d]: StartBit (data='%c'=0x%x)\n", (int)(puatNum),
+ 240:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 					puat_shiftingByte[puatNum],	(int)(puat_shiftingByte[puatNum]));
+ 241:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		}
+ 242:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		else
+ 243:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		{
+ 244:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			//Still waiting for data to transmit
+ 245:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		}
+ 246:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	}
+ 247:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	// Assuming that this function is called often enough that
+ 248:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	// TCNT can never be >= 2* BIT_TCNT
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 18
+
+
+ 249:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	// This test should be safe, since it only gets here when 
+ 250:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	//   not awaiting start
+ 251:_commonCode_localized/polled_uat/0.40/polled_uat.c **** //	else if(myTcnter >= puat_nextTcnter)
+ 252:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #ifdef BIT_TCNT
+ 253:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	else if(tcnter_isItTime8(&(puat_lastTime[puatNum]), BIT_TCNT))
+ 254:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #else
+ 255:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	else if(tcnter_isItTime8(&(puat_lastTime[puatNum]),
+ 256:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 									 puat_bitTcnt[puatNum]))
+ 257:_commonCode_localized/polled_uat/0.40/polled_uat.c **** #endif
+ 258:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		//tcnter_get() >= puat_nextTcnter[puatNum])
+ 259:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	{
+ 260:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		//This should be safe here for all cases below
+ 261:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		//TCNT0 = thisTcnt - BIT_TCNT;
+ 262:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		//lastTcnt = thisTcnt;
+ 263:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 264:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		// We *might* be able to get away without these tests
+ 265:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		//  just making it an else case...
+ 266:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		// (Though, intuitively, it makes more visual-sense this way)
+ 267:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		//Transmit Data Bits...
+ 268:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		if( (puat_txState[puatNum] >= TXSTATE_SENDING_START)
+ 269:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			 && (puat_txState[puatNum] < TXSTATE_SENDING_BIT8) )
+ 270:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		{
+ 271:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum]++;
+ 272:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_writeOutput(puatNum, (puat_shiftingByte[puatNum])&0x01);
+ 273:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			//puat_shiftingByte >>= 1;
+ 274:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 275:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			DPRINT("Sending[%d]: Bit %d = %d\n", (int)(puatNum),
+ 276:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 								(int)(puat_txState[puatNum]-TXSTATE_SENDING_START-1),
+ 277:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 								(int)((puat_shiftingByte[puatNum])&0x01) );
+ 278:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 279:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_shiftingByte[puatNum] >>= 1;
+ 280:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		}
+ 281:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		//Transmit Stop Bit...
+ 282:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		else if( puat_txState[puatNum] == TXSTATE_SENDING_BIT8 ) 
+ 283:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		{
+ 284:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum] = TXSTATE_SENDING_STOP;
+ 275               		.stabn	68,0,284,.LM20-.LFBB1
+ 276               	.LM20:
+ 277 00ca 3AE0      		ldi r19,lo8(10)
+ 278 00cc E32E      		mov r14,r19
+ 279               	.LBE230:
+ 280               	.LBE229:
+ 281               	.LBB238:
+ 282               	.LBB239:
+ 283               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext10
+ 284               	.Ltext10:
+ 174:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** }
+ 175:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #endif
+ 176:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 177:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //Inlining saved 2 Bytes !!!
+ 178:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** PUAR_INLINEABLE
+ 179:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** void puar_init(uint8_t puarNum)
+ 180:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** {
+ 181:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #if(!defined(TCNTER_STUFF_IN_MAIN) || !TCNTER_STUFF_IN_MAIN)
+ 182:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	tcnter_init();
+ 183:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #endif
+ 184:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 19
+
+
+ 185:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #ifdef BIT_TCNT
+ 186:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	puar_bitTcnt[puarNum] = BIT_TCNT;
+ 187:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #endif
+ 188:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 189:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	DPRINT("puar_init(%d)\n", puarNum);
+ 190:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** }
+ 191:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 192:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //Inlining saved 172 Bytes !
+ 193:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** PUAR_INLINEABLE
+ 194:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** void puar_update(uint8_t puarNum)
+ 195:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** {
+ 196:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	static uint8_t lastTcnt = 0;		//TCNT as of the last update() call
+ 197:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	static uint8_t thisByte[NUMPUARS]; // = 0x00;
+ 198:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	uint8_t thisTcnt = TCNT0;
+ 199:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	
+ 200:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	static uint16_t myTcnter = 0;		//Running tcnts since last Start edge
+ 201:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	static myTcnter_t nextTcnter[NUMPUARS]; // = 0;	//When the next action should occur
+ 202:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 												// wrt: myTcnter
+ 203:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 204:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #if(!defined(TCNTER_STUFF_IN_MAIN) || !TCNTER_STUFF_IN_MAIN)
+ 205:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	tcnter_update();
+ 206:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** #endif
+ 207:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 208:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	int16_t deltaTcnt = (int16_t)thisTcnt - (int16_t)lastTcnt;
+ 209:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 210:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	// Handle wrap-around...
+ 211:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	if (thisTcnt < lastTcnt)
+ 212:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //		deltaTcnt += (int16_t)(OCR0A);
+ 213:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 214:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	lastTcnt = thisTcnt;
+ 215:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 216:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	myTcnter += deltaTcnt;
+ 217:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 218:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            start                                stop
+ 219:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // bits:        v   0   1   2   3   4   5   6   7   v 
+ 220:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    .....___     ___ ___ ___ ___ ___ ___ ___ ___ ___ .......
+ 221:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            \___/___X___X___X___X___X___X___X___/
+ 222:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            ^ ^   ^   ^   ^   ^   ^   ^   ^   ^   ^
+ 223:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            | |   |   |   |   |   |   |   |   |   |
+ 224:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            | |   \---+-Data Bits Sampled-+---/   |
+ 225:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            | |                                   |
+ 226:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            | \--Start Tested             Stop Bit Sampled
+ 227:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            |
+ 228:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            \--Start Detected
+ 229:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            
+ 230:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    .....___     ___ ___ ___ ___ ___ ___ ___ ___ ___ .......
+ 231:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //            \___/___X___X___X___X___X___X___X___/
+ 232:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	           ^ ^   ^   ^   ^   ^   ^   ^   ^   ^   ^
+ 233:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    ...____/ V \_/ \___ 7 States Unnamed ____/ \_/ \___AWAITING_START (2)
+ 234:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //      |      |  |                               |
+ 235:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //      |      |  \--FIRST_BIT                    \--EXPECTING_STOP
+ 236:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //      |      |
+ 237:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //      |      \--EXPECTING_START
+ 238:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //      |
+ 239:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //      \--AWAITING_START
+ 240:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //
+ 241:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // Bit order might be reversed, (looks right, pseudo-verified)
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 20
+
+
+ 242:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** // I am, however, pretty sure that start-bits are 0 and stop-bits are 1
+ 243:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //    so then the data-bits are directly-read from the pin (not inverted)
+ 244:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 245:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	if(rxState[puarNum] == RXSTATE_AWAITING_START)
+ 246:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	{
+ 247:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	   if(!puar_readInput(puarNum)) //getbit(rxPin))
+ 248:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		{
+ 249:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			rxState[puarNum] = RXSTATE_EXPECTING_START;
+ 250:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			//Set it up to sample bits halfway...
+ 251:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			//TCNT0 = HALF_TCNT;
+ 252:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			//lastTcnt = thisTcnt;
+ 253:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			//myTcnter = 0;
+ 254:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			nextTcnter[puarNum] = tcnter_get() + puar_bitTcnt[puarNum]/2; //HALF_TCNT + tcnter_get();
+ 255:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 256:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			//Depending on the timer resolution, it might be worthwhile
+ 257:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			// to restart the timer...
+ 258:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			// hopefully the res is high enough not to have to
+ 259:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 260:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			thisByte[puarNum] = 0x00;
+ 261:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			DPRINT("Start Detected [%d]\n", (int)puarNum);
+ 262:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		}
+ 263:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		else
+ 264:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		{
+ 265:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			//Still waiting for that start indication
+ 266:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		}
+ 267:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	}
+ 268:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	// Assuming that this function is called often enough that
+ 269:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	// TCNT can never be >= 2* BIT_TCNT
+ 270:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	// This test should be safe, since it only gets here when 
+ 271:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	//   not awaiting start
+ 272:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** //	else if(myTcnter >= nextTcnter)
+ 273:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	else if(tcnter_get() >= nextTcnter[puarNum])
+ 274:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	{
+ 275:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		//This should be safe here for all cases below
+ 276:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		//TCNT0 = thisTcnt - BIT_TCNT;
+ 277:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		//lastTcnt = thisTcnt;
+ 278:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		nextTcnter[puarNum] += puar_bitTcnt[puarNum]; //BIT_TCNT;
+ 279:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 280:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		if(rxState[puarNum] == RXSTATE_EXPECTING_START)
+ 281:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		{
+ 282:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****    		//Make sure it wasn't just a glitch...
+ 283:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****    		if(!puar_readInput(puarNum)) //getbit(rxPin))
+ 284:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****    		{
+ 285:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****          	//TCNT0 = thisTcnt - BIT_TCNT;
+ 286:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****          	rxState[puarNum] = RXSTATE_FIRST_BIT;
+ 285               		.stabn	68,0,286,.LM21-.LFBB1
+ 286               	.LM21:
+ 287 00ce 22E0      		ldi r18,lo8(2)
+ 288 00d0 F22E      		mov r15,r18
+ 289               	.LBE239:
+ 290               	.LBE238:
+ 291               	.LBB250:
+ 292               	.LBB251:
+ 293               		.stabs	"_commonCode_localized/btbConnector/0.20/btbConnector.c",132,0,0,.Ltext11
+ 294               	.Ltext11:
+  28:_commonCode_localized/btbConnector/0.20/btbConnector.c **** }
+  29:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 21
+
+
+  30:_commonCode_localized/btbConnector/0.20/btbConnector.c **** char btbcCmd_Reset[]="\r\n+STWMOD=0\r\n";
+  31:_commonCode_localized/btbConnector/0.20/btbConnector.c **** char btbcCmd_Inquire[]="\r\n+INQ=1\r\n";
+  32:_commonCode_localized/btbConnector/0.20/btbConnector.c **** char *btbcCommand = "\0";
+  33:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+  34:_commonCode_localized/btbConnector/0.20/btbConnector.c **** //These are the actual responses, the manual says differently
+  35:_commonCode_localized/btbConnector/0.20/btbConnector.c **** char btbcErrorResponse[]="ERROR";
+  36:_commonCode_localized/btbConnector/0.20/btbConnector.c **** // Doesn't work when prefixed with "\r\n" ?!
+  37:_commonCode_localized/btbConnector/0.20/btbConnector.c **** // ALSO: detecting +BTSTATE:1\r\n as an indicator for disconnect->reset
+  38:_commonCode_localized/btbConnector/0.20/btbConnector.c **** //       doesn't work, since \r is used to restart detection
+  39:_commonCode_localized/btbConnector/0.20/btbConnector.c **** //       so remove \r\n from the end...
+  40:_commonCode_localized/btbConnector/0.20/btbConnector.c **** char btbcResponse_BTSTATE1[]="\n+BTSTATE:1"; //\r\n";	//Ready
+  41:_commonCode_localized/btbConnector/0.20/btbConnector.c **** char btbcResponse_BTSTATE2[]="+BTSTATE:2\r\n";	//Inquiring
+  42:_commonCode_localized/btbConnector/0.20/btbConnector.c **** char btbcResponse_BTSTATE4[]="+BTSTATE:4\r\n";	//Connected
+  43:_commonCode_localized/btbConnector/0.20/btbConnector.c **** char *btbcResponse = "\0";
+  44:_commonCode_localized/btbConnector/0.20/btbConnector.c **** // Cannot increment the pointer, because it might need to be reset
+  45:_commonCode_localized/btbConnector/0.20/btbConnector.c **** //  e.g. BTSTATE:0 received, when looking for BTSTATE:1
+  46:_commonCode_localized/btbConnector/0.20/btbConnector.c **** uint8_t btbcResponseIndex = 0;
+  47:_commonCode_localized/btbConnector/0.20/btbConnector.c **** uint8_t btbcErrorResponseIndex = 0;
+  48:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+  49:_commonCode_localized/btbConnector/0.20/btbConnector.c **** uint8_t btbcState;
+  50:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_SENDRESET				0
+  51:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_SENDINGRESET			1
+  52:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_AWAITBTSTATE1 			2
+  53:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_AWAITINGBTSTATE1		3
+  54:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_SENDINQUIRE				4
+  55:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_SENDINGINQUIRE			5
+  56:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_AWAITBTSTATE2			6
+  57:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_AWAITINGBTSTATE2		7
+  58:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_AWAITCONNECTION		8
+  59:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_AWAITINGCONNECTION	9
+  60:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_CONNECTRECEIVED		10
+  61:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_CONNECTED				11
+  62:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #define BTBCSTATE_VERIFYINGCONNECTION	12
+  63:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+  64:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+  65:_commonCode_localized/btbConnector/0.20/btbConnector.c **** //4106 pre-inlining, 4132 after
+  66:_commonCode_localized/btbConnector/0.20/btbConnector.c **** // 4120 inlined WITH puat_dataWaiting inlined
+  67:_commonCode_localized/btbConnector/0.20/btbConnector.c **** // 4094 not inlined WITH puat_dataWaiting inlined
+  68:_commonCode_localized/btbConnector/0.20/btbConnector.c **** // 4072 not inlined WITH puat_sendByte inlined
+  69:_commonCode_localized/btbConnector/0.20/btbConnector.c **** // 4098 inlined WITH puat_sendByte inlined
+  70:_commonCode_localized/btbConnector/0.20/btbConnector.c **** BTBC_INLINEABLE	//This INCREASES code size (WTF?) 26Bytes
+  71:_commonCode_localized/btbConnector/0.20/btbConnector.c **** void btbc_update(int16_t rxByteFromBTB, int16_t rxByteFromDevice)
+  72:_commonCode_localized/btbConnector/0.20/btbConnector.c **** {
+  73:_commonCode_localized/btbConnector/0.20/btbConnector.c **** #warning "THIS SHOULD NOT BE TESTED WHILE CONNECTED! Or..?"
+  74:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	//OOOh FANCY! This could be merged into a single function
+  75:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	// to be made inline... with AWATING... states' functionality
+  76:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	// duh.
+  77:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	if(btbcErrorResponse[btbcErrorResponseIndex] == '\0')
+  78:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	{
+  79:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		DPRINT("ERROR Received\n");
+  80:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		btbcErrorResponseIndex = 0;
+  81:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		btbcState = BTBCSTATE_SENDRESET;
+  82:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	}
+  83:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	else if(rxByteFromBTB >= 0)
+  84:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	{
+  85:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		//Who knows where "Error" might come from... probably a good idea
+  86:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		// to look for it (?)
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 22
+
+
+  87:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		// But maybe not while connected...?
+  88:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		//Luckily 'E' is only used once in the error response
+  89:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		if(rxByteFromBTB == btbcErrorResponse[0])
+  90:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcErrorResponseIndex = 1;
+  91:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		else if(rxByteFromBTB == btbcErrorResponse[btbcErrorResponseIndex])
+  92:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcErrorResponseIndex++;
+  93:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		else
+  94:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcErrorResponseIndex = 0;
+  95:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	}
+  96:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+  97:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+  98:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	switch(btbcState)
+  99:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	{
+ 100:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_SENDRESET:
+ 101:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcCommand = btbcCmd_Reset;
+ 102:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//btbcState++;
+ 103:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_SENDINGRESET;
+ 104:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			DPRINT("Sending Reset\n");
+ 105:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			break;
+ 106:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		//Sending States:
+ 107:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_SENDINGRESET:
+ 108:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_SENDINGINQUIRE:
+ 109:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//if(uatReady)
+ 110:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//	if(*btbcCommand != '\0')
+ 111:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//	{
+ 112:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			// Assumes btbcCommand[0] != '\0'
+ 113:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			// should be safe state-wise
+ 114:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					if(btbc_btbReadyForData())
+ 115:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					{
+ 116:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						btbc_sendByteToBTB(*btbcCommand);
+ 117:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						btbcCommand++;
+ 118:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 119:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						if(*btbcCommand == '\0')
+ 120:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 							btbcState++;
+ 121:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					}
+ 122:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//	}
+ 123:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//	else
+ 124:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//		btbcState++;
+ 125:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			break;
+ 126:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_AWAITBTSTATE1:
+ 127:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponse = btbcResponse_BTSTATE1;
+ 128:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponseIndex = 0;
+ 129:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//btbcState++;
+ 130:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_AWAITINGBTSTATE1;
+ 131:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			DPRINT("Awaiting BTSTATE:1 (Ready)\n");
+ 132:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			break;
+ 133:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		//Receiving States:
+ 134:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_AWAITINGBTSTATE1:
+ 135:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_AWAITINGBTSTATE2:
+ 136:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_AWAITINGCONNECTION:
+ 137:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			if(btbcResponse[btbcResponseIndex] == '\0')
+ 138:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				btbcState++;
+ 139:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			else if(rxByteFromBTB >= 0)
+ 140:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			{
+ 141:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromBTB == btbcResponse[btbcResponseIndex])
+ 142:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponseIndex++;
+ 143:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				else
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 23
+
+
+ 144:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponseIndex = 0;
+ 145:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			}
+ 146:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			break;
+ 147:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_SENDINQUIRE:
+ 148:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			DPRINT("BTSTATE1, Bluetooth Bee ready to receive INQ\n");
+ 149:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcCommand = btbcCmd_Inquire;
+ 150:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//btbcState++;
+ 151:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_SENDINGINQUIRE;
+ 152:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			break;
+ 153:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		//BTBCSTATE_SENDINGINQUIRE is merged above
+ 154:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_AWAITBTSTATE2:
+ 155:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponse = btbcResponse_BTSTATE2;
+ 156:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponseIndex = 0;
+ 157:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//btbcState++;
+ 158:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_AWAITINGBTSTATE2;
+ 159:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			DPRINT("Awaiting BTSTATE:2 (Inquiring)\n");
+ 160:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			break;
+ 161:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		//BTBCSTATE_AWAITINGBTSTATE2 is merged above
+ 162:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_AWAITCONNECTION:
+ 163:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			DPRINT("BTSTATE2, Bluetooth Bee ready to receive connection\n");
+ 164:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponse = btbcResponse_BTSTATE4;
+ 165:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponseIndex = 0;
+ 166:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//btbcState++;
+ 167:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_AWAITINGCONNECTION;
+ 168:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			break;
+ 169:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		//BTBCSTATE_AWAITINGCONNECTION is merged above
+ 170:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_CONNECTRECEIVED:
+ 171:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			DPRINT("Bluetooth Bee connected (via bluetooth) to host\n");
+ 172:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//btbcState++;
+ 173:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_CONNECTED;
+ 174:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			break;
+ 175:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_CONNECTED:
+ 176:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			{
+ 177:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				//static uint8_t withholding = FALSE;
+ 178:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 179:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				//In most cases, this'll be retransmitted immediately after
+ 180:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				// making sure it's not possibly the start of a
+ 181:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				// btb disconnect message
+ 182:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromBTB >= 0)
+ 183:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					cirBuff_addByte(&btbCirBuff, rxByteFromBTB, TRUE);
+ 184:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 185:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				//While connected, we repeat the data from the device
+ 186:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				// to the host
+ 187:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				// BUT it's halted if we're receiving a message from btb
+ 188:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromDevice >= 0)
+ 189:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					cirBuff_addByte(&btbDeviceBuff, rxByteFromDevice, TRUE);
+ 190:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 191:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromBTB == '\r')
+ 192:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				{
+ 193:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				//	withholding = TRUE;
+ 194:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					DPRINT("'\\r' received, witholding data"
+ 195:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						  "to verify it's not a bt notice (e.g. disconnect)\n");
+ 196:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					//Data should be withheld in *both* directions...
+ 197:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			
+ 198:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					// When the host disconnects from the "serial port"
+ 199:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					//  (via bluetooth)
+ 200:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					// OR when bluetooth is disabled on the host
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 24
+
+
+ 201:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					// the btb sends BTSTATE:1
+ 202:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					// WHAT ABOUT OTHER DISCONNECTS?
+ 203:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponse = btbcResponse_BTSTATE1;
+ 204:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponseIndex = 0;	
+ 205:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcState = BTBCSTATE_VERIFYINGCONNECTION;
+ 206:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				}
+ 207:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				else
+ 208:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				{
+ 209:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					//int16_t cirBuffByte = cirBuff_getByte(&btbCirBuff);
+ 210:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 211:_commonCode_localized/btbConnector/0.20/btbConnector.c **** //#warning "need to resend data in the other direction!"
+ 212:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					if(btbc_deviceReadyForData())
+ 213:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					{
+ 214:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						int16_t cirBuffByte = cirBuff_getByte(&btbCirBuff);
+ 215:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 216:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						if(cirBuffByte >= 0)
+ 217:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						{
+ 218:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 							btbc_sendByteToDevice(cirBuffByte);
+ 219:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 							DPRINT("Retransmitting to device 0x%x='%c'\n", 
+ 220:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 									(int)(cirBuffByte), (char)(cirBuffByte));
+ 221:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						}
+ 222:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					}
+ 223:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 224:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					if(btbc_btbReadyForData())
+ 225:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					{
+ 226:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						int16_t cirBuffByte = cirBuff_getByte(&btbDeviceBuff);
+ 227:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 228:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						if(cirBuffByte >= 0)
+ 229:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						{
+ 230:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 							btbc_sendByteToBTB(cirBuffByte);
+ 231:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 							DPRINT("Retransmitting to host 0x%x='%c'\n",
+ 232:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 									(int)(cirBuffByte), (char)(cirBuffByte));
+ 233:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						}
+ 234:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					}
+ 235:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				}
+ 236:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 237:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			}
+ 238:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			break;
+ 239:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		case BTBCSTATE_VERIFYINGCONNECTION:
+ 240:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			//Keep buffering Tablet Data in case we're still connected
+ 241:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			if(rxByteFromDevice >= 0)
+ 242:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				   cirBuff_addByte(&btbDeviceBuff, rxByteFromDevice, TRUE);
+ 243:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 244:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			if(btbcResponse[btbcResponseIndex] == '\0')
+ 245:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			{
+ 246:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				DPRINT("Host disconnected\n");
+ 247:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				//AWAITING_CONNECTION should work for most cases
+ 248:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				// except if the bluetooth was disabled at the host
+ 249:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				// then inquiry would be required...
+ 250:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				btbcState = BTBCSTATE_SENDRESET; // or reset?
+ 251:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 252:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				//Clear the circular buffer...
+ 253:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				cirBuff_empty(&btbCirBuff);
+ 254:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				cirBuff_empty(&btbDeviceBuff);
+ 255:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			}
+ 256:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			else if(rxByteFromBTB >= 0)
+ 257:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			{
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 25
+
+
+ 258:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				//Buffer the received bytes, they may be host commands to the
+ 259:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				// tablet...
+ 260:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				cirBuff_addByte(&btbCirBuff, rxByteFromBTB, TRUE);
+ 261:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 
+ 262:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				// Unusual case, but it's happened in testing...
+ 263:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				//  Device Sends '\r' then disconnects
+ 264:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				//  (a second '\r' is sent, indicating the start of the 
+ 265:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				//   disconnect message, but it won't be read, without this)
+ 266:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromBTB == '\r')
+ 267:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponseIndex = 0;
+ 268:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromBTB == btbcResponse[btbcResponseIndex])
+ 269:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponseIndex++;
+ 270:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				else	//Not an expected btb response...
+ 271:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				{
+ 272:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					DPRINT("... apparently wasn't a disconnect notice."
+ 273:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 							 " Need to Resend the buffered data\n");
+ 274:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcState = BTBCSTATE_CONNECTED;
+ 295               		.stabn	68,0,274,.LM22-.LFBB1
+ 296               	.LM22:
+ 297 00d2 0BE0      		ldi r16,lo8(11)
+ 203:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponse = btbcResponse_BTSTATE1;
+ 298               		.stabn	68,0,203,.LM23-.LFBB1
+ 299               	.LM23:
+ 300 00d4 C0E0      		ldi r28,lo8(btbcResponse_BTSTATE1)
+ 301 00d6 D0E0      		ldi r29,hi8(btbcResponse_BTSTATE1)
+ 164:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponse = btbcResponse_BTSTATE4;
+ 302               		.stabn	68,0,164,.LM24-.LFBB1
+ 303               	.LM24:
+ 304 00d8 90E0      		ldi r25,lo8(btbcResponse_BTSTATE4)
+ 305 00da A92E      		mov r10,r25
+ 306 00dc 90E0      		ldi r25,hi8(btbcResponse_BTSTATE4)
+ 307 00de B92E      		mov r11,r25
+ 155:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponse = btbcResponse_BTSTATE2;
+ 308               		.stabn	68,0,155,.LM25-.LFBB1
+ 309               	.LM25:
+ 310 00e0 80E0      		ldi r24,lo8(btbcResponse_BTSTATE2)
+ 311 00e2 C82E      		mov r12,r24
+ 312 00e4 80E0      		ldi r24,hi8(btbcResponse_BTSTATE2)
+ 313 00e6 D82E      		mov r13,r24
+ 149:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcCommand = btbcCmd_Inquire;
+ 314               		.stabn	68,0,149,.LM26-.LFBB1
+ 315               	.LM26:
+ 316 00e8 B0E0      		ldi r27,lo8(btbcCmd_Inquire)
+ 317 00ea 4B2E      		mov r4,r27
+ 318 00ec B0E0      		ldi r27,hi8(btbcCmd_Inquire)
+ 319 00ee 5B2E      		mov r5,r27
+ 101:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcCommand = btbcCmd_Reset;
+ 320               		.stabn	68,0,101,.LM27-.LFBB1
+ 321               	.LM27:
+ 322 00f0 A0E0      		ldi r26,lo8(btbcCmd_Reset)
+ 323 00f2 2A2E      		mov r2,r26
+ 324 00f4 A0E0      		ldi r26,hi8(btbcCmd_Reset)
+ 325 00f6 3A2E      		mov r3,r26
+ 326               	.L63:
+ 327               	.LBE251:
+ 328               	.LBE250:
+ 329               		.stabs	"main.c",132,0,0,.Ltext12
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 26
+
+
+ 330               	.Ltext12:
+ 221:main.c        **** 
+ 222:main.c        **** 	while(1)
+ 223:main.c        **** 	{
+ 224:main.c        **** 		togglepinPORT(HEART_PINNUM, HEART_PINPORT);
+ 331               		.stabn	68,0,224,.LM28-.LFBB1
+ 332               	.LM28:
+ 333 00f8 98B3      		in r25,56-0x20
+ 334 00fa 88B3      		in r24,56-0x20
+ 335 00fc 8270      		andi r24,lo8(2)
+ 336 00fe 8095      		com r24
+ 337 0100 8270      		andi r24,lo8(2)
+ 338 0102 9D7F      		andi r25,lo8(-3)
+ 339 0104 892B      		or r24,r25
+ 340 0106 88BB      		out 56-0x20,r24
+ 225:main.c        **** 		tcnter_update();
+ 341               		.stabn	68,0,225,.LM29-.LFBB1
+ 342               	.LM29:
+ 343 0108 00D0      		rcall tcnter_update
+ 344               	.LBB264:
+ 345               	.LBB237:
+ 346               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext13
+ 347               	.Ltext13:
+ 221:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	if(puat_txState[puatNum] == TXSTATE_IDLE)
+ 348               		.stabn	68,0,221,.LM30-.LFBB1
+ 349               	.LM30:
+ 350 010a 8091 0000 		lds r24,puat_txState
+ 351 010e 8823      		tst r24
+ 352 0110 01F4      		brne .L5
+ 223:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	   if(puat_txDataWaiting[puatNum])
+ 353               		.stabn	68,0,223,.LM31-.LFBB1
+ 354               	.LM31:
+ 355 0112 8091 0000 		lds r24,puat_txDataWaiting
+ 356 0116 8823      		tst r24
+ 357 0118 01F0      		breq .L6
+ 225:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_shiftingByte[puatNum] = puat_txData[puatNum];
+ 358               		.stabn	68,0,225,.LM32-.LFBB1
+ 359               	.LM32:
+ 360 011a 8091 0000 		lds r24,puat_txData
+ 361 011e 8093 0000 		sts puat_shiftingByte,r24
+ 226:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txDataWaiting[puatNum] = FALSE;
+ 362               		.stabn	68,0,226,.LM33-.LFBB1
+ 363               	.LM33:
+ 364 0122 1092 0000 		sts puat_txDataWaiting,__zero_reg__
+ 228:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum] = TXSTATE_SENDING_START;
+ 365               		.stabn	68,0,228,.LM34-.LFBB1
+ 366               	.LM34:
+ 367 0126 1093 0000 		sts puat_txState,r17
+ 231:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_lastTime[puatNum] = (tcnter8_t)(tcnter_get());
+ 368               		.stabn	68,0,231,.LM35-.LFBB1
+ 369               	.LM35:
+ 370 012a 00D0      		rcall tcnter_get
+ 371 012c 6093 0000 		sts puat_lastTime,r22
+ 372               	.LBB231:
+ 373               	.LBB232:
+ 374               		.stabs	"./puatStuff.h",132,0,0,.Ltext14
+ 375               	.Ltext14:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 27
+
+
+  24:./puatStuff.h **** 		writepinPORT(Tx0pin, Tx0PORT, value);
+ 376               		.stabn	68,0,24,.LM36-.LFBB1
+ 377               	.LM36:
+ 378 0130 C498      		cbi 56-0x20,4
+ 379 0132 00C0      		rjmp .L67
+ 380               	.L5:
+ 381               	.LBE232:
+ 382               	.LBE231:
+ 383               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext15
+ 384               	.Ltext15:
+ 255:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	else if(tcnter_isItTime8(&(puat_lastTime[puatNum]),
+ 385               		.stabn	68,0,255,.LM37-.LFBB1
+ 386               	.LM37:
+ 387 0134 80E0      		ldi r24,lo8(puat_lastTime)
+ 388 0136 90E0      		ldi r25,hi8(puat_lastTime)
+ 389 0138 6091 0000 		lds r22,puat_bitTcnt
+ 390 013c 00D0      		rcall tcnter_isItTime8
+ 391 013e 8823      		tst r24
+ 392 0140 01F0      		breq .L6
+ 268:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		if( (puat_txState[puatNum] >= TXSTATE_SENDING_START)
+ 393               		.stabn	68,0,268,.LM38-.LFBB1
+ 394               	.LM38:
+ 395 0142 8091 0000 		lds r24,puat_txState
+ 396 0146 982F      		mov r25,r24
+ 397 0148 9150      		subi r25,lo8(-(-1))
+ 398 014a 9830      		cpi r25,lo8(8)
+ 399 014c 00F4      		brsh .L7
+ 271:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum]++;
+ 400               		.stabn	68,0,271,.LM39-.LFBB1
+ 401               	.LM39:
+ 402 014e 8F5F      		subi r24,lo8(-(1))
+ 403 0150 8093 0000 		sts puat_txState,r24
+ 272:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_writeOutput(puatNum, (puat_shiftingByte[puatNum])&0x01);
+ 404               		.stabn	68,0,272,.LM40-.LFBB1
+ 405               	.LM40:
+ 406 0154 8091 0000 		lds r24,puat_shiftingByte
+ 407               	.LBB233:
+ 408               	.LBB234:
+ 409               		.stabs	"./puatStuff.h",132,0,0,.Ltext16
+ 410               	.Ltext16:
+  24:./puatStuff.h **** 		writepinPORT(Tx0pin, Tx0PORT, value);
+ 411               		.stabn	68,0,24,.LM41-.LFBB1
+ 412               	.LM41:
+ 413 0158 982F      		mov r25,r24
+ 414 015a 9170      		andi r25,lo8(1)
+ 415 015c 01F0      		breq .L8
+ 416 015e C49A      		sbi 56-0x20,4
+ 417 0160 00C0      		rjmp .L66
+ 418               	.L8:
+ 419 0162 C498      		cbi 56-0x20,4
+ 420               	.L66:
+ 421 0164 98B3      		in r25,56-0x20
+ 422               	.LBE234:
+ 423               	.LBE233:
+ 424               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext17
+ 425               	.Ltext17:
+ 279:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_shiftingByte[puatNum] >>= 1;
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 28
+
+
+ 426               		.stabn	68,0,279,.LM42-.LFBB1
+ 427               	.LM42:
+ 428 0166 8695      		lsr r24
+ 429 0168 8093 0000 		sts puat_shiftingByte,r24
+ 430 016c 00C0      		rjmp .L6
+ 431               	.L7:
+ 282:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		else if( puat_txState[puatNum] == TXSTATE_SENDING_BIT8 ) 
+ 432               		.stabn	68,0,282,.LM43-.LFBB1
+ 433               	.LM43:
+ 434 016e 8930      		cpi r24,lo8(9)
+ 435 0170 01F4      		brne .L10
+ 436               		.stabn	68,0,284,.LM44-.LFBB1
+ 437               	.LM44:
+ 438 0172 E092 0000 		sts puat_txState,r14
+ 439               	.LBB235:
+ 440               	.LBB236:
+ 441               		.stabs	"./puatStuff.h",132,0,0,.Ltext18
+ 442               	.Ltext18:
+  24:./puatStuff.h **** 		writepinPORT(Tx0pin, Tx0PORT, value);
+ 443               		.stabn	68,0,24,.LM45-.LFBB1
+ 444               	.LM45:
+ 445 0176 C49A      		sbi 56-0x20,4
+ 446               	.L67:
+ 447 0178 88B3      		in r24,56-0x20
+ 448 017a 00C0      		rjmp .L6
+ 449               	.L10:
+ 450               	.LBE236:
+ 451               	.LBE235:
+ 452               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext19
+ 453               	.Ltext19:
+ 285:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_writeOutput(puatNum, 1);
+ 286:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 
+ 287:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			DPRINT("Sending[%d]: StopBit\n", (int)(puatNum));
+ 288:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		}
+ 289:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		else if(puat_txState[puatNum] == (TXSTATE_SENDING_STOP
+ 454               		.stabn	68,0,289,.LM46-.LFBB1
+ 455               	.LM46:
+ 456 017c 8A30      		cpi r24,lo8(10)
+ 457 017e 01F4      		brne .L11
+ 290:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 														+PUAT_STOP_BITS - 1))
+ 291:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		{
+ 292:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum] = TXSTATE_IDLE;
+ 458               		.stabn	68,0,292,.LM47-.LFBB1
+ 459               	.LM47:
+ 460 0180 1092 0000 		sts puat_txState,__zero_reg__
+ 461 0184 00C0      		rjmp .L6
+ 462               	.L11:
+ 293:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			DPRINT("Transmission[%d] Complete\n", (int)(puatNum));
+ 294:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		}
+ 295:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		else //Stop bits...
+ 296:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		{
+ 297:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			//Value has already been loaded we're just waiting...
+ 298:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum]++;
+ 463               		.stabn	68,0,298,.LM48-.LFBB1
+ 464               	.LM48:
+ 465 0186 8F5F      		subi r24,lo8(-(1))
+ 466 0188 8093 0000 		sts puat_txState,r24
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 29
+
+
+ 467               	.L6:
+ 468               	.LBE237:
+ 469               	.LBE264:
+ 470               	.LBB265:
+ 471               	.LBB266:
+ 221:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	if(puat_txState[puatNum] == TXSTATE_IDLE)
+ 472               		.stabn	68,0,221,.LM49-.LFBB1
+ 473               	.LM49:
+ 474 018c 8091 0000 		lds r24,puat_txState+1
+ 475 0190 8823      		tst r24
+ 476 0192 01F4      		brne .L12
+ 223:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	   if(puat_txDataWaiting[puatNum])
+ 477               		.stabn	68,0,223,.LM50-.LFBB1
+ 478               	.LM50:
+ 479 0194 8091 0000 		lds r24,puat_txDataWaiting+1
+ 480 0198 8823      		tst r24
+ 481 019a 01F0      		breq .L13
+ 225:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_shiftingByte[puatNum] = puat_txData[puatNum];
+ 482               		.stabn	68,0,225,.LM51-.LFBB1
+ 483               	.LM51:
+ 484 019c 8091 0000 		lds r24,puat_txData+1
+ 485 01a0 8093 0000 		sts puat_shiftingByte+1,r24
+ 226:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txDataWaiting[puatNum] = FALSE;
+ 486               		.stabn	68,0,226,.LM52-.LFBB1
+ 487               	.LM52:
+ 488 01a4 1092 0000 		sts puat_txDataWaiting+1,__zero_reg__
+ 228:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum] = TXSTATE_SENDING_START;
+ 489               		.stabn	68,0,228,.LM53-.LFBB1
+ 490               	.LM53:
+ 491 01a8 1093 0000 		sts puat_txState+1,r17
+ 231:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_lastTime[puatNum] = (tcnter8_t)(tcnter_get());
+ 492               		.stabn	68,0,231,.LM54-.LFBB1
+ 493               	.LM54:
+ 494 01ac 00D0      		rcall tcnter_get
+ 495 01ae 6093 0000 		sts puat_lastTime+1,r22
+ 496               	.LBB267:
+ 497               	.LBB268:
+ 498               		.stabs	"./puatStuff.h",132,0,0,.Ltext20
+ 499               	.Ltext20:
+ 500               		.stabn	68,0,26,.LM55-.LFBB1
+ 501               	.LM55:
+ 502 01b2 C098      		cbi 56-0x20,0
+ 503 01b4 00C0      		rjmp .L69
+ 504               	.L12:
+ 505               	.LBE268:
+ 506               	.LBE267:
+ 507               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext21
+ 508               	.Ltext21:
+ 255:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	else if(tcnter_isItTime8(&(puat_lastTime[puatNum]),
+ 509               		.stabn	68,0,255,.LM56-.LFBB1
+ 510               	.LM56:
+ 511 01b6 80E0      		ldi r24,lo8(puat_lastTime+1)
+ 512 01b8 90E0      		ldi r25,hi8(puat_lastTime+1)
+ 513 01ba 6091 0000 		lds r22,puat_bitTcnt+4
+ 514 01be 00D0      		rcall tcnter_isItTime8
+ 515 01c0 8823      		tst r24
+ 516 01c2 01F0      		breq .L13
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 30
+
+
+ 268:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		if( (puat_txState[puatNum] >= TXSTATE_SENDING_START)
+ 517               		.stabn	68,0,268,.LM57-.LFBB1
+ 518               	.LM57:
+ 519 01c4 8091 0000 		lds r24,puat_txState+1
+ 520 01c8 982F      		mov r25,r24
+ 521 01ca 9150      		subi r25,lo8(-(-1))
+ 522 01cc 9830      		cpi r25,lo8(8)
+ 523 01ce 00F4      		brsh .L14
+ 271:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum]++;
+ 524               		.stabn	68,0,271,.LM58-.LFBB1
+ 525               	.LM58:
+ 526 01d0 8F5F      		subi r24,lo8(-(1))
+ 527 01d2 8093 0000 		sts puat_txState+1,r24
+ 272:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_writeOutput(puatNum, (puat_shiftingByte[puatNum])&0x01);
+ 528               		.stabn	68,0,272,.LM59-.LFBB1
+ 529               	.LM59:
+ 530 01d6 8091 0000 		lds r24,puat_shiftingByte+1
+ 531               	.LBB269:
+ 532               	.LBB270:
+ 533               		.stabs	"./puatStuff.h",132,0,0,.Ltext22
+ 534               	.Ltext22:
+ 535               		.stabn	68,0,26,.LM60-.LFBB1
+ 536               	.LM60:
+ 537 01da 982F      		mov r25,r24
+ 538 01dc 9170      		andi r25,lo8(1)
+ 539 01de 01F0      		breq .L15
+ 540 01e0 C09A      		sbi 56-0x20,0
+ 541 01e2 00C0      		rjmp .L68
+ 542               	.L15:
+ 543 01e4 C098      		cbi 56-0x20,0
+ 544               	.L68:
+ 545 01e6 98B3      		in r25,56-0x20
+ 546               	.LBE270:
+ 547               	.LBE269:
+ 548               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext23
+ 549               	.Ltext23:
+ 279:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_shiftingByte[puatNum] >>= 1;
+ 550               		.stabn	68,0,279,.LM61-.LFBB1
+ 551               	.LM61:
+ 552 01e8 8695      		lsr r24
+ 553 01ea 8093 0000 		sts puat_shiftingByte+1,r24
+ 554 01ee 00C0      		rjmp .L13
+ 555               	.L14:
+ 282:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		else if( puat_txState[puatNum] == TXSTATE_SENDING_BIT8 ) 
+ 556               		.stabn	68,0,282,.LM62-.LFBB1
+ 557               	.LM62:
+ 558 01f0 8930      		cpi r24,lo8(9)
+ 559 01f2 01F4      		brne .L17
+ 284:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum] = TXSTATE_SENDING_STOP;
+ 560               		.stabn	68,0,284,.LM63-.LFBB1
+ 561               	.LM63:
+ 562 01f4 E092 0000 		sts puat_txState+1,r14
+ 563               	.LBB271:
+ 564               	.LBB272:
+ 565               		.stabs	"./puatStuff.h",132,0,0,.Ltext24
+ 566               	.Ltext24:
+ 567               		.stabn	68,0,26,.LM64-.LFBB1
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 31
+
+
+ 568               	.LM64:
+ 569 01f8 C09A      		sbi 56-0x20,0
+ 570               	.L69:
+ 571 01fa 88B3      		in r24,56-0x20
+ 572 01fc 00C0      		rjmp .L13
+ 573               	.L17:
+ 574               	.LBE272:
+ 575               	.LBE271:
+ 576               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext25
+ 577               	.Ltext25:
+ 289:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 		else if(puat_txState[puatNum] == (TXSTATE_SENDING_STOP
+ 578               		.stabn	68,0,289,.LM65-.LFBB1
+ 579               	.LM65:
+ 580 01fe 8A30      		cpi r24,lo8(10)
+ 581 0200 01F4      		brne .L18
+ 292:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 			puat_txState[puatNum] = TXSTATE_IDLE;
+ 582               		.stabn	68,0,292,.LM66-.LFBB1
+ 583               	.LM66:
+ 584 0202 1092 0000 		sts puat_txState+1,__zero_reg__
+ 585 0206 00C0      		rjmp .L13
+ 586               	.L18:
+ 587               		.stabn	68,0,298,.LM67-.LFBB1
+ 588               	.LM67:
+ 589 0208 8F5F      		subi r24,lo8(-(1))
+ 590 020a 8093 0000 		sts puat_txState+1,r24
+ 591               	.L13:
+ 592               	.LBE266:
+ 593               	.LBE265:
+ 594               	.LBB273:
+ 595               	.LBB249:
+ 596               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext26
+ 597               	.Ltext26:
+ 245:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	if(rxState[puarNum] == RXSTATE_AWAITING_START)
+ 598               		.stabn	68,0,245,.LM68-.LFBB1
+ 599               	.LM68:
+ 600 020e 8091 0000 		lds r24,rxState
+ 601 0212 8823      		tst r24
+ 602 0214 01F4      		brne .L19
+ 603               	.LBB240:
+ 604               	.LBB241:
+ 605               		.stabs	"./puarStuff.h",132,0,0,.Ltext27
+ 606               	.Ltext27:
+   1:./puarStuff.h **** 
+   2:./puarStuff.h **** #include "pinout.h"
+   3:./puarStuff.h **** 
+   4:./puarStuff.h **** extern __inline__ uint8_t puar_readInput(uint8_t puarNum)
+   5:./puarStuff.h **** {
+   6:./puarStuff.h ****    if(puarNum == 0)
+   7:./puarStuff.h ****       return getpinPORT(Rx0pin, Rx0PORT);
+ 607               		.stabn	68,0,7,.LM69-.LFBB1
+ 608               	.LM69:
+ 609 0216 86B3      		in r24,54-0x20
+ 610               	.LBE241:
+ 611               	.LBE240:
+ 612               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext28
+ 613               	.Ltext28:
+ 247:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	   if(!puar_readInput(puarNum)) //getbit(rxPin))
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 32
+
+
+ 614               		.stabn	68,0,247,.LM70-.LFBB1
+ 615               	.LM70:
+ 616 0218 8870      		andi r24,lo8(8)
+ 617 021a 01F0      		breq .+2
+ 618 021c 00C0      		rjmp .L20
+ 249:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			rxState[puarNum] = RXSTATE_EXPECTING_START;
+ 619               		.stabn	68,0,249,.LM71-.LFBB1
+ 620               	.LM71:
+ 621 021e 1093 0000 		sts rxState,r17
+ 254:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			nextTcnter[puarNum] = tcnter_get() + puar_bitTcnt[puarNum]/2; //HALF_TCNT + tcnter_get();
+ 622               		.stabn	68,0,254,.LM72-.LFBB1
+ 623               	.LM72:
+ 624 0222 00D0      		rcall tcnter_get
+ 625 0224 2091 0000 		lds r18,puar_bitTcnt
+ 626 0228 3091 0000 		lds r19,(puar_bitTcnt)+1
+ 627 022c 4091 0000 		lds r20,(puar_bitTcnt)+2
+ 628 0230 5091 0000 		lds r21,(puar_bitTcnt)+3
+ 629 0234 5695      		lsr r21
+ 630 0236 4795      		ror r20
+ 631 0238 3795      		ror r19
+ 632 023a 2795      		ror r18
+ 633 023c 620F      		add r22,r18
+ 634 023e 731F      		adc r23,r19
+ 635 0240 841F      		adc r24,r20
+ 636 0242 951F      		adc r25,r21
+ 637 0244 6093 0000 		sts nextTcnter.1302,r22
+ 638 0248 7093 0000 		sts (nextTcnter.1302)+1,r23
+ 639 024c 8093 0000 		sts (nextTcnter.1302)+2,r24
+ 640 0250 9093 0000 		sts (nextTcnter.1302)+3,r25
+ 260:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			thisByte[puarNum] = 0x00;
+ 641               		.stabn	68,0,260,.LM73-.LFBB1
+ 642               	.LM73:
+ 643 0254 1092 0000 		sts thisByte.1301,__zero_reg__
+ 644 0258 00C0      		rjmp .L20
+ 645               	.L19:
+ 273:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	else if(tcnter_get() >= nextTcnter[puarNum])
+ 646               		.stabn	68,0,273,.LM74-.LFBB1
+ 647               	.LM74:
+ 648 025a 00D0      		rcall tcnter_get
+ 649 025c 2091 0000 		lds r18,nextTcnter.1302
+ 650 0260 3091 0000 		lds r19,(nextTcnter.1302)+1
+ 651 0264 4091 0000 		lds r20,(nextTcnter.1302)+2
+ 652 0268 5091 0000 		lds r21,(nextTcnter.1302)+3
+ 653 026c 6217      		cp r22,r18
+ 654 026e 7307      		cpc r23,r19
+ 655 0270 8407      		cpc r24,r20
+ 656 0272 9507      		cpc r25,r21
+ 657 0274 00F4      		brsh .+2
+ 658 0276 00C0      		rjmp .L20
+ 278:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		nextTcnter[puarNum] += puar_bitTcnt[puarNum]; //BIT_TCNT;
+ 659               		.stabn	68,0,278,.LM75-.LFBB1
+ 660               	.LM75:
+ 661 0278 8091 0000 		lds r24,puar_bitTcnt
+ 662 027c 9091 0000 		lds r25,(puar_bitTcnt)+1
+ 663 0280 A091 0000 		lds r26,(puar_bitTcnt)+2
+ 664 0284 B091 0000 		lds r27,(puar_bitTcnt)+3
+ 665 0288 820F      		add r24,r18
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 33
+
+
+ 666 028a 931F      		adc r25,r19
+ 667 028c A41F      		adc r26,r20
+ 668 028e B51F      		adc r27,r21
+ 669 0290 8093 0000 		sts nextTcnter.1302,r24
+ 670 0294 9093 0000 		sts (nextTcnter.1302)+1,r25
+ 671 0298 A093 0000 		sts (nextTcnter.1302)+2,r26
+ 672 029c B093 0000 		sts (nextTcnter.1302)+3,r27
+ 280:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		if(rxState[puarNum] == RXSTATE_EXPECTING_START)
+ 673               		.stabn	68,0,280,.LM76-.LFBB1
+ 674               	.LM76:
+ 675 02a0 9091 0000 		lds r25,rxState
+ 676 02a4 9130      		cpi r25,lo8(1)
+ 677 02a6 01F4      		brne .L21
+ 678               	.LBB242:
+ 679               	.LBB243:
+ 680               		.stabs	"./puarStuff.h",132,0,0,.Ltext29
+ 681               	.Ltext29:
+ 682               		.stabn	68,0,7,.LM77-.LFBB1
+ 683               	.LM77:
+ 684 02a8 86B3      		in r24,54-0x20
+ 685               	.LBE243:
+ 686               	.LBE242:
+ 687               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext30
+ 688               	.Ltext30:
+ 283:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****    		if(!puar_readInput(puarNum)) //getbit(rxPin))
+ 689               		.stabn	68,0,283,.LM78-.LFBB1
+ 690               	.LM78:
+ 691 02aa 8870      		andi r24,lo8(8)
+ 692 02ac 01F4      		brne .L24
+ 693               		.stabn	68,0,286,.LM79-.LFBB1
+ 694               	.LM79:
+ 695 02ae F092 0000 		sts rxState,r15
+ 696 02b2 00C0      		rjmp .L20
+ 697               	.L21:
+ 287:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****          	//lastTcnt = thisTcnt;
+ 288:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****          	//nextTcnter += BIT_TCNT;
+ 289:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****          	DPRINT("Sampled[%d]: Start\n", (int)puarNum);
+ 290:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****    		}
+ 291:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****    		else  //GLITCH...
+ 292:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****    		{
+ 293:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****          	rxState[puarNum] = RXSTATE_AWAITING_START;
+ 294:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****          	DPRINT("Error[%d]: Start Glitch\n", (int)puarNum);
+ 295:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****    		}
+ 296:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		}
+ 297:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		// Receiving Data Bits...
+ 298:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		// We *might* be able to get away without these tests
+ 299:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		//  just making it an else case...
+ 300:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		// (Though, intuitively, it makes more visual-sense this way)
+ 301:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		else if( (rxState[puarNum] >= RXSTATE_FIRST_BIT) 
+ 698               		.stabn	68,0,301,.LM80-.LFBB1
+ 699               	.LM80:
+ 700 02b4 892F      		mov r24,r25
+ 701 02b6 8250      		subi r24,lo8(-(-2))
+ 702 02b8 8830      		cpi r24,lo8(8)
+ 703 02ba 00F4      		brsh .L23
+ 704               	.LBB244:
+ 705               	.LBB245:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 34
+
+
+ 706               	.LBB246:
+ 707               		.stabs	"./puarStuff.h",132,0,0,.Ltext31
+ 708               	.Ltext31:
+ 709               		.stabn	68,0,7,.LM81-.LFBB1
+ 710               	.LM81:
+ 711 02bc 86B3      		in r24,54-0x20
+ 712               	.LBE246:
+ 713               	.LBE245:
+ 714               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext32
+ 715               	.Ltext32:
+ 302:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			 && (rxState[puarNum] < RXSTATE_EXPECTING_STOP) )
+ 303:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		{
+ 304:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			uint8_t pinVal = puar_readInput(puarNum); //getbit(rxPin);
+ 305:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 306:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			(thisByte[puarNum]) >>= 1;
+ 307:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			//This is specific to 8-bit data-streams!
+ 308:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			// (There may be a way to optimize this a bit)
+ 309:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			// (Especially since getbit uses shifts already)
+ 310:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			(thisByte[puarNum]) |= (pinVal<<7);
+ 716               		.stabn	68,0,310,.LM82-.LFBB1
+ 717               	.LM82:
+ 718 02be 8695      		lsr r24
+ 719 02c0 8695      		lsr r24
+ 720 02c2 8695      		lsr r24
+ 721 02c4 8795      		ror r24
+ 722 02c6 8827      		clr r24
+ 723 02c8 8795      		ror r24
+ 724 02ca 2091 0000 		lds r18,thisByte.1301
+ 725 02ce 2695      		lsr r18
+ 726 02d0 822B      		or r24,r18
+ 727 02d2 8093 0000 		sts thisByte.1301,r24
+ 311:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			(rxState[puarNum])++;
+ 728               		.stabn	68,0,311,.LM83-.LFBB1
+ 729               	.LM83:
+ 730 02d6 9F5F      		subi r25,lo8(-(1))
+ 731 02d8 9093 0000 		sts rxState,r25
+ 732 02dc 00C0      		rjmp .L20
+ 733               	.L23:
+ 734               	.LBE244:
+ 312:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			DPRINT("Sampled[%d]: Bit %d = %d\n", (int)puarNum,
+ 313:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 										(int)(rxState[puarNum]-RXSTATE_FIRST_BIT-1),
+ 314:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 										(int)pinVal);
+ 315:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		}
+ 316:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		else if(rxState[puarNum] == RXSTATE_EXPECTING_STOP)
+ 735               		.stabn	68,0,316,.LM84-.LFBB1
+ 736               	.LM84:
+ 737 02de 9A30      		cpi r25,lo8(10)
+ 738 02e0 01F4      		brne .L20
+ 739               	.LBB247:
+ 740               	.LBB248:
+ 741               		.stabs	"./puarStuff.h",132,0,0,.Ltext33
+ 742               	.Ltext33:
+ 743               		.stabn	68,0,7,.LM85-.LFBB1
+ 744               	.LM85:
+ 745 02e2 86B3      		in r24,54-0x20
+ 746               	.LBE248:
+ 747               	.LBE247:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 35
+
+
+ 748               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext34
+ 749               	.Ltext34:
+ 317:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		{
+ 318:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			//Make sure we got our stop-bit
+ 319:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			if(puar_readInput(puarNum)) //getbit(rxPin))
+ 750               		.stabn	68,0,319,.LM86-.LFBB1
+ 751               	.LM86:
+ 752 02e4 8870      		andi r24,lo8(8)
+ 753 02e6 01F0      		breq .L24
+ 320:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			{
+ 321:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				//!!!LOAD DATA TO RX BUFFER
+ 322:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				rxData[puarNum] = thisByte[puarNum];
+ 754               		.stabn	68,0,322,.LM87-.LFBB1
+ 755               	.LM87:
+ 756 02e8 8091 0000 		lds r24,thisByte.1301
+ 757 02ec 8093 0000 		sts rxData,r24
+ 323:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				rxDataWaiting[puarNum] = TRUE;
+ 758               		.stabn	68,0,323,.LM88-.LFBB1
+ 759               	.LM88:
+ 760 02f0 1093 0000 		sts rxDataWaiting,r17
+ 761               	.L24:
+ 324:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				DPRINT("Sampled[%d]: Stop. Received '%c'=0x%x\n",
+ 325:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 									(int)puarNum, (char)(rxData[puarNum]),
+ 326:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 								  	(int)(rxData[puarNum]));
+ 327:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			}
+ 328:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			else	//framing error...
+ 329:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			{
+ 330:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				//Not sure what to do... could have an error
+ 331:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				// and load data anyhow...
+ 332:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				// or just discard it
+ 333:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				DPRINT("Error[%d]: Stop Not Received\n", (int)puarNum);
+ 334:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			}
+ 335:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 
+ 336:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			rxState[puarNum] = RXSTATE_AWAITING_START;
+ 762               		.stabn	68,0,336,.LM89-.LFBB1
+ 763               	.LM89:
+ 764 02f4 1092 0000 		sts rxState,__zero_reg__
+ 765               	.L20:
+ 766               	.LBE249:
+ 767               	.LBE273:
+ 768               	.LBB274:
+ 769               	.LBB275:
+ 245:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	if(rxState[puarNum] == RXSTATE_AWAITING_START)
+ 770               		.stabn	68,0,245,.LM90-.LFBB1
+ 771               	.LM90:
+ 772 02f8 8091 0000 		lds r24,rxState+1
+ 773 02fc 8823      		tst r24
+ 774 02fe 01F4      		brne .L25
+ 775               	.LBB276:
+ 776               	.LBB277:
+ 777               		.stabs	"./puarStuff.h",132,0,0,.Ltext35
+ 778               	.Ltext35:
+   8:./puarStuff.h ****    else
+   9:./puarStuff.h ****       return getpinPORT(Rx1pin, Rx1PORT);
+ 779               		.stabn	68,0,9,.LM91-.LFBB1
+ 780               	.LM91:
+ 781 0300 86B3      		in r24,54-0x20
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 36
+
+
+ 782               	.LBE277:
+ 783               	.LBE276:
+ 784               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext36
+ 785               	.Ltext36:
+ 247:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	   if(!puar_readInput(puarNum)) //getbit(rxPin))
+ 786               		.stabn	68,0,247,.LM92-.LFBB1
+ 787               	.LM92:
+ 788 0302 8470      		andi r24,lo8(4)
+ 789 0304 01F0      		breq .+2
+ 790 0306 00C0      		rjmp .L26
+ 249:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			rxState[puarNum] = RXSTATE_EXPECTING_START;
+ 791               		.stabn	68,0,249,.LM93-.LFBB1
+ 792               	.LM93:
+ 793 0308 1093 0000 		sts rxState+1,r17
+ 254:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			nextTcnter[puarNum] = tcnter_get() + puar_bitTcnt[puarNum]/2; //HALF_TCNT + tcnter_get();
+ 794               		.stabn	68,0,254,.LM94-.LFBB1
+ 795               	.LM94:
+ 796 030c 00D0      		rcall tcnter_get
+ 797 030e 2091 0000 		lds r18,puar_bitTcnt+4
+ 798 0312 3091 0000 		lds r19,(puar_bitTcnt+4)+1
+ 799 0316 4091 0000 		lds r20,(puar_bitTcnt+4)+2
+ 800 031a 5091 0000 		lds r21,(puar_bitTcnt+4)+3
+ 801 031e 5695      		lsr r21
+ 802 0320 4795      		ror r20
+ 803 0322 3795      		ror r19
+ 804 0324 2795      		ror r18
+ 805 0326 620F      		add r22,r18
+ 806 0328 731F      		adc r23,r19
+ 807 032a 841F      		adc r24,r20
+ 808 032c 951F      		adc r25,r21
+ 809 032e 6093 0000 		sts nextTcnter.1302+4,r22
+ 810 0332 7093 0000 		sts (nextTcnter.1302+4)+1,r23
+ 811 0336 8093 0000 		sts (nextTcnter.1302+4)+2,r24
+ 812 033a 9093 0000 		sts (nextTcnter.1302+4)+3,r25
+ 260:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			thisByte[puarNum] = 0x00;
+ 813               		.stabn	68,0,260,.LM95-.LFBB1
+ 814               	.LM95:
+ 815 033e 1092 0000 		sts thisByte.1301+1,__zero_reg__
+ 816 0342 00C0      		rjmp .L26
+ 817               	.L25:
+ 273:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	else if(tcnter_get() >= nextTcnter[puarNum])
+ 818               		.stabn	68,0,273,.LM96-.LFBB1
+ 819               	.LM96:
+ 820 0344 00D0      		rcall tcnter_get
+ 821 0346 2091 0000 		lds r18,nextTcnter.1302+4
+ 822 034a 3091 0000 		lds r19,(nextTcnter.1302+4)+1
+ 823 034e 4091 0000 		lds r20,(nextTcnter.1302+4)+2
+ 824 0352 5091 0000 		lds r21,(nextTcnter.1302+4)+3
+ 825 0356 6217      		cp r22,r18
+ 826 0358 7307      		cpc r23,r19
+ 827 035a 8407      		cpc r24,r20
+ 828 035c 9507      		cpc r25,r21
+ 829 035e 00F4      		brsh .+2
+ 830 0360 00C0      		rjmp .L26
+ 278:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		nextTcnter[puarNum] += puar_bitTcnt[puarNum]; //BIT_TCNT;
+ 831               		.stabn	68,0,278,.LM97-.LFBB1
+ 832               	.LM97:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 37
+
+
+ 833 0362 8091 0000 		lds r24,puar_bitTcnt+4
+ 834 0366 9091 0000 		lds r25,(puar_bitTcnt+4)+1
+ 835 036a A091 0000 		lds r26,(puar_bitTcnt+4)+2
+ 836 036e B091 0000 		lds r27,(puar_bitTcnt+4)+3
+ 837 0372 820F      		add r24,r18
+ 838 0374 931F      		adc r25,r19
+ 839 0376 A41F      		adc r26,r20
+ 840 0378 B51F      		adc r27,r21
+ 841 037a 8093 0000 		sts nextTcnter.1302+4,r24
+ 842 037e 9093 0000 		sts (nextTcnter.1302+4)+1,r25
+ 843 0382 A093 0000 		sts (nextTcnter.1302+4)+2,r26
+ 844 0386 B093 0000 		sts (nextTcnter.1302+4)+3,r27
+ 280:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		if(rxState[puarNum] == RXSTATE_EXPECTING_START)
+ 845               		.stabn	68,0,280,.LM98-.LFBB1
+ 846               	.LM98:
+ 847 038a 9091 0000 		lds r25,rxState+1
+ 848 038e 9130      		cpi r25,lo8(1)
+ 849 0390 01F4      		brne .L27
+ 850               	.LBB278:
+ 851               	.LBB279:
+ 852               		.stabs	"./puarStuff.h",132,0,0,.Ltext37
+ 853               	.Ltext37:
+ 854               		.stabn	68,0,9,.LM99-.LFBB1
+ 855               	.LM99:
+ 856 0392 86B3      		in r24,54-0x20
+ 857               	.LBE279:
+ 858               	.LBE278:
+ 859               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext38
+ 860               	.Ltext38:
+ 283:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****    		if(!puar_readInput(puarNum)) //getbit(rxPin))
+ 861               		.stabn	68,0,283,.LM100-.LFBB1
+ 862               	.LM100:
+ 863 0394 8470      		andi r24,lo8(4)
+ 864 0396 01F4      		brne .L30
+ 286:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c ****          	rxState[puarNum] = RXSTATE_FIRST_BIT;
+ 865               		.stabn	68,0,286,.LM101-.LFBB1
+ 866               	.LM101:
+ 867 0398 F092 0000 		sts rxState+1,r15
+ 868 039c 00C0      		rjmp .L26
+ 869               	.L27:
+ 301:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		else if( (rxState[puarNum] >= RXSTATE_FIRST_BIT) 
+ 870               		.stabn	68,0,301,.LM102-.LFBB1
+ 871               	.LM102:
+ 872 039e 892F      		mov r24,r25
+ 873 03a0 8250      		subi r24,lo8(-(-2))
+ 874 03a2 8830      		cpi r24,lo8(8)
+ 875 03a4 00F4      		brsh .L29
+ 876               	.LBB280:
+ 877               	.LBB281:
+ 878               	.LBB282:
+ 879               		.stabs	"./puarStuff.h",132,0,0,.Ltext39
+ 880               	.Ltext39:
+ 881               		.stabn	68,0,9,.LM103-.LFBB1
+ 882               	.LM103:
+ 883 03a6 86B3      		in r24,54-0x20
+ 884               	.LBE282:
+ 885               	.LBE281:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 38
+
+
+ 886               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext40
+ 887               	.Ltext40:
+ 310:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			(thisByte[puarNum]) |= (pinVal<<7);
+ 888               		.stabn	68,0,310,.LM104-.LFBB1
+ 889               	.LM104:
+ 890 03a8 8695      		lsr r24
+ 891 03aa 8695      		lsr r24
+ 892 03ac 8795      		ror r24
+ 893 03ae 8827      		clr r24
+ 894 03b0 8795      		ror r24
+ 895 03b2 2091 0000 		lds r18,thisByte.1301+1
+ 896 03b6 2695      		lsr r18
+ 897 03b8 822B      		or r24,r18
+ 898 03ba 8093 0000 		sts thisByte.1301+1,r24
+ 311:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			(rxState[puarNum])++;
+ 899               		.stabn	68,0,311,.LM105-.LFBB1
+ 900               	.LM105:
+ 901 03be 9F5F      		subi r25,lo8(-(1))
+ 902 03c0 9093 0000 		sts rxState+1,r25
+ 903 03c4 00C0      		rjmp .L26
+ 904               	.L29:
+ 905               	.LBE280:
+ 316:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 		else if(rxState[puarNum] == RXSTATE_EXPECTING_STOP)
+ 906               		.stabn	68,0,316,.LM106-.LFBB1
+ 907               	.LM106:
+ 908 03c6 9A30      		cpi r25,lo8(10)
+ 909 03c8 01F4      		brne .L26
+ 910               	.LBB283:
+ 911               	.LBB284:
+ 912               		.stabs	"./puarStuff.h",132,0,0,.Ltext41
+ 913               	.Ltext41:
+ 914               		.stabn	68,0,9,.LM107-.LFBB1
+ 915               	.LM107:
+ 916 03ca 86B3      		in r24,54-0x20
+ 917               	.LBE284:
+ 918               	.LBE283:
+ 919               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext42
+ 920               	.Ltext42:
+ 319:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 			if(puar_readInput(puarNum)) //getbit(rxPin))
+ 921               		.stabn	68,0,319,.LM108-.LFBB1
+ 922               	.LM108:
+ 923 03cc 8470      		andi r24,lo8(4)
+ 924 03ce 01F0      		breq .L30
+ 322:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				rxData[puarNum] = thisByte[puarNum];
+ 925               		.stabn	68,0,322,.LM109-.LFBB1
+ 926               	.LM109:
+ 927 03d0 8091 0000 		lds r24,thisByte.1301+1
+ 928 03d4 8093 0000 		sts rxData+1,r24
+ 323:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 				rxDataWaiting[puarNum] = TRUE;
+ 929               		.stabn	68,0,323,.LM110-.LFBB1
+ 930               	.LM110:
+ 931 03d8 1093 0000 		sts rxDataWaiting+1,r17
+ 932               	.L30:
+ 933               		.stabn	68,0,336,.LM111-.LFBB1
+ 934               	.LM111:
+ 935 03dc 1092 0000 		sts rxState+1,__zero_reg__
+ 936               	.L26:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 39
+
+
+ 937               	.LBE275:
+ 938               	.LBE274:
+  44:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	return rxDataWaiting[puarNum];
+ 939               		.stabn	68,0,44,.LM112-.LFBB1
+ 940               	.LM112:
+ 941 03e0 8091 0000 		lds r24,rxDataWaiting
+ 942 03e4 8823      		tst r24
+ 943 03e6 01F4      		brne .L31
+ 944 03e8 8824      		clr r8
+ 945 03ea 8A94      		dec r8
+ 946 03ec 982C      		mov r9,r8
+ 947 03ee 00C0      		rjmp .L32
+ 948               	.L31:
+ 949               	.LBB285:
+ 950               	.LBB286:
+  53:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	rxDataWaiting[puarNum] = FALSE;
+ 951               		.stabn	68,0,53,.LM113-.LFBB1
+ 952               	.LM113:
+ 953 03f0 1092 0000 		sts rxDataWaiting,__zero_reg__
+ 954               	.LBE286:
+ 955               	.LBE285:
+ 956               		.stabs	"main.c",132,0,0,.Ltext43
+ 957               	.Ltext43:
+ 226:main.c        **** 	/*	
+ 227:main.c        **** 		for(puat=0; puat<NUMPUATS; puat++)
+ 228:main.c        **** 		{
+ 229:main.c        **** 			puat_update(puat);
+ 230:main.c        **** 			
+ 231:main.c        **** 	//for(puar=0; puar<NUMPUARS; puar++)
+ 232:main.c        **** 		   puar_update(puat);
+ 233:main.c        **** 		}
+ 234:main.c        **** 		*/
+ 235:main.c        **** 		//MUCH faster than for-looping...
+ 236:main.c        **** 		puat_update(0);
+ 237:main.c        **** 		puat_update(1);
+ 238:main.c        **** 		puar_update(0);
+ 239:main.c        **** 		puar_update(1);
+ 240:main.c        **** 
+ 241:main.c        **** 		int16_t rxByteFromBTB = -1;
+ 242:main.c        **** 		int16_t rxByteFromDevice = -1;
+ 243:main.c        **** 
+ 244:main.c        **** 		// If there's data received, then retransmit it
+ 245:main.c        **** 		if(puar_dataWaiting(PUAR_FROM_BTB))
+ 246:main.c        **** 			rxByteFromBTB = puar_getByte(PUAR_FROM_BTB);
+ 958               		.stabn	68,0,246,.LM114-.LFBB1
+ 959               	.LM114:
+ 960 03f4 8090 0000 		lds r8,rxData
+ 961 03f8 9924      		clr r9
+ 962               	.L32:
+ 963               		.stabs	"_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c",132,0,0,.Ltext44
+ 964               	.Ltext44:
+  44:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	return rxDataWaiting[puarNum];
+ 965               		.stabn	68,0,44,.LM115-.LFBB1
+ 966               	.LM115:
+ 967 03fa 8091 0000 		lds r24,rxDataWaiting+1
+ 968 03fe 8823      		tst r24
+ 969 0400 01F4      		brne .L33
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 40
+
+
+ 970 0402 6624      		clr r6
+ 971 0404 6A94      		dec r6
+ 972 0406 762C      		mov r7,r6
+ 973 0408 00C0      		rjmp .L34
+ 974               	.L33:
+ 975               	.LBB287:
+ 976               	.LBB288:
+  53:_commonCode_localized/polled_uar/0.40-2_preQuarterStartBit/polled_uar.c **** 	rxDataWaiting[puarNum] = FALSE;
+ 977               		.stabn	68,0,53,.LM116-.LFBB1
+ 978               	.LM116:
+ 979 040a 1092 0000 		sts rxDataWaiting+1,__zero_reg__
+ 980               	.LBE288:
+ 981               	.LBE287:
+ 982               		.stabs	"main.c",132,0,0,.Ltext45
+ 983               	.Ltext45:
+ 247:main.c        **** 	
+ 248:main.c        **** 		if(puar_dataWaiting(PUAR_FROM_DEVICE))
+ 249:main.c        **** 			rxByteFromDevice = puar_getByte(PUAR_FROM_DEVICE);
+ 984               		.stabn	68,0,249,.LM117-.LFBB1
+ 985               	.LM117:
+ 986 040e 6090 0000 		lds r6,rxData+1
+ 987 0412 7724      		clr r7
+ 988               	.L34:
+ 989               	.LBB289:
+ 990               	.LBB263:
+ 991               		.stabs	"_commonCode_localized/btbConnector/0.20/btbConnector.c",132,0,0,.Ltext46
+ 992               	.Ltext46:
+  77:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	if(btbcErrorResponse[btbcErrorResponseIndex] == '\0')
+ 993               		.stabn	68,0,77,.LM118-.LFBB1
+ 994               	.LM118:
+ 995 0414 8091 0000 		lds r24,btbcErrorResponseIndex
+ 996 0418 E82F      		mov r30,r24
+ 997 041a F0E0      		ldi r31,lo8(0)
+ 998 041c E050      		subi r30,lo8(-(btbcErrorResponse))
+ 999 041e F040      		sbci r31,hi8(-(btbcErrorResponse))
+ 1000 0420 9081      		ld r25,Z
+ 1001 0422 9923      		tst r25
+ 1002 0424 01F4      		brne .L35
+  80:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		btbcErrorResponseIndex = 0;
+ 1003               		.stabn	68,0,80,.LM119-.LFBB1
+ 1004               	.LM119:
+ 1005 0426 1092 0000 		sts btbcErrorResponseIndex,__zero_reg__
+  81:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		btbcState = BTBCSTATE_SENDRESET;
+ 1006               		.stabn	68,0,81,.LM120-.LFBB1
+ 1007               	.LM120:
+ 1008 042a 1092 0000 		sts btbcState,__zero_reg__
+ 1009 042e 00C0      		rjmp .L36
+ 1010               	.L35:
+  83:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	else if(rxByteFromBTB >= 0)
+ 1011               		.stabn	68,0,83,.LM121-.LFBB1
+ 1012               	.LM121:
+ 1013 0430 2FEF      		ldi r18,lo8(-1)
+ 1014 0432 8216      		cp r8,r18
+ 1015 0434 2FEF      		ldi r18,hi8(-1)
+ 1016 0436 9206      		cpc r9,r18
+ 1017 0438 01F0      		breq .L36
+  89:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		if(rxByteFromBTB == btbcErrorResponse[0])
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 41
+
+
+ 1018               		.stabn	68,0,89,.LM122-.LFBB1
+ 1019               	.LM122:
+ 1020 043a 2091 0000 		lds r18,btbcErrorResponse
+ 1021 043e 30E0      		ldi r19,lo8(0)
+ 1022 0440 8216      		cp r8,r18
+ 1023 0442 9306      		cpc r9,r19
+ 1024 0444 01F4      		brne .L37
+  90:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcErrorResponseIndex = 1;
+ 1025               		.stabn	68,0,90,.LM123-.LFBB1
+ 1026               	.LM123:
+ 1027 0446 1093 0000 		sts btbcErrorResponseIndex,r17
+ 1028 044a 00C0      		rjmp .L36
+ 1029               	.L37:
+  91:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 		else if(rxByteFromBTB == btbcErrorResponse[btbcErrorResponseIndex])
+ 1030               		.stabn	68,0,91,.LM124-.LFBB1
+ 1031               	.LM124:
+ 1032 044c 292F      		mov r18,r25
+ 1033 044e 30E0      		ldi r19,lo8(0)
+ 1034 0450 8216      		cp r8,r18
+ 1035 0452 9306      		cpc r9,r19
+ 1036 0454 01F4      		brne .L38
+  92:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcErrorResponseIndex++;
+ 1037               		.stabn	68,0,92,.LM125-.LFBB1
+ 1038               	.LM125:
+ 1039 0456 8F5F      		subi r24,lo8(-(1))
+ 1040 0458 8093 0000 		sts btbcErrorResponseIndex,r24
+ 1041 045c 00C0      		rjmp .L36
+ 1042               	.L38:
+  94:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcErrorResponseIndex = 0;
+ 1043               		.stabn	68,0,94,.LM126-.LFBB1
+ 1044               	.LM126:
+ 1045 045e 1092 0000 		sts btbcErrorResponseIndex,__zero_reg__
+ 1046               	.L36:
+  98:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 	switch(btbcState)
+ 1047               		.stabn	68,0,98,.LM127-.LFBB1
+ 1048               	.LM127:
+ 1049 0462 8091 0000 		lds r24,btbcState
+ 1050 0466 E82F      		mov r30,r24
+ 1051 0468 F0E0      		ldi r31,lo8(0)
+ 1052 046a ED30      		cpi r30,13
+ 1053 046c F105      		cpc r31,__zero_reg__
+ 1054 046e 00F0      		brlo .+2
+ 1055 0470 00C0      		rjmp .L63
+ 1056 0472 E050      		subi r30,lo8(-(gs(.L49)))
+ 1057 0474 F040      		sbci r31,hi8(-(gs(.L49)))
+ 1058 0476 0994      		ijmp
+ 1059               		.data
+ 1060               		.section .progmem.gcc_sw_table, "ax", @progbits
+ 1061               		.p2align 1
+ 1062               	.L49:
+ 1063               		.data
+ 1064               		.section .progmem.gcc_sw_table, "ax", @progbits
+ 1065               		.p2align 1
+ 1066 0000 00C0      		rjmp .L39
+ 1067 0002 00C0      		rjmp .L40
+ 1068 0004 00C0      		rjmp .L41
+ 1069 0006 00C0      		rjmp .L42
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 42
+
+
+ 1070 0008 00C0      		rjmp .L43
+ 1071 000a 00C0      		rjmp .L40
+ 1072 000c 00C0      		rjmp .L44
+ 1073 000e 00C0      		rjmp .L42
+ 1074 0010 00C0      		rjmp .L45
+ 1075 0012 00C0      		rjmp .L42
+ 1076 0014 00C0      		rjmp .L59
+ 1077 0016 00C0      		rjmp .L47
+ 1078 0018 00C0      		rjmp .L48
+ 1079               		.text
+ 1080               	.L39:
+ 101:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcCommand = btbcCmd_Reset;
+ 1081               		.stabn	68,0,101,.LM128-.LFBB1
+ 1082               	.LM128:
+ 1083 0478 3092 0000 		sts (btbcCommand)+1,r3
+ 1084 047c 2092 0000 		sts btbcCommand,r2
+ 103:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_SENDINGRESET;
+ 1085               		.stabn	68,0,103,.LM129-.LFBB1
+ 1086               	.LM129:
+ 1087 0480 1093 0000 		sts btbcState,r17
+ 1088 0484 00C0      		rjmp .L63
+ 1089               	.L40:
+ 1090               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext47
+ 1091               	.Ltext47:
+  80:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	return puat_txDataWaiting[puatNum];
+ 1092               		.stabn	68,0,80,.LM130-.LFBB1
+ 1093               	.LM130:
+ 1094 0486 9091 0000 		lds r25,puat_txDataWaiting
+ 1095 048a 9923      		tst r25
+ 1096 048c 01F0      		breq .+2
+ 1097 048e 00C0      		rjmp .L63
+ 1098               		.stabs	"_commonCode_localized/btbConnector/0.20/btbConnector.c",132,0,0,.Ltext48
+ 1099               	.Ltext48:
+ 116:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						btbc_sendByteToBTB(*btbcCommand);
+ 1100               		.stabn	68,0,116,.LM131-.LFBB1
+ 1101               	.LM131:
+ 1102 0490 A091 0000 		lds r26,btbcCommand
+ 1103 0494 B091 0000 		lds r27,(btbcCommand)+1
+ 1104 0498 FD01      		movw r30,r26
+ 1105 049a 9191      		ld r25,Z+
+ 1106               	.LBB252:
+ 1107               	.LBB253:
+ 1108               	.LBB254:
+ 1109               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext49
+ 1110               	.Ltext49:
+  88:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	puat_txDataWaiting[puatNum] = TRUE;
+ 1111               		.stabn	68,0,88,.LM132-.LFBB1
+ 1112               	.LM132:
+ 1113 049c 1093 0000 		sts puat_txDataWaiting,r17
+  89:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	puat_txData[puatNum] = data;
+ 1114               		.stabn	68,0,89,.LM133-.LFBB1
+ 1115               	.LM133:
+ 1116 04a0 9093 0000 		sts puat_txData,r25
+ 1117               	.LBE254:
+ 1118               	.LBE253:
+ 1119               	.LBE252:
+ 1120               		.stabs	"_commonCode_localized/btbConnector/0.20/btbConnector.c",132,0,0,.Ltext50
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 43
+
+
+ 1121               	.Ltext50:
+ 117:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						btbcCommand++;
+ 1122               		.stabn	68,0,117,.LM134-.LFBB1
+ 1123               	.LM134:
+ 1124 04a4 F093 0000 		sts (btbcCommand)+1,r31
+ 1125 04a8 E093 0000 		sts btbcCommand,r30
+ 119:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						if(*btbcCommand == '\0')
+ 1126               		.stabn	68,0,119,.LM135-.LFBB1
+ 1127               	.LM135:
+ 1128 04ac 1196      		adiw r26,1
+ 1129 04ae 9C91      		ld r25,X
+ 1130 04b0 1197      		sbiw r26,1
+ 1131 04b2 9923      		tst r25
+ 1132 04b4 01F0      		breq .+2
+ 1133 04b6 00C0      		rjmp .L63
+ 1134 04b8 00C0      		rjmp .L70
+ 1135               	.L41:
+ 127:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponse = btbcResponse_BTSTATE1;
+ 1136               		.stabn	68,0,127,.LM136-.LFBB1
+ 1137               	.LM136:
+ 1138 04ba D093 0000 		sts (btbcResponse)+1,r29
+ 1139 04be C093 0000 		sts btbcResponse,r28
+ 128:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponseIndex = 0;
+ 1140               		.stabn	68,0,128,.LM137-.LFBB1
+ 1141               	.LM137:
+ 1142 04c2 1092 0000 		sts btbcResponseIndex,__zero_reg__
+ 130:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_AWAITINGBTSTATE1;
+ 1143               		.stabn	68,0,130,.LM138-.LFBB1
+ 1144               	.LM138:
+ 1145 04c6 83E0      		ldi r24,lo8(3)
+ 1146               	.L64:
+ 1147 04c8 8093 0000 		sts btbcState,r24
+ 1148 04cc 00C0      		rjmp .L63
+ 1149               	.L42:
+ 137:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			if(btbcResponse[btbcResponseIndex] == '\0')
+ 1150               		.stabn	68,0,137,.LM139-.LFBB1
+ 1151               	.LM139:
+ 1152 04ce 9091 0000 		lds r25,btbcResponseIndex
+ 1153 04d2 E091 0000 		lds r30,btbcResponse
+ 1154 04d6 F091 0000 		lds r31,(btbcResponse)+1
+ 1155 04da E90F      		add r30,r25
+ 1156 04dc F11D      		adc r31,__zero_reg__
+ 1157 04de 2081      		ld r18,Z
+ 1158 04e0 2223      		tst r18
+ 1159 04e2 01F4      		brne .L50
+ 1160               	.L70:
+ 138:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				btbcState++;
+ 1161               		.stabn	68,0,138,.LM140-.LFBB1
+ 1162               	.LM140:
+ 1163 04e4 8F5F      		subi r24,lo8(-(1))
+ 1164 04e6 00C0      		rjmp .L64
+ 1165               	.L50:
+ 139:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			else if(rxByteFromBTB >= 0)
+ 1166               		.stabn	68,0,139,.LM141-.LFBB1
+ 1167               	.LM141:
+ 1168 04e8 8FEF      		ldi r24,lo8(-1)
+ 1169 04ea 8816      		cp r8,r24
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 44
+
+
+ 1170 04ec 8FEF      		ldi r24,hi8(-1)
+ 1171 04ee 9806      		cpc r9,r24
+ 1172 04f0 01F4      		brne .+2
+ 1173 04f2 00C0      		rjmp .L63
+ 141:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromBTB == btbcResponse[btbcResponseIndex])
+ 1174               		.stabn	68,0,141,.LM142-.LFBB1
+ 1175               	.LM142:
+ 1176 04f4 30E0      		ldi r19,lo8(0)
+ 1177 04f6 8216      		cp r8,r18
+ 1178 04f8 9306      		cpc r9,r19
+ 1179 04fa 01F4      		brne .L51
+ 142:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponseIndex++;
+ 1180               		.stabn	68,0,142,.LM143-.LFBB1
+ 1181               	.LM143:
+ 1182 04fc 9F5F      		subi r25,lo8(-(1))
+ 1183 04fe 9093 0000 		sts btbcResponseIndex,r25
+ 1184 0502 00C0      		rjmp .L63
+ 1185               	.L51:
+ 144:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponseIndex = 0;
+ 1186               		.stabn	68,0,144,.LM144-.LFBB1
+ 1187               	.LM144:
+ 1188 0504 1092 0000 		sts btbcResponseIndex,__zero_reg__
+ 1189 0508 00C0      		rjmp .L63
+ 1190               	.L43:
+ 149:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcCommand = btbcCmd_Inquire;
+ 1191               		.stabn	68,0,149,.LM145-.LFBB1
+ 1192               	.LM145:
+ 1193 050a 5092 0000 		sts (btbcCommand)+1,r5
+ 1194 050e 4092 0000 		sts btbcCommand,r4
+ 151:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_SENDINGINQUIRE;
+ 1195               		.stabn	68,0,151,.LM146-.LFBB1
+ 1196               	.LM146:
+ 1197 0512 25E0      		ldi r18,lo8(5)
+ 1198 0514 00C0      		rjmp .L65
+ 1199               	.L44:
+ 155:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponse = btbcResponse_BTSTATE2;
+ 1200               		.stabn	68,0,155,.LM147-.LFBB1
+ 1201               	.LM147:
+ 1202 0516 D092 0000 		sts (btbcResponse)+1,r13
+ 1203 051a C092 0000 		sts btbcResponse,r12
+ 156:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponseIndex = 0;
+ 1204               		.stabn	68,0,156,.LM148-.LFBB1
+ 1205               	.LM148:
+ 1206 051e 1092 0000 		sts btbcResponseIndex,__zero_reg__
+ 158:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_AWAITINGBTSTATE2;
+ 1207               		.stabn	68,0,158,.LM149-.LFBB1
+ 1208               	.LM149:
+ 1209 0522 87E0      		ldi r24,lo8(7)
+ 1210 0524 00C0      		rjmp .L64
+ 1211               	.L45:
+ 164:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponse = btbcResponse_BTSTATE4;
+ 1212               		.stabn	68,0,164,.LM150-.LFBB1
+ 1213               	.LM150:
+ 1214 0526 B092 0000 		sts (btbcResponse)+1,r11
+ 1215 052a A092 0000 		sts btbcResponse,r10
+ 165:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcResponseIndex = 0;
+ 1216               		.stabn	68,0,165,.LM151-.LFBB1
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 45
+
+
+ 1217               	.LM151:
+ 1218 052e 1092 0000 		sts btbcResponseIndex,__zero_reg__
+ 167:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			btbcState = BTBCSTATE_AWAITINGCONNECTION;
+ 1219               		.stabn	68,0,167,.LM152-.LFBB1
+ 1220               	.LM152:
+ 1221 0532 29E0      		ldi r18,lo8(9)
+ 1222               	.L65:
+ 1223 0534 2093 0000 		sts btbcState,r18
+ 1224 0538 00C0      		rjmp .L63
+ 1225               	.L47:
+ 182:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromBTB >= 0)
+ 1226               		.stabn	68,0,182,.LM153-.LFBB1
+ 1227               	.LM153:
+ 1228 053a 8FEF      		ldi r24,lo8(-1)
+ 1229 053c 8816      		cp r8,r24
+ 1230 053e 8FEF      		ldi r24,hi8(-1)
+ 1231 0540 9806      		cpc r9,r24
+ 1232 0542 01F0      		breq .L52
+ 183:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					cirBuff_addByte(&btbCirBuff, rxByteFromBTB, TRUE);
+ 1233               		.stabn	68,0,183,.LM154-.LFBB1
+ 1234               	.LM154:
+ 1235 0544 80E0      		ldi r24,lo8(btbCirBuff)
+ 1236 0546 90E0      		ldi r25,hi8(btbCirBuff)
+ 1237 0548 682D      		mov r22,r8
+ 1238 054a 41E0      		ldi r20,lo8(1)
+ 1239 054c 00D0      		rcall cirBuff_addByte
+ 1240               	.L52:
+ 188:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromDevice >= 0)
+ 1241               		.stabn	68,0,188,.LM155-.LFBB1
+ 1242               	.LM155:
+ 1243 054e 2FEF      		ldi r18,lo8(-1)
+ 1244 0550 6216      		cp r6,r18
+ 1245 0552 2FEF      		ldi r18,hi8(-1)
+ 1246 0554 7206      		cpc r7,r18
+ 1247 0556 01F0      		breq .L53
+ 189:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					cirBuff_addByte(&btbDeviceBuff, rxByteFromDevice, TRUE);
+ 1248               		.stabn	68,0,189,.LM156-.LFBB1
+ 1249               	.LM156:
+ 1250 0558 80E0      		ldi r24,lo8(btbDeviceBuff)
+ 1251 055a 90E0      		ldi r25,hi8(btbDeviceBuff)
+ 1252 055c 662D      		mov r22,r6
+ 1253 055e 41E0      		ldi r20,lo8(1)
+ 1254 0560 00D0      		rcall cirBuff_addByte
+ 1255               	.L53:
+ 191:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromBTB == '\r')
+ 1256               		.stabn	68,0,191,.LM157-.LFBB1
+ 1257               	.LM157:
+ 1258 0562 8DE0      		ldi r24,lo8(13)
+ 1259 0564 8816      		cp r8,r24
+ 1260 0566 9104      		cpc r9,__zero_reg__
+ 1261 0568 01F4      		brne .L54
+ 203:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponse = btbcResponse_BTSTATE1;
+ 1262               		.stabn	68,0,203,.LM158-.LFBB1
+ 1263               	.LM158:
+ 1264 056a D093 0000 		sts (btbcResponse)+1,r29
+ 1265 056e C093 0000 		sts btbcResponse,r28
+ 204:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponseIndex = 0;	
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 46
+
+
+ 1266               		.stabn	68,0,204,.LM159-.LFBB1
+ 1267               	.LM159:
+ 1268 0572 1092 0000 		sts btbcResponseIndex,__zero_reg__
+ 205:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcState = BTBCSTATE_VERIFYINGCONNECTION;
+ 1269               		.stabn	68,0,205,.LM160-.LFBB1
+ 1270               	.LM160:
+ 1271 0576 2CE0      		ldi r18,lo8(12)
+ 1272 0578 00C0      		rjmp .L65
+ 1273               	.L54:
+ 1274               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext51
+ 1275               	.Ltext51:
+  80:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	return puat_txDataWaiting[puatNum];
+ 1276               		.stabn	68,0,80,.LM161-.LFBB1
+ 1277               	.LM161:
+ 1278 057a 8091 0000 		lds r24,puat_txDataWaiting+1
+ 1279 057e 8823      		tst r24
+ 1280 0580 01F4      		brne .L55
+ 1281               	.LBB255:
+ 1282               		.stabs	"_commonCode_localized/btbConnector/0.20/btbConnector.c",132,0,0,.Ltext52
+ 1283               	.Ltext52:
+ 214:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						int16_t cirBuffByte = cirBuff_getByte(&btbCirBuff);
+ 1284               		.stabn	68,0,214,.LM162-.LFBB1
+ 1285               	.LM162:
+ 1286 0582 80E0      		ldi r24,lo8(btbCirBuff)
+ 1287 0584 90E0      		ldi r25,hi8(btbCirBuff)
+ 1288 0586 00D0      		rcall cirBuff_getByte
+ 216:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						if(cirBuffByte >= 0)
+ 1289               		.stabn	68,0,216,.LM163-.LFBB1
+ 1290               	.LM163:
+ 1291 0588 97FD      		sbrc r25,7
+ 1292 058a 00C0      		rjmp .L55
+ 1293               	.LBB256:
+ 1294               	.LBB257:
+ 1295               	.LBB258:
+ 1296               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext53
+ 1297               	.Ltext53:
+  88:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	puat_txDataWaiting[puatNum] = TRUE;
+ 1298               		.stabn	68,0,88,.LM164-.LFBB1
+ 1299               	.LM164:
+ 1300 058c 1093 0000 		sts puat_txDataWaiting+1,r17
+  89:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	puat_txData[puatNum] = data;
+ 1301               		.stabn	68,0,89,.LM165-.LFBB1
+ 1302               	.LM165:
+ 1303 0590 8093 0000 		sts puat_txData+1,r24
+ 1304               	.L55:
+ 1305               	.LBE258:
+ 1306               	.LBE257:
+ 1307               	.LBE256:
+ 1308               	.LBE255:
+  80:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	return puat_txDataWaiting[puatNum];
+ 1309               		.stabn	68,0,80,.LM166-.LFBB1
+ 1310               	.LM166:
+ 1311 0594 8091 0000 		lds r24,puat_txDataWaiting
+ 1312 0598 8823      		tst r24
+ 1313 059a 01F0      		breq .+2
+ 1314 059c 00C0      		rjmp .L63
+ 1315               	.LBB259:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 47
+
+
+ 1316               		.stabs	"_commonCode_localized/btbConnector/0.20/btbConnector.c",132,0,0,.Ltext54
+ 1317               	.Ltext54:
+ 226:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						int16_t cirBuffByte = cirBuff_getByte(&btbDeviceBuff);
+ 1318               		.stabn	68,0,226,.LM167-.LFBB1
+ 1319               	.LM167:
+ 1320 059e 80E0      		ldi r24,lo8(btbDeviceBuff)
+ 1321 05a0 90E0      		ldi r25,hi8(btbDeviceBuff)
+ 1322 05a2 00D0      		rcall cirBuff_getByte
+ 228:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 						if(cirBuffByte >= 0)
+ 1323               		.stabn	68,0,228,.LM168-.LFBB1
+ 1324               	.LM168:
+ 1325 05a4 97FD      		sbrc r25,7
+ 1326 05a6 00C0      		rjmp .L63
+ 1327               	.LBB260:
+ 1328               	.LBB261:
+ 1329               	.LBB262:
+ 1330               		.stabs	"_commonCode_localized/polled_uat/0.40/polled_uat.c",132,0,0,.Ltext55
+ 1331               	.Ltext55:
+  88:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	puat_txDataWaiting[puatNum] = TRUE;
+ 1332               		.stabn	68,0,88,.LM169-.LFBB1
+ 1333               	.LM169:
+ 1334 05a8 1093 0000 		sts puat_txDataWaiting,r17
+  89:_commonCode_localized/polled_uat/0.40/polled_uat.c **** 	puat_txData[puatNum] = data;
+ 1335               		.stabn	68,0,89,.LM170-.LFBB1
+ 1336               	.LM170:
+ 1337 05ac 8093 0000 		sts puat_txData,r24
+ 1338 05b0 00C0      		rjmp .L63
+ 1339               	.L48:
+ 1340               	.LBE262:
+ 1341               	.LBE261:
+ 1342               	.LBE260:
+ 1343               	.LBE259:
+ 1344               		.stabs	"_commonCode_localized/btbConnector/0.20/btbConnector.c",132,0,0,.Ltext56
+ 1345               	.Ltext56:
+ 241:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			if(rxByteFromDevice >= 0)
+ 1346               		.stabn	68,0,241,.LM171-.LFBB1
+ 1347               	.LM171:
+ 1348 05b2 8FEF      		ldi r24,lo8(-1)
+ 1349 05b4 6816      		cp r6,r24
+ 1350 05b6 8FEF      		ldi r24,hi8(-1)
+ 1351 05b8 7806      		cpc r7,r24
+ 1352 05ba 01F0      		breq .L56
+ 242:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				   cirBuff_addByte(&btbDeviceBuff, rxByteFromDevice, TRUE);
+ 1353               		.stabn	68,0,242,.LM172-.LFBB1
+ 1354               	.LM172:
+ 1355 05bc 80E0      		ldi r24,lo8(btbDeviceBuff)
+ 1356 05be 90E0      		ldi r25,hi8(btbDeviceBuff)
+ 1357 05c0 662D      		mov r22,r6
+ 1358 05c2 41E0      		ldi r20,lo8(1)
+ 1359 05c4 00D0      		rcall cirBuff_addByte
+ 1360               	.L56:
+ 244:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			if(btbcResponse[btbcResponseIndex] == '\0')
+ 1361               		.stabn	68,0,244,.LM173-.LFBB1
+ 1362               	.LM173:
+ 1363 05c6 8091 0000 		lds r24,btbcResponseIndex
+ 1364 05ca E091 0000 		lds r30,btbcResponse
+ 1365 05ce F091 0000 		lds r31,(btbcResponse)+1
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 48
+
+
+ 1366 05d2 E80F      		add r30,r24
+ 1367 05d4 F11D      		adc r31,__zero_reg__
+ 1368 05d6 8081      		ld r24,Z
+ 1369 05d8 8823      		tst r24
+ 1370 05da 01F4      		brne .L57
+ 250:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				btbcState = BTBCSTATE_SENDRESET; // or reset?
+ 1371               		.stabn	68,0,250,.LM174-.LFBB1
+ 1372               	.LM174:
+ 1373 05dc 1092 0000 		sts btbcState,__zero_reg__
+ 253:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				cirBuff_empty(&btbCirBuff);
+ 1374               		.stabn	68,0,253,.LM175-.LFBB1
+ 1375               	.LM175:
+ 1376 05e0 80E0      		ldi r24,lo8(btbCirBuff)
+ 1377 05e2 90E0      		ldi r25,hi8(btbCirBuff)
+ 1378 05e4 00D0      		rcall cirBuff_empty
+ 254:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				cirBuff_empty(&btbDeviceBuff);
+ 1379               		.stabn	68,0,254,.LM176-.LFBB1
+ 1380               	.LM176:
+ 1381 05e6 80E0      		ldi r24,lo8(btbDeviceBuff)
+ 1382 05e8 90E0      		ldi r25,hi8(btbDeviceBuff)
+ 1383 05ea 00D0      		rcall cirBuff_empty
+ 1384 05ec 00C0      		rjmp .L63
+ 1385               	.L57:
+ 256:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 			else if(rxByteFromBTB >= 0)
+ 1386               		.stabn	68,0,256,.LM177-.LFBB1
+ 1387               	.LM177:
+ 1388 05ee 2FEF      		ldi r18,lo8(-1)
+ 1389 05f0 8216      		cp r8,r18
+ 1390 05f2 2FEF      		ldi r18,hi8(-1)
+ 1391 05f4 9206      		cpc r9,r18
+ 1392 05f6 01F4      		brne .+2
+ 1393 05f8 00C0      		rjmp .L63
+ 260:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				cirBuff_addByte(&btbCirBuff, rxByteFromBTB, TRUE);
+ 1394               		.stabn	68,0,260,.LM178-.LFBB1
+ 1395               	.LM178:
+ 1396 05fa 80E0      		ldi r24,lo8(btbCirBuff)
+ 1397 05fc 90E0      		ldi r25,hi8(btbCirBuff)
+ 1398 05fe 682D      		mov r22,r8
+ 1399 0600 41E0      		ldi r20,lo8(1)
+ 1400 0602 00D0      		rcall cirBuff_addByte
+ 266:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromBTB == '\r')
+ 1401               		.stabn	68,0,266,.LM179-.LFBB1
+ 1402               	.LM179:
+ 1403 0604 8DE0      		ldi r24,lo8(13)
+ 1404 0606 8816      		cp r8,r24
+ 1405 0608 9104      		cpc r9,__zero_reg__
+ 1406 060a 01F4      		brne .L58
+ 267:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponseIndex = 0;
+ 1407               		.stabn	68,0,267,.LM180-.LFBB1
+ 1408               	.LM180:
+ 1409 060c 1092 0000 		sts btbcResponseIndex,__zero_reg__
+ 1410               	.L58:
+ 268:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 				if(rxByteFromBTB == btbcResponse[btbcResponseIndex])
+ 1411               		.stabn	68,0,268,.LM181-.LFBB1
+ 1412               	.LM181:
+ 1413 0610 8091 0000 		lds r24,btbcResponseIndex
+ 1414 0614 E091 0000 		lds r30,btbcResponse
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 49
+
+
+ 1415 0618 F091 0000 		lds r31,(btbcResponse)+1
+ 1416 061c E80F      		add r30,r24
+ 1417 061e F11D      		adc r31,__zero_reg__
+ 1418 0620 2081      		ld r18,Z
+ 1419 0622 30E0      		ldi r19,lo8(0)
+ 1420 0624 8216      		cp r8,r18
+ 1421 0626 9306      		cpc r9,r19
+ 1422 0628 01F4      		brne .L59
+ 269:_commonCode_localized/btbConnector/0.20/btbConnector.c **** 					btbcResponseIndex++;
+ 1423               		.stabn	68,0,269,.LM182-.LFBB1
+ 1424               	.LM182:
+ 1425 062a 8F5F      		subi r24,lo8(-(1))
+ 1426 062c 8093 0000 		sts btbcResponseIndex,r24
+ 1427 0630 00C0      		rjmp .L63
+ 1428               	.L59:
+ 1429               		.stabn	68,0,274,.LM183-.LFBB1
+ 1430               	.LM183:
+ 1431 0632 0093 0000 		sts btbcState,r16
+ 1432 0636 00C0      		rjmp .L63
+ 1433               	.LBE263:
+ 1434               	.LBE289:
+ 1435               	.LBE228:
+ 1436               		.size	main, .-main
+ 1437               		.stabs	"puar0_bitTcnt:r(3,6)",64,0,118,14
+ 1438               		.stabn	192,0,0,.LFBB1-.LFBB1
+ 1439               		.stabs	"rxByteFromBTB:r(3,3)",64,0,241,8
+ 1440               		.stabs	"rxByteFromDevice:r(3,3)",64,0,242,6
+ 1441               		.stabn	192,0,0,.LBB228-.LFBB1
+ 1442               		.stabs	"cirBuffByte:r(3,3)",64,0,214,24
+ 1443               		.stabn	192,0,0,.LBB255-.LFBB1
+ 1444               		.stabn	224,0,0,.LBE255-.LFBB1
+ 1445               		.stabs	"cirBuffByte:r(3,3)",64,0,226,24
+ 1446               		.stabn	192,0,0,.LBB259-.LFBB1
+ 1447               		.stabn	224,0,0,.LBE259-.LFBB1
+ 1448               		.stabn	224,0,0,.LBE228-.LFBB1
+ 1449               		.stabn	224,0,0,.Lscope1-.LFBB1
+ 1450               	.Lscope1:
+ 1451               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 1452               		.stabd	78,0,0
+ 1453               	.global	header0
+ 1454               		.section	.progmem.data,"a",@progbits
+ 1455               		.type	header0, @object
+ 1456               		.size	header0, 57
+ 1457               	header0:
+ 1458 0000 202F 5573 		.string	" /Users/meh/_avrProjects/tabletBluetoother/8-gittifying "
+ 1458      6572 732F 
+ 1458      6D65 682F 
+ 1458      5F61 7672 
+ 1458      5072 6F6A 
+ 1459               	.global	header1
+ 1460               		.type	header1, @object
+ 1461               		.size	header1, 31
+ 1462               	header1:
+ 1463 0039 204D 6F6E 		.string	" Mon Dec 23 08:00:44 PST 2013 "
+ 1463      2044 6563 
+ 1463      2032 3320 
+ 1463      3038 3A30 
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 50
+
+
+ 1463      303A 3434 
+ 1464               	.global	headerOpt
+ 1465               		.type	headerOpt, @object
+ 1466               		.size	headerOpt, 15
+ 1467               	headerOpt:
+ 1468 0058 2057 4454 		.string	" WDT_DIS=TRUE "
+ 1468      5F44 4953 
+ 1468      3D54 5255 
+ 1468      4520 00
+ 1469               	.global	btbcCmd_Reset
+ 1470               		.data
+ 1471               		.type	btbcCmd_Reset, @object
+ 1472               		.size	btbcCmd_Reset, 14
+ 1473               	btbcCmd_Reset:
+ 1474 0000 0D0A 2B53 		.string	"\r\n+STWMOD=0\r\n"
+ 1474      5457 4D4F 
+ 1474      443D 300D 
+ 1474      0A00 
+ 1475               	.global	btbcCmd_Inquire
+ 1476               		.type	btbcCmd_Inquire, @object
+ 1477               		.size	btbcCmd_Inquire, 11
+ 1478               	btbcCmd_Inquire:
+ 1479 000e 0D0A 2B49 		.string	"\r\n+INQ=1\r\n"
+ 1479      4E51 3D31 
+ 1479      0D0A 00
+ 1480               	.global	btbcCommand
+ 1481               	.LC0:
+ 1482 0019 00        		.string	""
+ 1483 001a 00        		.string	""
+ 1484               		.type	btbcCommand, @object
+ 1485               		.size	btbcCommand, 2
+ 1486               	btbcCommand:
+ 1487 001b 0000      		.word	.LC0
+ 1488               	.global	btbcErrorResponse
+ 1489               		.type	btbcErrorResponse, @object
+ 1490               		.size	btbcErrorResponse, 6
+ 1491               	btbcErrorResponse:
+ 1492 001d 4552 524F 		.string	"ERROR"
+ 1492      5200 
+ 1493               	.global	btbcResponse_BTSTATE1
+ 1494               		.type	btbcResponse_BTSTATE1, @object
+ 1495               		.size	btbcResponse_BTSTATE1, 12
+ 1496               	btbcResponse_BTSTATE1:
+ 1497 0023 0A2B 4254 		.string	"\n+BTSTATE:1"
+ 1497      5354 4154 
+ 1497      453A 3100 
+ 1498               	.global	btbcResponse_BTSTATE2
+ 1499               		.type	btbcResponse_BTSTATE2, @object
+ 1500               		.size	btbcResponse_BTSTATE2, 13
+ 1501               	btbcResponse_BTSTATE2:
+ 1502 002f 2B42 5453 		.string	"+BTSTATE:2\r\n"
+ 1502      5441 5445 
+ 1502      3A32 0D0A 
+ 1502      00
+ 1503               	.global	btbcResponse_BTSTATE4
+ 1504               		.type	btbcResponse_BTSTATE4, @object
+ 1505               		.size	btbcResponse_BTSTATE4, 13
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 51
+
+
+ 1506               	btbcResponse_BTSTATE4:
+ 1507 003c 2B42 5453 		.string	"+BTSTATE:4\r\n"
+ 1507      5441 5445 
+ 1507      3A34 0D0A 
+ 1507      00
+ 1508               	.global	btbcResponse
+ 1509               		.type	btbcResponse, @object
+ 1510               		.size	btbcResponse, 2
+ 1511               	btbcResponse:
+ 1512 0049 0000      		.word	.LC0
+ 1513               	.global	btbcResponseIndex
+ 1514               	.global	btbcResponseIndex
+ 1515               		.section .bss
+ 1516               		.type	btbcResponseIndex, @object
+ 1517               		.size	btbcResponseIndex, 1
+ 1518               	btbcResponseIndex:
+ 1519 0000 00        		.skip 1,0
+ 1520               	.global	btbcErrorResponseIndex
+ 1521               	.global	btbcErrorResponseIndex
+ 1522               		.type	btbcErrorResponseIndex, @object
+ 1523               		.size	btbcErrorResponseIndex, 1
+ 1524               	btbcErrorResponseIndex:
+ 1525 0001 00        		.skip 1,0
+ 1526               		.lcomm nextTcnter.1302,8
+ 1527               		.lcomm thisByte.1301,2
+ 1528               		.comm rxData,2,1
+ 1529               		.comm rxDataWaiting,2,1
+ 1530               		.comm rxState,2,1
+ 1531               		.comm puar_bitTcnt,8,1
+ 1532               		.comm puat_bitTcnt,8,1
+ 1533               		.comm puat_txData,2,1
+ 1534               		.comm puat_txDataWaiting,2,1
+ 1535               		.comm puat_txState,2,1
+ 1536               		.comm puat_shiftingByte,2,1
+ 1537               		.comm puat_lastTime,2,1
+ 1538               		.comm btbBuffer,20,1
+ 1539               		.comm btbCirBuff,5,1
+ 1540               		.comm btbDeviceBuffer,20,1
+ 1541               		.comm btbDeviceBuff,5,1
+ 1542               		.comm btbcState,1,1
+ 1543               		.stabs	"header0:G(0,16)=ar(0,17)=r(0,17);0;0177777;;0;56;(3,2)",32,0,9,0
+ 1544               		.stabs	"header1:G(0,18)=ar(0,17);0;30;(3,2)",32,0,11,0
+ 1545               		.stabs	"headerOpt:G(0,19)=ar(0,17);0;14;(3,2)",32,0,13,0
+ 1546               		.stabs	"rxData:G(0,20)=ar(0,17);0;1;(3,2)",32,0,37,0
+ 1547               		.stabs	"rxDataWaiting:G(0,20)",32,0,38,0
+ 1548               		.stabs	"rxState:G(0,20)",32,0,57,0
+ 1549               		.stabs	"puar_bitTcnt:G(0,21)=ar(0,17);0;1;(3,6)",32,0,74,0
+ 1550               		.stabs	"puat_bitTcnt:G(0,21)",32,0,39,0
+ 1551               		.stabs	"puat_txData:G(0,20)",32,0,71,0
+ 1552               		.stabs	"puat_txDataWaiting:G(0,20)",32,0,72,0
+ 1553               		.stabs	"puat_txState:G(0,20)",32,0,92,0
+ 1554               		.stabs	"puat_shiftingByte:G(0,20)",32,0,153,0
+ 1555               		.stabs	"puat_lastTime:G(0,20)",32,0,158,0
+ 1556               		.stabs	"btbBuffer:G(0,22)=ar(0,17);0;19;(3,2)",32,0,17,0
+ 1557               		.stabs	"btbCirBuff:G(8,1)",32,0,18,0
+ 1558               		.stabs	"btbDeviceBuffer:G(0,22)",32,0,19,0
+ 1559               		.stabs	"btbDeviceBuff:G(8,1)",32,0,20,0
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 52
+
+
+ 1560               		.stabs	"btbcCmd_Reset:G(0,23)=ar(0,17);0;13;(0,2)",32,0,30,0
+ 1561               		.stabs	"btbcCmd_Inquire:G(0,24)=ar(0,17);0;10;(0,2)",32,0,31,0
+ 1562               		.stabs	"btbcCommand:G(11,2)",32,0,32,0
+ 1563               		.stabs	"btbcErrorResponse:G(0,25)=ar(0,17);0;5;(0,2)",32,0,35,0
+ 1564               		.stabs	"btbcResponse_BTSTATE1:G(0,26)=ar(0,17);0;11;(0,2)",32,0,40,0
+ 1565               		.stabs	"btbcResponse_BTSTATE2:G(0,27)=ar(0,17);0;12;(0,2)",32,0,41,0
+ 1566               		.stabs	"btbcResponse_BTSTATE4:G(0,27)",32,0,42,0
+ 1567               		.stabs	"btbcResponse:G(11,2)",32,0,43,0
+ 1568               		.stabs	"btbcResponseIndex:G(3,2)",32,0,46,0
+ 1569               		.stabs	"btbcErrorResponseIndex:G(3,2)",32,0,47,0
+ 1570               		.stabs	"btbcState:G(3,2)",32,0,49,0
+ 1571               		.text
+ 1572               		.stabs	"",100,0,0,.Letext0
+ 1573               	.Letext0:
+GAS LISTING /var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s 			page 53
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:2      *ABS*:0000003f __SREG__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:3      *ABS*:0000003e __SP_H__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:4      *ABS*:0000003d __SP_L__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:5      *ABS*:00000000 __tmp_reg__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:6      *ABS*:00000001 __zero_reg__
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:94     .text:00000000 main
+                            *COM*:00000005 btbCirBuff
+                            *COM*:00000014 btbBuffer
+                            *COM*:00000005 btbDeviceBuff
+                            *COM*:00000014 btbDeviceBuffer
+                            *COM*:00000008 puar_bitTcnt
+                            *COM*:00000008 puat_bitTcnt
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1496   .data:00000023 btbcResponse_BTSTATE1
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1506   .data:0000003c btbcResponse_BTSTATE4
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1501   .data:0000002f btbcResponse_BTSTATE2
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1478   .data:0000000e btbcCmd_Inquire
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1473   .data:00000000 btbcCmd_Reset
+                            *COM*:00000002 puat_txState
+                            *COM*:00000002 puat_txDataWaiting
+                            *COM*:00000002 puat_txData
+                            *COM*:00000002 puat_shiftingByte
+                            *COM*:00000002 puat_lastTime
+                            *COM*:00000002 rxState
+                             .bss:00000002 nextTcnter.1302
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1526   .bss:0000000a thisByte.1301
+                            *COM*:00000002 rxData
+                            *COM*:00000002 rxDataWaiting
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1524   .bss:00000001 btbcErrorResponseIndex
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1491   .data:0000001d btbcErrorResponse
+                            *COM*:00000001 btbcState
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1486   .data:0000001b btbcCommand
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1511   .data:00000049 btbcResponse
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1518   .bss:00000000 btbcResponseIndex
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1457   .progmem.data:00000000 header0
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1462   .progmem.data:00000039 header1
+/var/folders/yG/yGnXnnFGGj4hKA71DL26EU+++TI/-Tmp-//cciQOqSI.s:1467   .progmem.data:00000058 headerOpt
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+timer_init
+tcnter_init
+cirBuff_init
+tcnter_get
+tcnter_update
+tcnter_isItTime8
+cirBuff_addByte
+cirBuff_getByte
+cirBuff_empty
